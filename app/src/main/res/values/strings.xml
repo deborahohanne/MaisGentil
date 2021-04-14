@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">+Gentil</string>
+    <string name="txtEmail">Email</string>
+    <string name="txtNome">Nome</string>
+    <string name="txtTelefone">Telefone</string>
+    <string name="txtConfirmaSenha">Confirme a senha</string>
+    <string name="txtSenha">Senha</string>
+    <string name="txtNomeInstituicao">Nome da Instituição</string>
+
+</resources>
