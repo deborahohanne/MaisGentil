@@ -16,22 +16,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/gentil_main_logo" />
 
-    <ImageView
-        android:id="@+id/ivMainImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivMainLogo"
-        app:srcCompat="@drawable/Intro_image" />
-
     <TextView
         android:id="@+id/tvTextOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="24dp"
         android:text="@string/txt1main"
         android:textColor="@color/black"
         android:textSize="20dp"
@@ -50,7 +39,7 @@
         android:textSize="16dp"
         app:layout_constraintBottom_toTopOf="@+id/btHome"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTextOne" />
 
@@ -65,17 +54,6 @@
         app:layout_constraintEnd_toStartOf="@+id/tvMainLinked"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivMainLogo"
-        app:srcCompat="@drawable/intro_image_one" />
 
     <TextView
         android:id="@+id/btHome"
@@ -121,5 +99,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/tvLogin" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivMainLogo"
+        app:srcCompat="@drawable/intro_image_one" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
