@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1001743663714",
+    "project_id": "maisgentil-e07d4",
+    "storage_bucket": "maisgentil-e07d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001743663714:android:25ba29e40773ce6731473b",
+        "android_client_info": {
+          "package_name": "br.iesb.mobile.gentil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001743663714-51fa4t4m0os0q8hv7vf9r3pg7ls4umtr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByr904kEJd2t36bf_4LmEHuWXy9s4pF5g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1001743663714-51fa4t4m0os0q8hv7vf9r3pg7ls4umtr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
