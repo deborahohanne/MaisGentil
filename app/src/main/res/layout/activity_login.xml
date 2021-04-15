@@ -21,7 +21,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="104dp"
-        android:text="TextView"
+        android:text="@string/txt5login"
+        android:textColor="@color/black"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -62,21 +64,12 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="443dp" />
 
-    <ImageButton
-        android:id="@+id/btLoginLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/bt_image_one"
-        tools:layout_editor_absoluteY="589dp" />
-
     <TextView
         android:id="@+id/tvLoginTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="@string/txt3forgot"
+        android:textColor="@color/txt_vermelho"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="529dp" />
@@ -85,9 +78,37 @@
         android:id="@+id/tvLoginThree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
         android:layout_marginBottom="24dp"
-        android:text="TextView"
+        android:text="@string/txtJaTemUmaConta1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvLoginLinked"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/btLoginLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_bt_one"
+        android:gravity="center"
+        android:text="@string/txtEntrar"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="600dp" />
+
+    <TextView
+        android:id="@+id/tvLoginLinked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="124dp"
+        android:text="@string/txtJaTemUmaConta2"
+        android:textColor="@color/txt_vermelho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvLoginThree"
+        tools:layout_editor_absoluteY="688dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

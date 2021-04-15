@@ -21,7 +21,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
-        android:text="TextView"
+        android:text="@string/txt1forgot"
+        android:textColor="@color/black"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -48,30 +50,32 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="469dp" />
 
-    <ImageButton
-        android:id="@+id/btForgotEnviar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/bt_image_one"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="564dp" />
-
     <TextView
         android:id="@+id/tvForgotTwo"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/txt2forgot"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="382dp" />
+        tools:layout_editor_absoluteY="347dp" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/btForgot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:text="TextView"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/custom_bt_one"
+        android:gravity="center"
+        android:text="@string/txtEnviar"
+        android:textAlignment="center"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,5 +6,30 @@
     <string name="txtConfirmaSenha">Confirme a senha</string>
     <string name="txtSenha">Senha</string>
     <string name="txtNomeInstituicao">Nome da Instituição</string>
+    <string name="txtEnviar">Enviar</string>
+    <string name="txtVoltar">Voltar</string>
+    <string name="txtFazerCadastro">Cadastrar</string>
+    <string name="txtCrieCadastro">Crie seu cadastro</string>
+    <string name="txtEntrar">Entrar</string>
+    <string name="txtNext">Avançar</string>
+
+    <string name="txtJaTemUmaConta1">Já tem uma conta?</string>
+    <string name="txtJaTemUmaConta2">Faça seu login</string>
+
+
+    <string name="txt1main">Seja mais gentil com o +Gentil</string>
+    <string name="txt2main">Descubra as instituições de caridade mais próximas de você, reuna-se com voluntários e promova eventos e campanhas beneficentes.  Tudo em um lugar só.</string>
+    <string name="txt1forgot">Esqueceu sua senha?</string>
+    <string name="txt2forgot">Insira o seu e-mail no campo abaixo para enviarmos uma senha para seu acesso:</string>
+    <string name="txt1login">Seja bem-vindo ao +Gentil</string>
+    <string name="txt2login">Ficamos muito felizes em tê-lo aqui! Você deseja se cadastrar como voluntário ou como representante de instituição beneficente?</string>
+    <string name="txt3login">Olá, Voluntário!</string>
+    <string name="txt4login">Olá, Representante!</string>
+    <string name="txt5login">Bem-vindo de volta!</string>
+    <string name="txt3forgot">Esqueceu sua senha?</string>
+    <string name="txt3main">Ir para +Gentil</string>
+
+
+
 
 </resources>
