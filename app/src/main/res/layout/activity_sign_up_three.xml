@@ -6,16 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".SignUpThreeActivity">
 
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/Vector_default" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -33,25 +23,28 @@
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/signup_image_three"
-        tools:layout_editor_absoluteY="120dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/signup_image_three" />
 
     <EditText
         android:id="@+id/etRepresentanteNome"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="@string/txtNomeInstituicao"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etEmailRepresentante"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="286dp" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <EditText
         android:id="@+id/etEmailRepresentante"
@@ -62,10 +55,11 @@
         android:ems="10"
         android:hint="@string/txtEmail"
         android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/etPasswordRepresentante"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="355dp" />
+        app:layout_constraintTop_toBottomOf="@+id/etRepresentanteNome" />
 
     <EditText
         android:id="@+id/etPasswordRepresentante"
@@ -76,10 +70,11 @@
         android:ems="10"
         android:hint="@string/txtSenha"
         android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/etConfirmPasswordRepresentante"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="418dp" />
+        app:layout_constraintTop_toBottomOf="@+id/etEmailRepresentante" />
 
     <EditText
         android:id="@+id/etConfirmPasswordRepresentante"
@@ -87,13 +82,15 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
+        android:layout_marginBottom="56dp"
         android:ems="10"
         android:hint="@string/txtConfirmaSenha"
         android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btSignUpRepresentante"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="476dp" />
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordRepresentante" />
 
     <TextView
         android:id="@+id/textView3"
@@ -111,13 +108,15 @@
         android:id="@+id/btSignUpRepresentante"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
         android:background="@drawable/custom_bt_one"
         android:gravity="center"
         android:text="@string/txtEnviar"
         android:textAlignment="center"
         android:textColor="@color/white"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="572dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tvSignUpRepLinked"
@@ -125,10 +124,22 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginEnd="120dp"
+        android:layout_marginBottom="40dp"
         android:text="@string/txtJaTemUmaConta2"
         android:textColor="@color/txt_vermelho"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        tools:layout_editor_absoluteY="672dp" />
+        app:layout_constraintStart_toEndOf="@+id/textView3" />
+
+    <ImageButton
+        android:id="@+id/btSignUpThreeVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/setinha_de_voltar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

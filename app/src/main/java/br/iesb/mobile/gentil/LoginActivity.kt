@@ -25,5 +25,9 @@ class LoginActivity : AppCompatActivity() {
             val intencaoDeChamada = Intent(this, LoginActivity::class.java)
             startActivity(intencaoDeChamada)
         }
+        btLoginVoltar.setOnClickListener {
+            val intencaoDeChamada = Intent(this, MainActivity::class.java)
+            startActivity(intencaoDeChamada)
+        }
     }
 }

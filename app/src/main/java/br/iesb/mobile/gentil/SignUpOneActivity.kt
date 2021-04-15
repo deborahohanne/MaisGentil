@@ -19,6 +19,10 @@ class SignUpOneActivity : AppCompatActivity() {
             val intencaoDeChamada = Intent(this, LoginActivity::class.java)
             startActivity(intencaoDeChamada)
         }
+        btSignUpOneVoltar.setOnClickListener {
+            val intencaoDeChamada = Intent(this, MainActivity::class.java)
+            startActivity(intencaoDeChamada)
+        }
 
     }
 }

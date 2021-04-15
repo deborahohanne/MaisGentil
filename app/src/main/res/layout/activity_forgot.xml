@@ -6,16 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ForgotActivity">
 
-    <ImageButton
-        android:id="@+id/imageButton8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/Vector_default" />
-
     <TextView
         android:id="@+id/tvForgotOne"
         android:layout_width="wrap_content"
@@ -32,10 +22,12 @@
         android:id="@+id/ivForgotOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/forgot_image_one"
-        tools:layout_editor_absoluteY="142dp" />
+        app:layout_constraintTop_toBottomOf="@+id/tvForgotOne"
+        app:srcCompat="@drawable/forgot_image_one" />
 
     <EditText
         android:id="@+id/etForgotEmail"
@@ -43,30 +35,37 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
+        android:layout_marginBottom="76dp"
         android:ems="10"
         android:hint="@string/txtEmail"
         android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/btForgot"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="469dp" />
+        app:layout_constraintTop_toBottomOf="@+id/tvForgotTwo"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/tvForgotTwo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="32dp"
         android:text="@string/txt2forgot"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="347dp" />
+        app:layout_constraintTop_toBottomOf="@+id/ivForgotOne" />
 
     <TextView
         android:id="@+id/btForgot"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
         android:layout_marginBottom="84dp"
         android:background="@drawable/custom_bt_one"
         android:gravity="center"
@@ -76,6 +75,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btForgotVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/setinha_de_voltar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,6 +15,11 @@ class ForgotActivity : AppCompatActivity() {
             startActivity(intencaoDeChamada)
 
         }
+        btForgotVoltar.setOnClickListener {
+            val intencaoDeChamada = Intent(this, LoginActivity::class.java)
+            startActivity(intencaoDeChamada)
+
+        }
 
     }
 }

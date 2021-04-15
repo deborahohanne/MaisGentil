@@ -6,26 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".SignUpTwoActivity">
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/Vector_default" />
-
     <TextView
         android:id="@+id/tvSignUpVoluntario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="40dp"
         android:text="@string/txt3login"
         android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -44,13 +33,14 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="@string/txtNome"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etEmailSignUpVoluntario"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivSignUpVoluntario" />
 
@@ -63,9 +53,11 @@
         android:ems="10"
         android:hint="@string/txtEmail"
         android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/etPassword"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="384dp" />
+        app:layout_constraintTop_toBottomOf="@+id/etNomeSignUpVoluntario" />
 
     <EditText
         android:id="@+id/etPassword"
@@ -76,10 +68,11 @@
         android:ems="10"
         android:hint="@string/txtSenha"
         android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/etConfirmPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="456dp" />
+        app:layout_constraintTop_toBottomOf="@+id/etEmailSignUpVoluntario" />
 
     <EditText
         android:id="@+id/etConfirmPassword"
@@ -90,9 +83,11 @@
         android:ems="10"
         android:hint="@string/txtConfirmaSenha"
         android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btSignUpVoluntario"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="525dp" />
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
     <TextView
         android:id="@+id/tvSignUpVoluntarioTwo"
@@ -110,14 +105,16 @@
         android:id="@+id/btSignUpVoluntario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
         android:background="@drawable/custom_bt_one"
         android:gravity="center"
         android:text="@string/txtFazerCadastro"
         android:textAlignment="center"
         android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/tvSignUpVoluntarioTwo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="609dp" />
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tvSignUpVoluntarioThree"
@@ -125,11 +122,23 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="122dp"
+        android:layout_marginBottom="24dp"
         android:text="@string/txtJaTemUmaConta2"
         android:textColor="@color/txt_vermelho"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/tvSignUpVoluntarioTwo"
-        tools:layout_editor_absoluteY="688dp" />
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toEndOf="@+id/tvSignUpVoluntarioTwo" />
+
+    <ImageButton
+        android:id="@+id/btSignUpTwoVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/setinha_de_voltar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
