@@ -28,8 +28,12 @@
     <string name="txt5login">Bem-vindo de volta!</string>
     <string name="txt3forgot">Esqueceu sua senha?</string>
     <string name="txt3main">Ir para +Gentil</string>
-
-
+    <string name="title_activity_chatbot">ChatbotActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
 
 
 </resources>

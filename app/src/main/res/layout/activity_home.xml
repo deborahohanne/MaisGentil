@@ -6,4 +6,68 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/menu"
+        tools:layout_editor_absoluteX="352dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="408dp"
+        android:layout_height="87dp"
+        app:srcCompat="@drawable/to_bar_home"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="648dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/search"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rectangle_green_bar"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="19dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/img_teste1"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/img_teste2"
+        tools:layout_editor_absoluteX="261dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/img_teste3"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="413dp" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/img_teste4"
+        tools:layout_editor_absoluteX="261dp"
+        tools:layout_editor_absoluteY="482dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

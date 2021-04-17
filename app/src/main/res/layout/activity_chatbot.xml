@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8D1D1"
+    tools:context=".ChatbotActivity">
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/setinha_de_voltar"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/smiley_face"
+        tools:layout_editor_absoluteX="305dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <TextView
+        android:id="@+id/tvChatbotTitle"
+        android:layout_width="228dp"
+        android:layout_height="47dp"
+        android:text="Olá, eu sou o +Gentil"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="66dp"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/smiley_face"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="163dp" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="67dp"
+        android:layout_height="47dp"
+        app:srcCompat="@drawable/smiley_face"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="376dp" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/balao_text1_chatbot"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="118dp" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/balao_text2_chatbot"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="229dp" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/balao_text1_chatbot"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="412dp"
+        android:layout_height="166dp"
+        app:srcCompat="@drawable/digitar_chatbot"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="563dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
