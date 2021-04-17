@@ -53,14 +53,14 @@
         android:ems="10"
         android:hint="@string/txtEmail"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/etPassword"
+        app:layout_constraintBottom_toTopOf="@+id/etPasswordSignUpVoluntario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etNomeSignUpVoluntario" />
 
     <EditText
-        android:id="@+id/etPassword"
+        android:id="@+id/etPasswordSignUpVoluntario"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -68,14 +68,14 @@
         android:ems="10"
         android:hint="@string/txtSenha"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/etConfirmPassword"
+        app:layout_constraintBottom_toTopOf="@+id/etConfirmPasswordSignUpVoluntario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEmailSignUpVoluntario" />
 
     <EditText
-        android:id="@+id/etConfirmPassword"
+        android:id="@+id/etConfirmPasswordSignUpVoluntario"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -87,7 +87,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordSignUpVoluntario" />
 
     <TextView
         android:id="@+id/tvSignUpVoluntarioTwo"
