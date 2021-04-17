@@ -17,9 +17,15 @@ class SignUpOneActivity : AppCompatActivity() {
 
         btSignUpOne.setOnClickListener {
             checkVoluntario = this.findViewById(R.id.cbVoluntario);
+            checkRepresentante = this.findViewById(R.id.cbRepresentante)
 
             if (checkVoluntario.isChecked) {
                 val intencaoDeChamada = Intent(this, SignUpTwoActivity::class.java)
+                startActivity(intencaoDeChamada)
+            }
+
+            if (checkRepresentante.isChecked) {
+                val intencaoDeChamada = Intent(this, SignUpThreeActivity::class.java)
                 startActivity(intencaoDeChamada)
             }
 
