@@ -1,7 +1,8 @@
-package br.iesb.mobile.gentil
+package br.iesb.mobile.gentil.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import br.iesb.mobile.gentil.R
 
 class ChatbotActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
