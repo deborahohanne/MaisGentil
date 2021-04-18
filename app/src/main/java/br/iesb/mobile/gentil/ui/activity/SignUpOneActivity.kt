@@ -1,9 +1,10 @@
-package br.iesb.mobile.gentil
+package br.iesb.mobile.gentil.ui.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.CheckBox
+import br.iesb.mobile.gentil.R
 import kotlinx.android.synthetic.main.activity_sign_up_one.*
 
 class SignUpOneActivity : AppCompatActivity() {

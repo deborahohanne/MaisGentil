@@ -1,9 +1,10 @@
-package br.iesb.mobile.gentil
+package br.iesb.mobile.gentil.ui.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import br.iesb.mobile.gentil.R
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -33,9 +34,9 @@ class LoginActivity : AppCompatActivity() {
             // -.  o que quero fazer depois
             taskDeLogin.addOnCompleteListener{ resultado ->
                 if (resultado.isSuccessful) {
-                    /*val intentIrParaTelaHome = Intent(this, HomeActivity::class.java)
-                    startActivity((intentIrParaTelaHome))*/
-                    Toast.makeText(this, "Olha, deu Certo o Login", Toast.LENGTH_LONG).show()
+                    val intentIrParaTelaHome = Intent(this, HomeActivity::class.java)
+                    startActivity((intentIrParaTelaHome))
+                    // Toast.makeText(this, "Olha, deu certo o Login", Toast.LENGTH_LONG).show()
                 } else {
                     Toast.makeText(this, "Olha, deu erro no Login", Toast.LENGTH_LONG).show()
                 }
