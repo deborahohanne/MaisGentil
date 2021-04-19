@@ -1,10 +1,18 @@
 package br.iesb.mobile.gentil.ui.activity
 
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.lifecycle.Lifecycle
+import androidx.viewpager2.adapter.FragmentStateAdapter
+
+import br.iesb.mobile.gentil.ui.activity.splash.screen.SplashScreenFragment
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import br.iesb.mobile.gentil.R
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_splash_screen.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,5 +36,30 @@ class MainActivity : AppCompatActivity() {
             val intencaoDeChamada = Intent(this, LoginActivity::class.java)
             startActivity(intencaoDeChamada)
         }
+
+        val listaFragmentos = listOf(
+            SplashScreenFragment()
+        )
+
+        val adaptador = AdaptadorParaConversarComVp(
+            listaFragmentos,
+            supportFragmentManager,
+            lifecycle
+        )
+
+//        vpSplashScreen.adapter = adaptador
+
+    }
+
+
+    class AdaptadorParaConversarComVp(
+        val listaFragmentos: List<Fragment>,
+        fragmentManager: FragmentManager,
+        lifecycle: Lifecycle
+    ) : FragmentStateAdapter(fragmentManager, lifecycle) {
+
+        override fun getItemCount() = listaFragmentos.size
+
+        override fun createFragment(position: Int) = listaFragmentos[position]
     }
 }
