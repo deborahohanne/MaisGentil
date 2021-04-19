@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".ui.activity.SignUpOneActivity">
 
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="54dp"
+        android:layout_height="47dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/back" />
+
     <TextView
         android:id="@+id/tvSignUpOne"
         android:layout_width="wrap_content"
@@ -42,30 +54,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <CheckBox
-        android:id="@+id/cbVoluntario"
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="32dp"
-        android:text="Voluntário"
-        app:layout_constraintBottom_toTopOf="@+id/cbRepresentante"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSignUpTwo" />
-
-    <CheckBox
-        android:id="@+id/cbRepresentante"
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:layout_marginBottom="44dp"
-        android:text="Representante"
-        app:layout_constraintBottom_toTopOf="@+id/btSignUpOne"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cbVoluntario" />
 
     <TextView
         android:id="@+id/tvSignUpThree"
@@ -108,15 +96,24 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/tvSignUpThree" />
 
-    <ImageButton
-        android:id="@+id/btSignUpOneVoltar"
+    <RadioButton
+        android:id="@+id/radioButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:text="Voluntário"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintHorizontal_bias="0.177"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/setinha_de_voltar" />
+        tools:layout_editor_absoluteY="421dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Representante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="491dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

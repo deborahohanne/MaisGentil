@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+
+</font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/Poppins-Regular" />
+    <font
+        android:fontStyle="italic"
+        android:fontWeight="400"
+        android:font="@font/Poppins-Italic" />
+    <font
+        android:fontStyle="semibold"
+        android:fontWeight="400"
+        android:font="@font/Poppins-SemiBold" />
+    <font
+        android:fontStyle="bold"
+        android:fontWeight="400"
+        android:font="@font/Poppins-Bold" />
+    <font
+        android:fontStyle="semibold italic"
+        android:fontWeight="400"
+        android:font="@font/Poppins-SemiBoldItalic" />
+    <font
+        android:fontStyle="semibold"
+        android:fontWeight="400"
+        android:font="@font/Poppins-SemiBold" />
+</font-family>
