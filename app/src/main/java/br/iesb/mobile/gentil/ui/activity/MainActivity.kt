@@ -13,6 +13,7 @@ import android.os.Bundle
 import br.iesb.mobile.gentil.R
 import br.iesb.mobile.gentil.ui.activity.onboarding.screen.OnboardingFirstFragment
 import br.iesb.mobile.gentil.ui.activity.onboarding.screen.OnboardingSecondFragment
+import br.iesb.mobile.gentil.ui.activity.onboarding.screen.OnboardingThreeFragment
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_splash_screen.*
 
@@ -43,7 +44,8 @@ class MainActivity : AppCompatActivity() {
         // cria o fragmento em memória, chama o onCreateView() e recupera o .xml que o representa, e deixar pronto para apresentar
         val listaFragmentos = listOf(
             OnboardingFirstFragment(),
-            OnboardingSecondFragment()
+            OnboardingSecondFragment(),
+            OnboardingThreeFragment()
         )
 
         // criar adaptador
