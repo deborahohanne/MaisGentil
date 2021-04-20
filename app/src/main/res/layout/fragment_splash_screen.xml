@@ -12,7 +12,7 @@
     tools:context=".ui.activity.splash.screen.SplashScreenFragment">
 
     <ImageView
-        android:id="@+id/imageView21"
+        android:id="@+id/btforgotTrue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"

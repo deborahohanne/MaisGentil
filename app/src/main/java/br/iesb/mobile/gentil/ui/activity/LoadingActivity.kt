@@ -18,7 +18,7 @@ class LoadingActivity : AppCompatActivity() {
             SplashScreenFragment()
         )
 
-        val adaptador = AdaptadorParaConversarComVp(
+        val adaptador = AdaptadorParaConversarComVpLoading(
             listaFragmentos,
             supportFragmentManager,
             lifecycle
@@ -30,7 +30,7 @@ class LoadingActivity : AppCompatActivity() {
     }
 
 }
-class AdaptadorParaConversarComVp(
+class AdaptadorParaConversarComVpLoading(
     val listaFragmentos: List<Fragment>,
     fragmentManager: FragmentManager,
     lifecycle: Lifecycle

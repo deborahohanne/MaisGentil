@@ -11,9 +11,11 @@
         android:theme="@style/Theme.Gentil">
 
 
+
 <!--        <meta-data-->
 <!--            android:name="com.google.android.wearable.standalone"-->
 <!--            android:value="true" />-->
+
 
         <activity android:name=".ui.activity.LoginActivity" />
         <activity android:name=".ui.activity.SignUpThreeActivity" />
