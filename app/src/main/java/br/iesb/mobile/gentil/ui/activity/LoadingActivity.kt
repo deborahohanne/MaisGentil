@@ -1,43 +1,24 @@
 package br.iesb.mobile.gentil.ui.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
-import androidx.lifecycle.Lifecycle
-import androidx.viewpager2.adapter.FragmentStateAdapter
+import android.widget.Toast
 import br.iesb.mobile.gentil.R
-import br.iesb.mobile.gentil.ui.activity.splash.screen.SplashScreenFragment
+import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.activity_forgot.*
+import kotlinx.android.synthetic.main.activity_loading.*
 
 class LoadingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_loading)
 
-        val listaFragmentos = listOf(
-            SplashScreenFragment()
-        )
+        btGentil.setOnClickListener {
+            val intencaoDeChamada = Intent(this, LoginActivity::class.java)
+            startActivity(intencaoDeChamada)
 
-        val adaptador = AdaptadorParaConversarComVp(
-            listaFragmentos,
-            supportFragmentManager,
-            lifecycle
-        )
-
-//        vpSplashScreen.adapter = adaptador
-
-
+        }
     }
-
-}
-class AdaptadorParaConversarComVp(
-    val listaFragmentos: List<Fragment>,
-    fragmentManager: FragmentManager,
-    lifecycle: Lifecycle
-) : FragmentStateAdapter(fragmentManager, lifecycle) {
-
-    override fun getItemCount() = listaFragmentos.size
-
-    override fun createFragment(position: Int) = listaFragmentos[position]
 }
 
