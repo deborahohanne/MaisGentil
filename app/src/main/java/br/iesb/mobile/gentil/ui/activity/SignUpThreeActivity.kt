@@ -23,7 +23,7 @@ class SignUpThreeActivity : AppCompatActivity() {
             startActivity(intencaoDeChamada)
 
         }
-        btSignUpThreeVoltar.setOnClickListener {
+        btSignupThreeTrue.setOnClickListener {
             val intencaoDeChamada = Intent(this, SignUpOneActivity::class.java)
             startActivity(intencaoDeChamada)
         }
