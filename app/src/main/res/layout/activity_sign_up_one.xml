@@ -110,6 +110,7 @@
 
     <Button
         android:id="@+id/btSignUpOne"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.ButtonSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"

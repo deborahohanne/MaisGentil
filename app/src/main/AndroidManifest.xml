@@ -9,17 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Gentil">
-        <meta-data
-            android:name="com.google.android.wearable.standalone"
-            android:value="true" />
+
+<!--        <meta-data-->
+<!--            android:name="com.google.android.wearable.standalone"-->
+<!--            android:value="true" />-->
+
         <activity android:name=".ui.activity.LoginActivity" />
         <activity android:name=".ui.activity.SignUpThreeActivity" />
-        <activity android:name=".ui.activity.LoadingActivity" />
         <activity android:name=".ui.activity.HomeActivity" />
         <activity android:name=".ui.activity.ForgotActivity" />
         <activity android:name=".ui.activity.SignUpTwoActivity" />
         <activity android:name=".ui.activity.SignUpOneActivity" />
-        <activity android:name=".ui.activity.MainActivity">
+        <activity android:name=".ui.activity.MainActivity"/>
+        <activity android:name=".ui.activity.LoadingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
