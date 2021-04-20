@@ -50,7 +50,7 @@ class LoginActivity : AppCompatActivity() {
 
         }
 
-        btLoginVoltar.setOnClickListener {
+        btforgotTrueLogin.setOnClickListener {
             val intencaoDeChamada = Intent(this, MainActivity::class.java)
             startActivity(intencaoDeChamada)
         }

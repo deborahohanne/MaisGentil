@@ -22,7 +22,7 @@ class SignUpTwoActivity : AppCompatActivity() {
             val intencaoDeChamada = Intent(this, LoginActivity::class.java)
             startActivity(intencaoDeChamada)
         }*/
-        btSignUpTwoVoltar.setOnClickListener {
+        btSignupTwoTrue.setOnClickListener {
             val intencaoDeChamada = Intent(this, SignUpOneActivity::class.java)
             startActivity(intencaoDeChamada)
         }

@@ -80,7 +80,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView21"
+        android:id="@+id/btforgotTrue"
         android:layout_width="54dp"
         android:layout_height="47dp"
         app:layout_constraintBottom_toBottomOf="parent"

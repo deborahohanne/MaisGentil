@@ -7,7 +7,7 @@
     tools:context=".ui.activity.LoginActivity">
 
     <ImageView
-        android:id="@+id/imageView24"
+        android:id="@+id/btforgotTrueLogin"
         android:layout_width="54dp"
         android:layout_height="47dp"
         app:layout_constraintBottom_toBottomOf="parent"

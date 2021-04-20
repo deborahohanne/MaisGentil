@@ -8,7 +8,7 @@
     tools:context=".ui.activity.SignUpThreeActivity">
 
     <ImageView
-        android:id="@+id/imageView23"
+        android:id="@+id/btSignupThreeTrue"
         android:layout_width="54dp"
         android:layout_height="47dp"
         app:layout_constraintBottom_toBottomOf="parent"
