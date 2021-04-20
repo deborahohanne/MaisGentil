@@ -1,5 +1,6 @@
 package br.iesb.mobile.gentil.ui.activity
 
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,9 +9,11 @@ import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import br.iesb.mobile.gentil.R
+
 import br.iesb.mobile.gentil.ui.activity.onboarding.screen.OnboardingFirstFragment
 import br.iesb.mobile.gentil.ui.activity.onboarding.screen.OnboardingSecondFragment
 import br.iesb.mobile.gentil.ui.activity.onboarding.screen.OnboardingThreeFragment
+
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -35,6 +38,7 @@ class MainActivity : AppCompatActivity() {
             val intencaoDeChamada = Intent(this, LoginActivity::class.java)
             startActivity(intencaoDeChamada)
         }
+
 
         // criar a fonte de dados
         // cria o fragmento em memória, chama o onCreateView() e recupera o .xml que o representa, e deixar pronto para apresentar
