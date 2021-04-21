@@ -35,8 +35,8 @@
     <string name="title2on">Ajude o próximo enquanto se diverte</string>
     <string name="txt2on">Com o +Gentil é muito mais fácil ser gentil: você ajuda brincando. Participe dos desafios, atinja novos níveis e faça com que as campanhas e ações voluntárias cheguem a mais pessoas.</string>
 
-    <string name="title3on">Tire suas dúvidas  com o Sr. +Gentil</string>
-    <string name="txt3on">O chatbot mais gentil que você verá por aí. O +Gentil irá te auxiliar em toda sua jornada em ajudar o próximo, te dando dicas e informações importantes, além de tirar suas dúvidas. </string>
+    <string name="title3on">Tire suas dúvidas  com o +Gentil</string>
+    <string name="txt3on">O chatbot mais gentil que você verá por aí. O +Gentil irá te auxiliar em toda sua jornada em ajudar o próximo, te dando dicas e informações importantes, e tirando suas dúvidas. </string>
     <!--
     This string is used for square devices and overridden by hello_world in
     values-round/strings.xml for round devices.
