@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">+Gentil</string>
-    <string name="txtEmail">Email</string>
+    <string name="txtEmail">E-mail</string>
     <string name="txtNome">Nome</string>
     <string name="txtTelefone">Telefone</string>
-    <string name="txtConfirmaSenha">Confirme a senha</string>
+    <string name="txtConfirmaSenha">Confirme sua senha</string>
     <string name="txtSenha">Senha</string>
     <string name="txtNomeInstituicao">Nome da Instituição</string>
     <string name="txtEnviar">Enviar</string>
@@ -11,16 +11,18 @@
     <string name="txtFazerCadastro">Cadastrar</string>
     <string name="txtCrieCadastro">Crie seu cadastro</string>
     <string name="txtEntrar">Entrar</string>
-    <string name="txtNext">Avançar</string>
+    <string name="txtNext">Próximo</string>
+    <string name="txtVol"> Sou voluntário</string>
+    <string name="txtRepr"> Sou representante</string>
 
     <string name="txtJaTemUmaConta1">Já tem uma conta?</string>
     <string name="txtJaTemUmaConta2">Faça seu login</string>
 
 
     <string name="txt1main">Seja mais gentil com o +Gentil</string>
-    <string name="txt2main">Descubra as instituições de caridade mais próximas de você, reuna-se com voluntários e promova eventos e campanhas beneficentes.  Tudo em um lugar só.</string>
+    <string name="txt2main">Descubra as instituições de caridade mais próximas de você, reúna-se com voluntários e promova eventos e campanhas beneficentes. Tudo em um lugar só.</string>
     <string name="txt1forgot">Esqueceu sua senha?</string>
-    <string name="txt2forgot">Insira o seu e-mail no campo abaixo para enviarmos uma senha para seu acesso:</string>
+    <string name="txt2forgot">Para redefinir sua senha, informe abaixo o e-mail cadastrado para enviarmos um link com as instruções.</string>
     <string name="txt1login">Seja bem-vindo ao +Gentil</string>
     <string name="txt2login">Ficamos muito felizes em tê-lo aqui! Você deseja se cadastrar como voluntário ou como representante de instituição beneficente?</string>
     <string name="txt3login">Olá, Voluntário!</string>
@@ -31,7 +33,7 @@
     <string name="title_activity_chatbot">ChatbotActivity</string>
 
     <string name="title2on">Ajude o próximo enquanto se diverte</string>
-    <string name="txt2on">Com o +Gentil é muito mais fácil ser gentil: você ajuda brincando. Participe das gamificações, atinja novos níveis e faça com que as campanhas e ações voluntárias cheguem a mais pessoas.</string>
+    <string name="txt2on">Com o +Gentil é muito mais fácil ser gentil: você ajuda brincando. Participe dos desafios, atinja novos níveis e faça com que as campanhas e ações voluntárias cheguem a mais pessoas.</string>
 
     <string name="title3on">Tire suas dúvidas  com o Sr. +Gentil</string>
     <string name="txt3on">O chatbot mais gentil que você verá por aí. O +Gentil irá te auxiliar em toda sua jornada em ajudar o próximo, te dando dicas e informações importantes, além de tirar suas dúvidas. </string>
