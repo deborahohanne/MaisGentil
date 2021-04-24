@@ -4,16 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpOneActivity">
+    android:background="#EEEEEE"
+    tools:context=".ui.activity.SignUpOneActivity">
+
+    <ImageView
+        android:id="@+id/btSignupVoltarTrue"
+        android:layout_width="54dp"
+        android:layout_height="47dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/back" />
 
     <TextView
         android:id="@+id/tvSignUpOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/poppinssemibold"
         android:text="@string/txt1login"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +37,7 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,75 +46,27 @@
 
     <TextView
         android:id="@+id/tvSignUpTwo"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="327dp"
+        android:layout_height="97dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
+        android:fontFamily="@font/poppinsregular"
         android:text="@string/txt2login"
+        android:textAlignment="center"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <CheckBox
-        android:id="@+id/cbVoluntario"
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="32dp"
-        android:text="Voluntário"
-        app:layout_constraintBottom_toTopOf="@+id/cbRepresentante"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSignUpTwo" />
-
-    <CheckBox
-        android:id="@+id/cbRepresentante"
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:layout_marginBottom="44dp"
-        android:text="Representante"
-        app:layout_constraintBottom_toTopOf="@+id/btSignUpOne"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cbVoluntario" />
-
-    <TextView
-        android:id="@+id/tvSignUpThree"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginBottom="44dp"
-        android:text="@string/txtJaTemUmaConta1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/tvSignUpLoginLinked"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/btSignUpOne"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:background="@drawable/custom_bt_one"
-        android:gravity="center"
-        android:text="@string/txtNext"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/tvSignUpThree"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tvSignUpLoginLinked"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="136dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/poppinsbold"
         android:text="@string/txtJaTemUmaConta2"
         android:textColor="@color/txt_vermelho"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -108,15 +74,64 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/tvSignUpThree" />
 
-    <ImageButton
-        android:id="@+id/btSignUpOneVoltar"
+    <TextView
+        android:id="@+id/tvSignUpThree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="@string/txtJaTemUmaConta1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvSignUpLoginLinked"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rgSignupOne"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btSignUpOne"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/setinha_de_voltar" />
+        app:layout_constraintTop_toBottomOf="@+id/tvSignUpTwo">
+
+        <RadioButton
+            android:id="@+id/rbCheckVoluntario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:text="@string/txtVol" />
+
+        <RadioButton
+            android:id="@+id/rbCheckRepresentante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:text="@string/txtRepr" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btSignUpOne"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.ButtonSignUp"
+        android:layout_width="345dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="@string/txtNext"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvSignUpLoginLinked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@color/white"
+        app:strokeColor="@color/white" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
