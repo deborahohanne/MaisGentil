@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EEEEEE"
-    tools:context=".ui.activity.SignUpTwoActivity">
+    tools:context=".ui.activity.representative.RegisterRepresentativeActivity">
 
     <ImageView
-        android:id="@+id/btSignupTwoTrue"
+        android:id="@+id/btSignupThreeTrue"
         android:layout_width="54dp"
         android:layout_height="47dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,115 +20,118 @@
         app:srcCompat="@drawable/back" />
 
     <TextView
-        android:id="@+id/tvSignUpVoluntario"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:fontFamily="@font/poppinssemibold"
-        android:text="@string/txt3login"
+        android:text="@string/txt4login"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/ivSignUpVoluntario"
-        android:layout_width="189dp"
-        android:layout_height="147dp"
-        android:layout_marginTop="24dp"
+        android:id="@+id/imageView2"
+        android:layout_width="240dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSignUpVoluntario"
-        app:srcCompat="@drawable/signup_image_two" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/signup_image_three" />
 
     <EditText
-        android:id="@+id/etNomeSignUpVoluntario"
+        android:id="@+id/etRepresentanteNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:drawableStart="@drawable/building"
+        android:drawablePadding="12dp"
+        android:hint="@string/txtNomeInstituicao"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etEmailRepresentante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/etEmailRepresentante"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:drawableStart="@drawable/user"
-        android:drawablePadding="12dp"
         android:ems="10"
-        android:hint="@string/txtNome"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/etEmailSignUpVoluntario"
+        android:drawableStart="@drawable/email"
+        android:drawablePadding="12dp"
+        android:hint="@string/txtEmail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/etPasswordRepresentante"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivSignUpVoluntario" />
+        app:layout_constraintTop_toBottomOf="@+id/etRepresentanteNome" />
 
     <EditText
-        android:id="@+id/etEmailSignUpVoluntario"
+        android:id="@+id/etPasswordRepresentante"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:drawableStart="@drawable/email"
-        android:drawablePadding="12dp"
         android:ems="10"
-        android:hint="@string/txtEmail"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/etPasswordSignUpVoluntario"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNomeSignUpVoluntario" />
-
-    <EditText
-        android:id="@+id/etPasswordSignUpVoluntario"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
         android:drawableStart="@drawable/lock"
         android:drawablePadding="12dp"
-        android:ems="10"
         android:hint="@string/txtSenha"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/etConfirmPasswordSignUpVoluntario"
+        app:layout_constraintBottom_toTopOf="@+id/etConfirmPasswordRepresentante"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etEmailSignUpVoluntario" />
+        app:layout_constraintTop_toBottomOf="@+id/etEmailRepresentante" />
 
     <EditText
-        android:id="@+id/etConfirmPasswordSignUpVoluntario"
+        android:id="@+id/etConfirmPasswordRepresentante"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
         android:drawableStart="@drawable/lock"
         android:drawablePadding="12dp"
-        android:ems="10"
         android:hint="@string/txtConfirmaSenha"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/btSignUpVoluntario"
+        app:layout_constraintBottom_toTopOf="@+id/btSignUpRepresentante"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPasswordSignUpVoluntario" />
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordRepresentante" />
 
     <TextView
-        android:id="@+id/tvSignUpVoluntarioTwo"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="100dp"
         android:layout_marginBottom="32dp"
         android:fontFamily="@font/poppinsregular"
         android:text="@string/txtJaTemUmaConta1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintEnd_toStartOf="@+id/tvSignUpRepLinked"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/tvSignUpVoluntarioThree"
+        android:id="@+id/tvSignUpRepLinked"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="4dp"
         android:layout_marginEnd="120dp"
         android:layout_marginBottom="32dp"
         android:fontFamily="@font/poppinsbold"
@@ -136,24 +139,23 @@
         android:textColor="@color/txt_vermelho"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/tvSignUpVoluntarioTwo" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView3" />
 
     <TextView
-        android:id="@+id/btSignUpVoluntario"
+        android:id="@+id/btSignUpRepresentante"
         android:layout_width="345dp"
         android:layout_height="58dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="84dp"
         android:background="@drawable/custom_bt_one"
         android:fontFamily="@font/poppinssemibold"
         android:gravity="center"
-        android:text="@string/txtFazerCadastro"
+        android:text="@string/txtEnviar"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/tvSignUpVoluntarioTwo"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

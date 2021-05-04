@@ -1,10 +1,12 @@
-package br.iesb.mobile.gentil.ui.activity
+package br.iesb.mobile.gentil.ui.activity.login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import br.iesb.mobile.gentil.R
+import br.iesb.mobile.gentil.ui.activity.HomeActivity
+import br.iesb.mobile.gentil.ui.activity.MainActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
 

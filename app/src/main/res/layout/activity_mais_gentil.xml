@@ -8,7 +8,7 @@
     android:background="#FF03DAC5"
     android:backgroundTintMode="screen"
     android:hapticFeedbackEnabled="true"
-    tools:context=".ui.activity.LoadingActivity">
+    tools:context=".ui.activity.MaisGentilActivity">
 
     <ImageView
         android:id="@+id/btforgotTrue"

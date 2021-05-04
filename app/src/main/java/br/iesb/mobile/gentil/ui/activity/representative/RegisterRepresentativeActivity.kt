@@ -1,28 +1,32 @@
-package br.iesb.mobile.gentil.ui.activity
+package br.iesb.mobile.gentil.ui.activity.representative
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import br.iesb.mobile.gentil.R
+import br.iesb.mobile.gentil.ui.activity.login.LoginActivity
+import br.iesb.mobile.gentil.ui.activity.SignUpOneActivity
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_sign_up_two.*
+import kotlinx.android.synthetic.main.activity_register_representative.*
 
-class SignUpTwoActivity : AppCompatActivity() {
+
+class RegisterRepresentativeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sign_up_two)
+        setContentView(R.layout.activity_register_representative)
 
-        btSignUpVoluntario.setOnClickListener {
+
+        btSignUpRepresentante.setOnClickListener {
             cadastrar()
 
         }
-/*        tvSignUpVoluntarioThree.setOnClickListener {
-
+        tvSignUpRepLinked.setOnClickListener {
             val intencaoDeChamada = Intent(this, LoginActivity::class.java)
             startActivity(intencaoDeChamada)
-        }*/
-        btSignupTwoTrue.setOnClickListener {
+
+        }
+        btSignupThreeTrue.setOnClickListener {
             val intencaoDeChamada = Intent(this, SignUpOneActivity::class.java)
             startActivity(intencaoDeChamada)
         }
@@ -31,10 +35,10 @@ class SignUpTwoActivity : AppCompatActivity() {
     // criar funcoes fora da classe
     private fun cadastrar() {
         // recuperar dados nos campos que o usuario digitou
-        val nome = etNomeSignUpVoluntario.text.toString()
-        val email = etEmailSignUpVoluntario.text.toString()
-        val password = etPasswordSignUpVoluntario.text.toString()
-        val retype = etConfirmPasswordSignUpVoluntario.text.toString()
+        val nomeInstituicao = etRepresentanteNome.text.toString()
+        val email = etEmailRepresentante.text.toString()
+        val password = etPasswordRepresentante.text.toString()
+        val retype = etConfirmPasswordRepresentante.text.toString()
 
         // se digitar os valores do campo errado
         if (password != retype) {

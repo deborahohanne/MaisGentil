@@ -9,10 +9,11 @@ import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import br.iesb.mobile.gentil.R
+import br.iesb.mobile.gentil.ui.activity.login.LoginActivity
 
-import br.iesb.mobile.gentil.ui.activity.onboarding.screen.OnboardingFirstFragment
-import br.iesb.mobile.gentil.ui.activity.onboarding.screen.OnboardingSecondFragment
-import br.iesb.mobile.gentil.ui.activity.onboarding.screen.OnboardingThreeFragment
+import br.iesb.mobile.gentil.ui.fragment.onboarding.screen.OnboardingFirstFragment
+import br.iesb.mobile.gentil.ui.fragment.onboarding.screen.OnboardingSecondFragment
+import br.iesb.mobile.gentil.ui.fragment.onboarding.screen.OnboardingThreeFragment
 
 import kotlinx.android.synthetic.main.activity_main.*
 

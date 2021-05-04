@@ -1,4 +1,4 @@
-package br.iesb.mobile.gentil.ui.activity
+package br.iesb.mobile.gentil.ui.activity.login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
