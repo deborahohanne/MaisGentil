@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import br.iesb.mobile.gentil.R
 import br.iesb.mobile.gentil.ui.activity.login.LoginActivity
-import br.iesb.mobile.gentil.ui.activity.SignUpOneActivity
+import br.iesb.mobile.gentil.ui.activity.RegisterActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_register_voluntary.*
 
@@ -26,7 +26,7 @@ class RegisterVoluntaryActivity : AppCompatActivity() {
             startActivity(intencaoDeChamada)
         }*/
         btSignupTwoTrue.setOnClickListener {
-            val intencaoDeChamada = Intent(this, SignUpOneActivity::class.java)
+            val intencaoDeChamada = Intent(this, RegisterActivity::class.java)
             startActivity(intencaoDeChamada)
         }
     }

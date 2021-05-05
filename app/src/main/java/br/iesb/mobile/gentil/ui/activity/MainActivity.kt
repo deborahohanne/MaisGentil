@@ -1,6 +1,5 @@
 package br.iesb.mobile.gentil.ui.activity
 
-
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -23,51 +22,48 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btHome.setOnClickListener {
-
-            val intencaoDeChamada = Intent(this, HomeActivity::class.java)
-            startActivity(intencaoDeChamada)
+            val callIntent = Intent(this, HomeActivity::class.java)
+            startActivity(callIntent)
         }
 
         btMainSignUp.setOnClickListener {
-
-            val intencaoDeChamada = Intent(this, SignUpOneActivity::class.java)
-            startActivity(intencaoDeChamada)
+            val callIntent = Intent(this, RegisterActivity::class.java)
+            startActivity(callIntent)
         }
 
         tvMainLinked.setOnClickListener {
-
-            val intencaoDeChamada = Intent(this, LoginActivity::class.java)
-            startActivity(intencaoDeChamada)
+            val callIntent = Intent(this, LoginActivity::class.java)
+            startActivity(callIntent)
         }
 
 
-        // criar a fonte de dados
-        // cria o fragmento em memória, chama o onCreateView() e recupera o .xml que o representa, e deixar pronto para apresentar
-        val listaFragmentos = listOf(
+       /* criar a fonte de dados
+        cria o fragmento em memória, chama o onCreateView() e recupera o .xml que o representa, e deixar pronto para apresentar */
+        val listOfFragments = listOf(
             OnboardingFirstFragment(),
             OnboardingSecondFragment(),
             OnboardingThreeFragment()
         )
 
-        // criar adaptador
-        val adaptador = AdaptadorParaConversarComVp(
-            listaFragmentos,
+        /* faz a comunicação entre a lista de dados em memória, lista de fragmentos e a ViewPage */
+        val adapterOnboarding = AdapterToChatViewPage(
+            listOfFragments,
             supportFragmentManager,
             lifecycle
         )
 
-        vpOnboarding.adapter = adaptador
+        vpOnboarding.adapter = adapterOnboarding
     }
 }
 
-
-class AdaptadorParaConversarComVp(
-    val listaFragmentos: List<Fragment>,
-    fragmentManager: FragmentManager,
-    lifecycle: Lifecycle
+/* criar adaptador para 'conversar" com a ViewPage */
+class AdapterToChatViewPage(
+   val listOfFragments: List<Fragment>,
+   fragmentManager: FragmentManager,
+   lifecycle: Lifecycle
 ) : FragmentStateAdapter(fragmentManager, lifecycle) {
 
-    override fun getItemCount() = listaFragmentos.size
+   override fun getItemCount() = listOfFragments.size
 
-    override fun createFragment(position: Int) = listaFragmentos[position]
+   override fun createFragment(position: Int) = listOfFragments[position]
 }

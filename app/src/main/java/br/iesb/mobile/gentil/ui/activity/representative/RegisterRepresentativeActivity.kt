@@ -5,8 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import br.iesb.mobile.gentil.R
+import br.iesb.mobile.gentil.ui.activity.RegisterActivity
 import br.iesb.mobile.gentil.ui.activity.login.LoginActivity
-import br.iesb.mobile.gentil.ui.activity.SignUpOneActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_register_representative.*
 
@@ -27,7 +27,7 @@ class RegisterRepresentativeActivity : AppCompatActivity() {
 
         }
         btSignupThreeTrue.setOnClickListener {
-            val intencaoDeChamada = Intent(this, SignUpOneActivity::class.java)
+            val intencaoDeChamada = Intent(this, RegisterActivity::class.java)
             startActivity(intencaoDeChamada)
         }
     }

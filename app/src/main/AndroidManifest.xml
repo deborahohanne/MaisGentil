@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Gentil">
-        <activity android:name=".ui.activity.MapActivity"></activity>
+        <activity android:name=".ui.activity.MainActivity"></activity>
+        <activity android:name=".ui.activity.MapActivity" />
         <activity android:name=".ui.activity.voluntary.HomeVoluntaryActivity" />
         <activity android:name=".ui.activity.representative.EditProfileRepresentativeActivity" />
         <activity android:name=".ui.activity.representative.HomeRepresentativeActivity" /> <!-- <meta-data -->
@@ -20,8 +21,7 @@
         <activity android:name=".ui.activity.HomeActivity" />
         <activity android:name=".ui.activity.login.ForgotActivity" />
         <activity android:name=".ui.activity.voluntary.RegisterVoluntaryActivity" />
-        <activity android:name=".ui.activity.SignUpOneActivity" />
-        <activity android:name=".ui.activity.MainActivity" />
+        <activity android:name=".ui.activity.RegisterActivity" />
         <activity android:name=".ui.activity.MaisGentilActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

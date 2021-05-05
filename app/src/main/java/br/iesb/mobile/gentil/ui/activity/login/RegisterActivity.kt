@@ -10,8 +10,9 @@ import br.iesb.mobile.gentil.ui.activity.representative.RegisterRepresentativeAc
 import br.iesb.mobile.gentil.ui.activity.voluntary.RegisterVoluntaryActivity
 import kotlinx.android.synthetic.main.activity_register.*
 
-class SignUpOneActivity : AppCompatActivity() {
+class RegisterActivity : AppCompatActivity() {
 
+   /* definições de variáveis referente ao 'radio group' da tela*/
     var radioGroup: RadioGroup? = null
     private lateinit var radioButton: RadioButton
     lateinit var button: Button
@@ -29,26 +30,25 @@ class SignUpOneActivity : AppCompatActivity() {
             radioButton = findViewById(intSelectButton)
 
             if (radioButton.equals(rbCheckVoluntario)) {
-                val intencaoDeChamada = Intent(this, RegisterVoluntaryActivity::class.java)
-                startActivity(intencaoDeChamada)
+                val callIntent = Intent(this, RegisterVoluntaryActivity::class.java)
+                startActivity(callIntent)
             }
 
             if (radioButton.equals(rbCheckRepresentante)){
-                val intencaoDeChamada = Intent(this, RegisterRepresentativeActivity::class.java)
-                startActivity(intencaoDeChamada)
+                val callIntent = Intent(this, RegisterRepresentativeActivity::class.java)
+                startActivity(callIntent)
             }
 
         // Toast.makeText(baseContext, radioButton.text, Toast.LENGTH_SHORT).show()
 
         }
         tvSignUpLoginLinked.setOnClickListener {
-
-            val intencaoDeChamada = Intent(this, LoginActivity::class.java)
-            startActivity(intencaoDeChamada)
+            val callIntent = Intent(this, LoginActivity::class.java)
+            startActivity(callIntent)
         }
         btSignupVoltarTrue.setOnClickListener {
-            val intencaoDeChamada = Intent(this, MainActivity::class.java)
-            startActivity(intencaoDeChamada)
+            val callIntent = Intent(this, MainActivity::class.java)
+            startActivity(callIntent)
         }
 
     }
