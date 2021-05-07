@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Gentil">
-        <activity android:name=".ui.activity.MainActivity"></activity>
+        <activity android:name=".ui.activity.representative.MyProfileRepresentativeActivity"></activity>
+        <activity android:name=".ui.activity.voluntary.CreateAdVoluntaryActivity" />
+        <activity android:name=".ui.activity.voluntary.EditProfileVoluntaryActivity" />
+        <activity android:name=".ui.activity.voluntary.MyProfileVoluntaryActivity" />
+        <activity android:name=".ui.activity.representative.CreateAdRepresentativeActivity" />
+        <activity android:name=".ui.activity.MainActivity" />
         <activity android:name=".ui.activity.MapActivity" />
         <activity android:name=".ui.activity.voluntary.HomeVoluntaryActivity" />
         <activity android:name=".ui.activity.representative.EditProfileRepresentativeActivity" />

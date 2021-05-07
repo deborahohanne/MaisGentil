@@ -2,6 +2,7 @@
 buildscript {
     ext {
         kotlin_version = "1.4.32"
+        // dependência 'hilt': biblioteca que fornece uma injeção de dependência no projeto
         hiltVersion = "2.31-alpha"
         hiltAndroidXVersion = '1.0.0-alpha03'
     }
