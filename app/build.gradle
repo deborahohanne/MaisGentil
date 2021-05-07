@@ -2,11 +2,14 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-android-extensions'
+    // 'kapt': gerador de código em tempo de compilação
     id 'kotlin-kapt'
     id 'com.google.gms.google-services'
+    // usar esse plugin dentro da app
     id 'dagger.hilt.android.plugin'
 }
 
+// seção android
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
@@ -27,14 +30,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = '1.8'
     }
-
+    // habilita o binding bidirecional, um campo em uma tela, se alterar ele automaticamente coloca no código
     buildFeatures {
         dataBinding true
     }
