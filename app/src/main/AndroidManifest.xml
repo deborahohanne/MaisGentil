@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.iesb.mobile.gentil">
-
+    <!-- adicionar na <application> na tag 'android:name', o arquivo que contém a classe que contém o ponto de entrada -->
     <application
+        android:name=".MaisGentilApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"

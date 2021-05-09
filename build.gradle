@@ -11,7 +11,7 @@ buildscript {
         google()
         jcenter()
     }
-    
+
     dependencies {
         /** Gradle Plugin */
         /** init: alterar a versão para 4.0.0 e apertar o sync para baixar o gradle 6.1.1 */
