@@ -1,14 +1,223 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragment.representative.HomeRepresentanteFragment">
+    android:background="#E5E5E5"
+    tools:context=".ui.fragment.representative.HomeRepresentantiveFragment" >
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/ivRetanguloBrancoRepresentante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ratangulo_branco_home_repersentante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/tvParaVoceHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Para você"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376" />
 
-</FrameLayout>
+    <ImageView
+        android:id="@+id/ivAvatarRepresentanteHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/avatar_home_representante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvOlaRepresentanteHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Olá, Representante!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivAvatarRepresentanteHome" />
+
+    <ImageView
+        android:id="@+id/ivEstrelaHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/estrela_home_representante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOlaRepresentanteHome" />
+
+    <ImageView
+        android:id="@+id/ivRetanguloAzulHomeRepresentante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/retangulo_azul_home_representante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivRetanguloBrancoRepresentante" />
+
+    <ImageView
+        android:id="@+id/ivRetanguloVerdeHomeRepresentante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/retangulo_verde_home_representante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivRetanguloAzulHomeRepresentante" />
+
+    <ImageView
+        android:id="@+id/ivRetanguloRosaHomeRepresentante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/retangulo_rosa_home_representante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivRetanguloVerdeHomeRepresentante" />
+
+    <ImageView
+        android:id="@+id/ivBackgroundBrancoHomeRepresentante"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="56dp"
+        android:src="@drawable/background_representante"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivRetanguloRosaHomeRepresentante"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/ivRetanguloDoacaoRepresentante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/retangulo_pequeno_azul_home"
+        app:layout_constraintBottom_toBottomOf="@+id/ivRetanguloAzulHomeRepresentante"
+        app:layout_constraintEnd_toEndOf="@+id/ivRetanguloAzulHomeRepresentante"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="@+id/ivRetanguloAzulHomeRepresentante"
+        app:layout_constraintTop_toTopOf="@+id/ivRetanguloAzulHomeRepresentante"
+        app:layout_constraintVertical_bias="0.382" />
+
+    <ImageView
+        android:id="@+id/ivIconeDoacaoReprsentante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bx_donate_home_"
+        app:layout_constraintBottom_toBottomOf="@+id/ivRetanguloAzulHomeRepresentante"
+        app:layout_constraintEnd_toEndOf="@+id/ivRetanguloAzulHomeRepresentante"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="@+id/ivRetanguloAzulHomeRepresentante"
+        app:layout_constraintTop_toTopOf="@+id/ivRetanguloAzulHomeRepresentante"
+        app:layout_constraintVertical_bias="0.462" />
+
+    <ImageView
+        android:id="@+id/ivRetanguloAcompanheHomeRepresentante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/retangulo_pequeno_verde_home_representante"
+        app:layout_constraintBottom_toBottomOf="@+id/ivRetanguloVerdeHomeRepresentante"
+        app:layout_constraintEnd_toEndOf="@+id/ivRetanguloVerdeHomeRepresentante"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="@+id/ivRetanguloVerdeHomeRepresentante"
+        app:layout_constraintTop_toTopOf="@+id/ivRetanguloVerdeHomeRepresentante"
+        app:layout_constraintVertical_bias="0.479" />
+
+    <ImageView
+        android:id="@+id/ivRetanguloRosaNoticiasHomeRepresentante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/retangulo_pequeno_rosa_home_representante"
+        app:layout_constraintBottom_toBottomOf="@+id/ivRetanguloRosaHomeRepresentante"
+        app:layout_constraintEnd_toEndOf="@+id/ivRetanguloRosaHomeRepresentante"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="@+id/ivRetanguloRosaHomeRepresentante"
+        app:layout_constraintTop_toTopOf="@+id/ivRetanguloRosaHomeRepresentante"
+        app:layout_constraintVertical_bias="0.458" />
+
+    <ImageView
+        android:id="@+id/ivIconeSairHomeRepresentante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/sair_home_representante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSairHomeRepresentante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="Sair"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/ivIconeSairHomeRepresentante"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvPrecisandoHomeRepresentante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O que está precisando?"
+        app:layout_constraintBottom_toBottomOf="@+id/ivRetanguloAzulHomeRepresentante"
+        app:layout_constraintEnd_toEndOf="@+id/ivRetanguloAzulHomeRepresentante"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/ivRetanguloAzulHomeRepresentante"
+        app:layout_constraintTop_toTopOf="@+id/ivRetanguloAzulHomeRepresentante"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <TextView
+        android:id="@+id/tvDoacoesHomeRepresentante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doações"
+        app:layout_constraintBottom_toBottomOf="@+id/ivRetanguloVerdeHomeRepresentante"
+        app:layout_constraintEnd_toEndOf="@+id/ivRetanguloVerdeHomeRepresentante"
+        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintStart_toStartOf="@+id/ivRetanguloVerdeHomeRepresentante"
+        app:layout_constraintTop_toTopOf="@+id/ivRetanguloVerdeHomeRepresentante"
+        app:layout_constraintVertical_bias="0.203" />
+
+    <TextView
+        android:id="@+id/tvNoticiasHomRepresentante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notícias e eventos"
+        app:layout_constraintBottom_toBottomOf="@+id/ivRetanguloRosaHomeRepresentante"
+        app:layout_constraintEnd_toEndOf="@+id/ivRetanguloRosaHomeRepresentante"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toStartOf="@+id/ivRetanguloRosaHomeRepresentante"
+        app:layout_constraintTop_toTopOf="@+id/ivRetanguloRosaHomeRepresentante"
+        app:layout_constraintVertical_bias="0.186" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,8 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import br.iesb.mobile.gentil.R
+import br.iesb.mobile.gentil.repository.TestClass
 import br.iesb.mobile.gentil.ui.activity.HomeActivity
 import br.iesb.mobile.gentil.ui.activity.MainActivity
+import br.iesb.mobile.gentil.ui.activity.representative.HomeRepresentativeActivity
+import br.iesb.mobile.gentil.ui.fragment.representative.HomeRepresentantiveFragment
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -34,7 +37,9 @@ class LoginActivity : AppCompatActivity() {
             /* verificar se foi efetuado o login com sucesso */
             taskDeLogin.addOnCompleteListener{ resultado ->
                 if (resultado.isSuccessful) {
-                    val intentGoToHomeScreen = Intent(this, HomeActivity::class.java)
+                    val intentGoToHomeScreen = Intent(this, HomeRepresentativeActivity::class.java)
+                    TestClass().setValue()
+                    TestClass().getValue()
                     startActivity((intentGoToHomeScreen))
                     // Toast.makeText(this, "Olha, deu certo o Login", Toast.LENGTH_LONG).show()
                 } else {
