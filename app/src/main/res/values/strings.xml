@@ -27,9 +27,26 @@
     <string name="txtNomeRepresentante">Nome do Representante</string>
     <string name="txtCPFRepresentante">CPF do Representante</string>
 
+    <string name="txtHomeVoluntario">Olá, voluntário!</string>
+    <string name="txtForYou">Para você</string>
+    <string name="txtSuasDoacoes1">Suas doações</string>
+    <string name="txtSuasDoacoes2">Veja o que as instituições estão precisando</string>
+    <string name="txtInst1">Instituições e ONGs</string>
+    <string name="txtInst2">Acompanhe o que está sendo doado</string>
+    <string name="txtNotiEve1">Notícias e eventos</string>
+    <string name="txtNotiEve2">Acompanhe a gentileza por aí</string>
+
+    <string name="txtHomeRepr">Olá, representante!</string>
+    <string name="txtDoacoes1">Doações</string>
+    <string name="txtDoacoes2">Veja o que os voluntários estão doando</string>
+    <string name="txtArrecad1">O que está precisando?</string>
+    <string name="txtArrecad2">Recursos materiais que a sua instituição está precisando arrecadar</string>
+
+
     <string name="txtJaTemUmaConta1">Já tem uma conta?</string>
     <string name="txtJaTemUmaConta2">Faça seu login</string>
 
+    <string name="txtbotgentil">Olá, eu sou o +Gentil</string>
 
     <string name="txt1main">Seja mais gentil com o +Gentil</string>
     <string name="txt2main">Descubra as instituições de caridade mais próximas de você, reúna-se com voluntários e promova eventos e campanhas beneficentes. Tudo em um lugar só.</string>
