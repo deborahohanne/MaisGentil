@@ -2,8 +2,16 @@
     <string name="app_name">+Gentil</string>
     <string name="txtEmail">E-mail</string>
     <string name="txtNome">Nome</string>
+    <string name="txtCPF">CPF</string>
+    <string name="txtEndereço">Endereço</string>
     <string name="txtTelefone">Telefone</string>
+    <string name="txtGenero">Gênero</string>
+    <string name="txtGeneroMasculino">Masculino</string>
+    <string name="txtGeneroFeminino">Feminino</string>
+    <string name="txtGeneroOutro">Prefiro não informar</string>
+    <string name="txtDataNascimento">Data de Nascimento</string>
     <string name="txtConfirmaSenha">Confirme sua senha</string>
+    <string name="txtEditarPerfil">Editar Meu Perfil</string>
     <string name="txtSenha">Senha</string>
     <string name="txtNomeInstituicao">Nome da Instituição</string>
     <string name="txtEnviar">Enviar</string>
@@ -11,9 +19,13 @@
     <string name="txtFazerCadastro">Cadastrar</string>
     <string name="txtCrieCadastro">Crie seu cadastro</string>
     <string name="txtEntrar">Entrar</string>
+    <string name="txtSalvar">Salvar</string>
     <string name="txtNext">Próximo</string>
     <string name="txtVol"> Sou voluntário</string>
     <string name="txtRepr"> Sou representante</string>
+    <string name="txtCNPJdaInstituiçao">CNPJ da Instituição</string>
+    <string name="txtNomeRepresentante">Nome do Representante</string>
+    <string name="txtCPFRepresentante">CPF do Representante</string>
 
     <string name="txtJaTemUmaConta1">Já tem uma conta?</string>
     <string name="txtJaTemUmaConta2">Faça seu login</string>
