@@ -3,9 +3,12 @@
     <style name="Widget.MaterialComponents.Button.OutlinedButton.PrimaryButton">
         <item name="backgroundTint">?attr/colorSecondary</item>
     </style>
-
     <style name="Widget.MaterialComponents.Button.OutlinedButton.ButtonSignUp">
         <item name="backgroundTint">#4992EB</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents">
+
     </style>
 </resources>
 
