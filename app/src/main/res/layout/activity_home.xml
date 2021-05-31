@@ -4,19 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#E5E5E5"
+    android:background="#EEEEEE"
     tools:context=".ui.activity.HomeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        tools:context=".ui.activity.voluntary.HomeVoluntaryActivity">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:fabCradleMargin="0dp"
-        app:fabCradleVerticalOffset="0dp"
-        app:fabCradleRoundedCornerRadius="10dp"
         android:layout_gravity="bottom"
         app:contentInsetLeft="0dp"
-        app:contentInsetStart="0dp">
+        app:contentInsetStart="0dp"
+        app:fabCradleMargin="0dp"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="0dp">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigationView"
