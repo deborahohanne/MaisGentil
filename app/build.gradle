@@ -5,7 +5,7 @@ plugins {
     // 'kapt': gerador de código em tempo de compilação
     id 'kotlin-kapt'
     id 'com.google.gms.google-services'
-    // usar esse plugin dentro da app
+    // usar esse plugin dentro da ap
     id 'dagger.hilt.android.plugin'
 }
 
