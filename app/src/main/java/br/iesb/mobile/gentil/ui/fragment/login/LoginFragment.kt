@@ -5,56 +5,81 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import br.iesb.mobile.gentil.R
+import br.iesb.mobile.gentil.databinding.FragmentLoginBinding
+import br.iesb.mobile.gentil.databinding.FragmentMainBinding
+import com.google.firebase.auth.FirebaseAuth
+import dagger.hilt.android.AndroidEntryPoint
+import dagger.hilt.android.WithFragmentBindings
+import javax.inject.Inject
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [LoginFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
+@AndroidEntryPoint
+@WithFragmentBindings
 class LoginFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
+    @Inject
+    lateinit var auth: FirebaseAuth
+
+    private lateinit var binding: FragmentLoginBinding
+
+    fun IrParaHome(v: View) {
+        findNavController().navigate(R.id.action_loginFragment_to_main)
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_login, container, false)
-    }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment LoginFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            LoginFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
+        tvLoginTwo.setOnClickListener {
+            val callIntent = Intent(this, ForgotActivity::class.java)
+            startActivity(callIntent)
+        }
+
+        btLoginLogin.setOnClickListener {
+            val email = etEmailAddressLogin.text.toString()
+            val password = etPasswordLogin.text.toString()
+
+            /* *//* recuperar uma instância do firebase o objeto de autenticação *//*
+            val auth = FirebaseAuth.getInstance()*/
+
+            /* função, dentro do obj 'auth', método que recebe o email e senha para efetuar o login
+            retorna promessa de resultado */
+            val taskDeLogin = auth.signInWithEmailAndPassword(email, password)
+
+            /* verificar se foi efetuado o login com sucesso */
+            taskDeLogin.addOnCompleteListener{ resultado ->
+                if (resultado.isSuccessful) {
+                    val intentGoToHomeScreen = Intent(this, HomeVoluntaryActivity::class.java)
+                    startActivity((intentGoToHomeScreen))
+                    // Toast.makeText(this, "Olha, deu certo o Login", Toast.LENGTH_LONG).show()
+                } else {
+                    Toast.makeText(this, "Olha, deu erro no Login", Toast.LENGTH_LONG).show()
                 }
             }
+        }
+
+        tvLoginLinked.setOnClickListener {
+            val callIntent = Intent(this, LoginActivity::class.java)
+            startActivity(callIntent)
+        }
+
+        btforgotTrueLogin.setOnClickListener {
+            val callIntent = Intent(this, MainActivity::class.java)
+            startActivity(callIntent)
+        }
+
+
+        binding = FragmentMainBinding.inflate(inflater, container, false)
+
+        // o código é a própria classe
+        binding.codigoFragmento = this
+        // o código define o ciclo de vida do fragmento
+        binding.lifecycleOwner = this
+
+        return binding.root
+
     }
+
 }

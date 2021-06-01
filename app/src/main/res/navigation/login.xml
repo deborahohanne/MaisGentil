@@ -3,12 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/login"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/maisGentilFragment">
     <fragment
         android:id="@+id/loginFragment"
         android:name="br.iesb.mobile.gentil.ui.fragment.login.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_forgotFragment"
+            app:destination="@id/forgotFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_main"
+            app:destination="@id/main" />
+    </fragment>
     <fragment
         android:id="@+id/forgotFragment"
         android:name="br.iesb.mobile.gentil.ui.fragment.login.ForgotFragment"
@@ -39,8 +46,6 @@
         <action
             android:id="@+id/action_mainFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
-        <action
-            android:id="@+id/action_mainFragment_to_forgotFragment"
-            app:destination="@id/forgotFragment" />
     </fragment>
+    <include app:graph="@navigation/main" />
 </navigation>

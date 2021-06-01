@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
 import br.iesb.mobile.gentil.R
-import br.iesb.mobile.gentil.ui.activity.login.LoginActivity
+//import br.iesb.mobile.gentil.ui.activity.login.LoginActivity
 import br.iesb.mobile.gentil.ui.activity.representative.RegisterRepresentativeActivity
 import br.iesb.mobile.gentil.ui.activity.voluntary.RegisterVoluntaryActivity
 import kotlinx.android.synthetic.main.activity_register.*
@@ -43,8 +43,8 @@ class RegisterActivity : AppCompatActivity() {
 
         }
         tvSignUpLoginLinked.setOnClickListener {
-            val callIntent = Intent(this, LoginActivity::class.java)
-            startActivity(callIntent)
+//            val callIntent = Intent(this, LoginActivity::class.java)
+//            startActivity(callIntent)
         }
         btSignupVoltarTrue.setOnClickListener {
             val callIntent = Intent(this, MainActivity::class.java)
