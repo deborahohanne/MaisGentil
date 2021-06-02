@@ -184,7 +184,7 @@
                 android:onClick="@{() -> codigoFragmento.activity.onBackPressed()}"
                 app:srcCompat="@drawable/back" />
 
-            <TextViewIrParaTelaLogin
+            <TextView
                 android:id="@+id/tvLoginOne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

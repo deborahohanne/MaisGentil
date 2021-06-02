@@ -17,23 +17,22 @@
         tools:context=".ui.activity.MainActivity">
 
         <TextView
-            android:id="@+id/tvMainLinked"
+            android:id="@+id/tvFacaSeuLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="100dp"
+            android:layout_marginEnd="80dp"
             android:layout_marginBottom="36dp"
             android:fontFamily="@font/poppinsbold"
+            android:onClick="@{codigoFragmento::irParaTelaLogin}"
             android:text="@string/txtJaTemUmaConta2"
             android:textColor="@color/txt_vermelho"
-            android:onClick="@{codigoFragmento::irParaTelaLogin}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/tvLogin" />
+            app:layout_constraintTop_toBottomOf="@+id/tvCrieSeuCadastro"
+            app:layout_constraintVertical_bias="1.0" />
 
         <TextView
-            android:id="@+id/tvLogin"
+            android:id="@+id/tvJaTemSuaConta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="76dp"
@@ -42,12 +41,14 @@
             android:text="@string/txtJaTemUmaConta1"
             android:textAlignment="center"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/tvMainLinked"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintEnd_toStartOf="@+id/tvFacaSeuLogin"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCrieSeuCadastro"
+            app:layout_constraintVertical_bias="1.0" />
 
         <TextView
-            android:id="@+id/btHome"
+            android:id="@+id/tvIrParaHome"
             android:layout_width="345dp"
             android:layout_height="58dp"
             android:layout_marginStart="32dp"
@@ -68,25 +69,24 @@
             app:layout_constraintTop_toBottomOf="@+id/vpOnboarding" />
 
         <TextView
-            android:id="@+id/tvMainSignUp"
+            android:id="@+id/tvCrieSeuCadastro"
             android:layout_width="345dp"
             android:layout_height="58dp"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="40dp"
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="84dp"
             android:background="@drawable/buttom2"
             android:fontFamily="@font/poppinsregular"
             android:gravity="center"
-            android:text="@string/txtCrieCadastro"
             android:onClick="@{codigoFragmento::irParaTelaCadastro}"
+            android:text="@string/txtCrieCadastro"
             android:textAlignment="center"
             android:textColor="#574E4E"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btHome"
+            app:layout_constraintTop_toBottomOf="@+id/tvIrParaHome"
             app:layout_constraintVertical_bias="1.0" />
 
         <androidx.viewpager2.widget.ViewPager2
@@ -100,6 +100,5 @@
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 </layout>

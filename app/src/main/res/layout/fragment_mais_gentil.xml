@@ -21,7 +21,7 @@
         tools:context=".ui.activity.MaisGentilActivity">
 
         <ImageView
-            android:id="@+id/btforgotTrue"
+            android:id="@+id/ivLogoGentil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -53,7 +53,7 @@
             app:layout_constraintVertical_bias="0.71" />
 
         <ImageView
-            android:id="@+id/imageView24"
+            android:id="@+id/ivTelaGentil"
             android:layout_width="131dp"
             android:layout_height="55dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -64,7 +64,7 @@
             app:srcCompat="@drawable/rectangle_green_bar" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/tvTelaGentil"
             android:layout_width="80dp"
             android:layout_height="27dp"
             android:text="Acesse"

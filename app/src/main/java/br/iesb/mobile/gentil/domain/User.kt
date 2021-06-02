@@ -2,7 +2,8 @@ package br.iesb.mobile.gentil.domain
 
 
 data class User(
-    val uid: String?=null,
-    val nome:  String?=null,
-    val cpf: String?=null
+    var id: String? = null,
+    var email: String? = null,
+    var password: String? = null,
+    var name: String? = null
 )

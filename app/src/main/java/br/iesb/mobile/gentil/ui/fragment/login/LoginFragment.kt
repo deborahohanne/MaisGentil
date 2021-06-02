@@ -35,10 +35,6 @@ class LoginFragment : Fragment() {
 //        findNavController().navigate(R.id.action_mainFragment_to_loginFragment)
 //    }
 
-//    fun VoltarTelaMain(v: View) {
-//        findNavController().navigate(R.id.action_loginFragment_to_mainFragment)
-//    }
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

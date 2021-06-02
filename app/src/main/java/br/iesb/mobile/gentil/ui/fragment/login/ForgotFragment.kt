@@ -15,10 +15,6 @@ class ForgotFragment : Fragment() {
 
     private lateinit var binding: FragmentForgotBinding
 
-    fun VoltarTelaLogin(v: View) {
-        findNavController().navigate(R.id.action_forgotFragment_to_loginFragment)
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
