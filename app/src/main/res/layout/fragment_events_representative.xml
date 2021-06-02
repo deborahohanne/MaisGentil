@@ -11,12 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#EEEEEE"
-        tools:context=".ui.activity.representative.HomeRepresentativeActivity">
+        tools:context=".ui.fragment.voluntary.EventsVoluntaryFragment">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".ui.activity.voluntary.HomeVoluntaryActivity">
+            tools:context=".ui.fragment.voluntary.EventsVoluntaryFragment">
 
 
             */ INSERE AQUI OBJETOS
