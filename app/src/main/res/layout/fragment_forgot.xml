@@ -1,141 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.fragment.login.ForgotFragment">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <ImageView
-        android:id="@+id/btforgotTrue2"
-        android:layout_width="54dp"
-        android:layout_height="47dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="@drawable/back" />
+    <data>
+        <variable
+            name="codigoFragmento"
+            type="br.iesb.mobile.gentil.ui.fragment.login.ForgotFragment" />
+    </data>
 
-    <TextView
-        android:id="@+id/btForgot2"
-        android:layout_width="345dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginBottom="84dp"
-        android:background="@drawable/custom_bt_one"
-        android:fontFamily="@font/poppinssemibold"
-        android:gravity="center"
-        android:text="@string/txtEnviar"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/tvForgotTwo2"
-        android:layout_width="345dp"
-        android:layout_height="84dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="32dp"
-        android:fontFamily="@font/poppinsregular"
-        android:text="@string/txt2forgot"
-        android:textAlignment="center"
-        android:textDirection="anyRtl"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivForgotOne" />
-
-    <EditText
-        android:id="@+id/etForgotEmail2"
-        android:layout_width="345dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="44dp"
-        android:background="@drawable/custom_input"
-        android:drawableStart="@drawable/email"
-        android:drawablePadding="18dp"
-        android:ems="10"
-        android:fontFamily="@font/poppinsregular"
-        android:hint="@string/txtEmail"
-        android:inputType="textEmailAddress"
-        android:paddingStart="28dp"
-        android:paddingEnd="28dp"
-        android:textAlignment="textStart"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/btForgot"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvForgotTwo"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <ImageView
-        android:id="@+id/ivForgotOne2"
-        android:layout_width="256dp"
-        android:layout_height="165dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvForgotOne"
-        app:srcCompat="@drawable/forgot_image_one" />
-
-    <TextView
-        android:id="@+id/tvForgotOne2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:fontFamily="@font/poppinssemibold"
-        android:text="@string/txt1forgot"
-        android:textColor="#D5000000"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#EEEEEE"
-        tools:context=".ui.activity.login.ForgotActivity">
+        tools:context=".ui.fragment.login.ForgotFragment">
 
-        <TextView
-            android:id="@+id/tvForgotOne"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            android:fontFamily="@font/poppinssemibold"
-            android:text="@string/txt1forgot"
-            android:textColor="#D5000000"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/ivForgotOne"
-            android:layout_width="256dp"
-            android:layout_height="165dp"
-            android:layout_marginTop="32dp"
+            android:id="@+id/btforgotTrue2"
+            android:layout_width="54dp"
+            android:layout_height="47dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintHorizontal_bias="0.044"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvForgotOne"
-            app:srcCompat="@drawable/forgot_image_one" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/btForgot2"
+            android:layout_width="345dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="84dp"
+            android:background="@drawable/custom_bt_one"
+            android:fontFamily="@font/poppinssemibold"
+            android:gravity="center"
+            android:text="@string/txtEnviar"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvForgotTwo2"
+            android:layout_width="345dp"
+            android:layout_height="84dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="@string/txt2forgot"
+            android:textAlignment="center"
+            android:textDirection="anyRtl"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivForgotOne" />
 
         <EditText
-            android:id="@+id/etForgotEmail"
+            android:id="@+id/etForgotEmail2"
             android:layout_width="345dp"
             android:layout_height="58dp"
             android:layout_marginStart="32dp"
@@ -159,53 +88,137 @@
             app:layout_constraintTop_toBottomOf="@+id/tvForgotTwo"
             app:layout_constraintVertical_bias="1.0" />
 
-        <TextView
-            android:id="@+id/tvForgotTwo"
-            android:layout_width="345dp"
-            android:layout_height="84dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="32dp"
-            android:fontFamily="@font/poppinsregular"
-            android:text="@string/txt2forgot"
-            android:textAlignment="center"
-            android:textDirection="anyRtl"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ivForgotOne" />
-
-        <TextView
-            android:id="@+id/btForgot"
-            android:layout_width="345dp"
-            android:layout_height="58dp"
-            android:layout_marginStart="64dp"
-            android:layout_marginEnd="64dp"
-            android:layout_marginBottom="84dp"
-            android:background="@drawable/custom_bt_one"
-            android:fontFamily="@font/poppinssemibold"
-            android:gravity="center"
-            android:text="@string/txtEnviar"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
         <ImageView
-            android:id="@+id/btforgotTrue"
-            android:layout_width="54dp"
-            android:layout_height="47dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/ivForgotOne2"
+            android:layout_width="256dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="32dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.044"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.023"
-            app:srcCompat="@drawable/back" />
+            app:layout_constraintTop_toBottomOf="@+id/tvForgotOne"
+            app:srcCompat="@drawable/forgot_image_one" />
+
+        <TextView
+            android:id="@+id/tvForgotOne2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="@string/txt1forgot"
+            android:textColor="#D5000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EEEEEE"
+            tools:context=".ui.activity.login.ForgotActivity">
+
+            <TextView
+                android:id="@+id/tvForgotOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="@string/txt1forgot"
+                android:textColor="#D5000000"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivForgotOne"
+                android:layout_width="256dp"
+                android:layout_height="165dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvForgotOne"
+                app:srcCompat="@drawable/forgot_image_one" />
+
+            <EditText
+                android:id="@+id/etForgotEmail"
+                android:layout_width="345dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="44dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="18dp"
+                android:ems="10"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="@string/txtEmail"
+                android:inputType="textEmailAddress"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp"
+                android:textAlignment="textStart"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/btForgot"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvForgotTwo"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/tvForgotTwo"
+                android:layout_width="345dp"
+                android:layout_height="84dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/txt2forgot"
+                android:textAlignment="center"
+                android:textDirection="anyRtl"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivForgotOne" />
+
+            <TextView
+                android:id="@+id/btForgot"
+                android:layout_width="345dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginEnd="64dp"
+                android:layout_marginBottom="84dp"
+                android:background="@drawable/custom_bt_one"
+                android:fontFamily="@font/poppinssemibold"
+                android:gravity="center"
+                android:text="@string/txtEnviar"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/btforgotTrue"
+                android:layout_width="54dp"
+                android:layout_height="47dp"
+                android:onClick="@{codigoFragmento::VoltarTelaLogin}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.044"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.023"
+                app:srcCompat="@drawable/back" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</FrameLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+</layout>

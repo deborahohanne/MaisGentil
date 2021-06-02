@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="codigoFragmento"
+            type="br.iesb.mobile.gentil.ui.fragment.representative.RegisterRepresentativeFragment" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/frameLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.login.LoginFragment">
+
+    <ImageView
+            android:id="@+id/btSignupThreeTrue"
+            android:layout_width="54dp"
+            android:layout_height="47dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.044"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="@string/txt4login"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="240dp"
+            android:layout_height="145dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:srcCompat="@drawable/signup_image_three" />
+
+        <EditText
+            android:id="@+id/etRepresentanteNome"
+            android:layout_width="345dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/building"
+            android:drawablePadding="18dp"
+            android:ems="10"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="@string/txtNomeInstituicao"
+            android:inputType="textPersonName"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/etEmailRepresentante"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <EditText
+            android:id="@+id/etEmailRepresentante"
+            android:layout_width="345dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="18dp"
+            android:ems="10"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="@string/txtEmail"
+            android:inputType="textEmailAddress"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/etPasswordRepresentante"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etRepresentanteNome" />
+
+        <EditText
+            android:id="@+id/etPasswordRepresentante"
+            android:layout_width="345dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/lock"
+            android:drawablePadding="18dp"
+            android:ems="10"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="@string/txtSenha"
+            android:inputType="textPassword"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/etConfirmPasswordRepresentante"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEmailRepresentante" />
+
+        <EditText
+            android:id="@+id/etConfirmPasswordRepresentante"
+            android:layout_width="345dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/lock"
+            android:drawablePadding="18dp"
+            android:ems="10"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="@string/txtConfirmaSenha"
+            android:inputType="textPassword"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/btSignUpRepresentante"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPasswordRepresentante" />
+
+        <TextView
+            android:id="@+id/btSignUpRepresentante"
+            android:layout_width="345dp"
+            android:layout_height="58dp"
+            android:layout_marginBottom="52dp"
+            android:background="@drawable/custom_bt_one"
+            android:fontFamily="@font/poppinssemibold"
+            android:gravity="center"
+            android:text="@string/txtEnviar"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
