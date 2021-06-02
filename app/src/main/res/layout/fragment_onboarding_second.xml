@@ -12,14 +12,15 @@
         android:id="@+id/tvTextTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="256dp"
         android:fontFamily="@font/poppinssemibold"
         android:text="@string/title2on"
         android:textColor="#463F3F"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintHorizontal_bias="0.3"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="270dp" />
+        app:layout_constraintTop_toTopOf="@+id/ivMainLogoTwo" />
 
     <TextView
         android:id="@+id/tvTextOnTwo"

@@ -21,5 +21,5 @@ class LoginViewModel(val app: Application) : AndroidViewModel(app) {
             result.value = it
         }
 
-    }ß
+    }
 }
