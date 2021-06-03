@@ -35,8 +35,8 @@ class ForgotActivity : AppCompatActivity() {
         }
 
         btforgotTrue.setOnClickListener {
-            val callIntent = Intent(this, LoginActivity::class.java)
-            startActivity(callIntent)
+//            val callIntent = Intent(this, LoginActivity::class.java)
+//            startActivity(callIntent)
         }
 
     }

@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import br.iesb.mobile.gentil.R
-import br.iesb.mobile.gentil.ui.activity.login.LoginActivity
+//import br.iesb.mobile.gentil.ui.activity.login.LoginActivity
 import br.iesb.mobile.gentil.ui.activity.RegisterActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_register_voluntary.*
@@ -51,9 +51,9 @@ class RegisterVoluntaryActivity : AppCompatActivity() {
 
         taskDeLogin.addOnCompleteListener{ resultado ->
             if (resultado.isSuccessful) {
-                Toast.makeText(this, "Cadastro realizado com sucesso!", Toast.LENGTH_LONG).show()
-                val intencaoDeChamada = Intent(this, LoginActivity::class.java)
-                startActivity(intencaoDeChamada)
+//                Toast.makeText(this, "Cadastro realizado com sucesso!", Toast.LENGTH_LONG).show()
+//                val intencaoDeChamada = Intent(this, LoginActivity::class.java)
+//                startActivity(intencaoDeChamada)
             } else {
                 Toast.makeText(this, "Olha, deu erro no CADASTRO!", Toast.LENGTH_LONG).show()
             }

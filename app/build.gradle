@@ -40,6 +40,7 @@ android {
         jvmTarget = '1.8'
     }
     // habilita o binding bidirecional, um campo em uma tela, se alterar ele automaticamente coloca no código
+    // vinculo de botões, chamar funcao botao, sem precisar ter a funcao, recuperar algo da tela
     buildFeatures {
         dataBinding true
     }

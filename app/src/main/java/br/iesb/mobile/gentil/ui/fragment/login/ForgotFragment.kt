@@ -1,4 +1,4 @@
-package br.iesb.mobile.gentil.ui.fragment.voluntary
+package br.iesb.mobile.gentil.ui.fragment.login
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,20 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import br.iesb.mobile.gentil.R
-import br.iesb.mobile.gentil.databinding.FragmentHomeVoluntaryBinding
+import br.iesb.mobile.gentil.databinding.FragmentForgotBinding
 import br.iesb.mobile.gentil.databinding.FragmentLoginBinding
 
 
-class HomeVoluntaryFragment : Fragment() {
+class ForgotFragment : Fragment() {
 
-    private lateinit var binding: FragmentHomeVoluntaryBinding
+    private lateinit var binding: FragmentForgotBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
-        binding = FragmentHomeVoluntaryBinding.inflate(inflater, container, false)
+        binding = FragmentForgotBinding.inflate(inflater, container, false)
 
         // o código é a própria classe
         binding.codigoFragmento = this
@@ -28,6 +27,5 @@ class HomeVoluntaryFragment : Fragment() {
 
         return binding.root
     }
-
 
 }

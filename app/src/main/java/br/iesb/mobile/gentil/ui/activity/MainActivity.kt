@@ -8,7 +8,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import br.iesb.mobile.gentil.R
-import br.iesb.mobile.gentil.ui.activity.login.LoginActivity
+//import br.iesb.mobile.gentil.ui.activity.login.LoginActivity
 
 import br.iesb.mobile.gentil.ui.fragment.onboarding.screen.OnboardingFirstFragment
 import br.iesb.mobile.gentil.ui.fragment.onboarding.screen.OnboardingSecondFragment
@@ -20,21 +20,21 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        btHome.setOnClickListener {
-            val callIntent = Intent(this, HomeActivity::class.java)
-            startActivity(callIntent)
-        }
-
-        btMainSignUp.setOnClickListener {
-            val callIntent = Intent(this, RegisterActivity::class.java)
-            startActivity(callIntent)
-        }
-
-        tvMainLinked.setOnClickListener {
-            val callIntent = Intent(this, LoginActivity::class.java)
-            startActivity(callIntent)
-        }
+//
+//        btHome.setOnClickListener {
+//            val callIntent = Intent(this, HomeActivity::class.java)
+//            startActivity(callIntent)
+//        }
+//
+//        tvMainSignUp.setOnClickListener {
+//            val callIntent = Intent(this, RegisterActivity::class.java)
+//            startActivity(callIntent)
+//        }
+//
+//        tvMainLinked.setOnClickListener {
+////            val callIntent = Intent(this, LoginActivity::class.java)
+////            startActivity(callIntent)
+//        }
 
 
        /* criar a fonte de dados

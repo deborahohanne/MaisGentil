@@ -58,7 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/vpOnboarding" />
 
     <TextView
-        android:id="@+id/btMainSignUp"
+        android:id="@+id/tvMainSignUp"
         android:layout_width="345dp"
         android:layout_height="58dp"
         android:layout_marginStart="32dp"

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="codigoFragmento"
+            type="br.iesb.mobile.gentil.ui.fragment.login.RegisterFragment" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.login.RegisterFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EEEEEE"
+            tools:context=".ui.activity.SignUpOneActivity">
+
+            <TextView
+                android:id="@+id/tvSignUpOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="88dp"
+                android:layout_marginEnd="68dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="@string/txt1login"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSignUpOne"
+                app:srcCompat="@drawable/signup_image_one" />
+
+            <TextView
+                android:id="@+id/tvSignUpTwo"
+                android:layout_width="327dp"
+                android:layout_height="97dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/txt2login"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <RadioGroup
+                android:id="@+id/rgSignupOne"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/btSignUpOne"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSignUpTwo">
+
+                <RadioButton
+                    android:id="@+id/rbCheckVoluntario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="@string/txtVol" />
+
+                <RadioButton
+                    android:id="@+id/rbCheckRepresentante"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="@string/txtRepr" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btSignUpOne"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.ButtonSignUp"
+                android:layout_width="345dp"
+                android:layout_height="66dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="@string/txtNext"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:cornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:rippleColor="@color/white"
+                app:strokeColor="@color/white" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/btSignupVoltarTrue4"
+            android:layout_width="54dp"
+            android:layout_height="47dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.044"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023"
+            android:onClick="@{() -> codigoFragmento.activity.onBackPressed() }"
+            app:srcCompat="@drawable/back" />
+
+
+    </FrameLayout>
+</layout>
