@@ -8,56 +8,23 @@
     tools:context=".ui.activity.representative.MyProfileRepresentativeActivity">
 
     <ImageView
-        android:id="@+id/ivRetanguloBrancoEditarPerfilRepresentative"
-        android:layout_width="0dp"
-        android:layout_height="51dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/retangulo_branco_editar_perfil_representative" />
-
-    <ImageView
-        android:id="@+id/ivVoltarEditarPerfilRepresentative"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/ivRetanguloBrancoEditarPerfilRepresentative"
-        app:layout_constraintEnd_toEndOf="@+id/ivRetanguloBrancoEditarPerfilRepresentative"
-        app:layout_constraintHorizontal_bias="0.073"
-        app:layout_constraintStart_toStartOf="@+id/ivRetanguloBrancoEditarPerfilRepresentative"
-        app:layout_constraintTop_toTopOf="@+id/ivRetanguloBrancoEditarPerfilRepresentative"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/back" />
-
-    <TextView
-        android:id="@+id/tvMeuPerfilRepresentante"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Meu Perfil"
-        app:layout_constraintEnd_toEndOf="@+id/ivRetanguloBrancoEditarPerfilRepresentative"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/ivRetanguloBrancoEditarPerfilRepresentative" />
-
-    <ImageView
         android:id="@+id/ivEclipseBrancoEditarPerfilRepresentative"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivRetanguloBrancoEditarPerfilRepresentative"
-        app:srcCompat="@drawable/elipese_branco_editar_perfil_representative" />
+        app:srcCompat="@drawable/elipese_branco_editar_perfil_representative"
+        tools:layout_editor_absoluteY="83dp" />
 
     <ImageView
         android:id="@+id/ivAvatarEditarPerfilRepresentative"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivRetanguloBrancoEditarPerfilRepresentative"
-        app:srcCompat="@drawable/avatar_home_representante" />
+        app:srcCompat="@drawable/avatar_home_representante"
+        tools:layout_editor_absoluteY="83dp" />
 
     <TextView
         android:id="@+id/tvNomeEditarPerfilRepresentaive"
