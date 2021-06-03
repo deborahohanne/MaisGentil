@@ -8,10 +8,7 @@
         <item name="backgroundTint">#4992EB</item>
     </style>
 
-    <style name="Theme.Gentil" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.Gentil1" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:windowBackground">@color/background</item>
     </style>
 </resources>
-
-
-

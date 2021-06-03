@@ -3,7 +3,7 @@ package br.iesb.mobile.gentil.ui.activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import br.iesb.mobile.gentil.R
-import kotlinx.android.synthetic.main.activity_home.*
+import kotlinx.android.synthetic.main.activity_home_noticias.*
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
