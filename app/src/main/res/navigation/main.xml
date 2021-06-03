@@ -3,11 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    app:startDestination="@id/homeRepresentantiveFragment">
-
+    app:startDestination="@id/publicationsVoluntaryFragment">
     <fragment
-        android:id="@+id/homeRepresentantiveFragment"
-        android:name="br.iesb.mobile.gentil.ui.fragment.representative.HomeRepresentantiveFragment"
-        android:label="fragment_home_representantive"
-        tools:layout="@layout/fragment_home_representantive" />
+        android:id="@+id/publicationsVoluntaryFragment"
+        android:name="br.iesb.mobile.gentil.ui.fragment.voluntary.PublicationsVoluntaryFragment"
+        android:label="fragment_publications_voluntary"
+        tools:layout="@layout/fragment_publications_voluntary" />
 </navigation>

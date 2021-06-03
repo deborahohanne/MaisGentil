@@ -48,12 +48,12 @@ class LoginActivity : AppCompatActivity() {
 //
 //            /* verificar se foi efetuado o login com sucesso */
 //            taskDeLogin.addOnCompleteListener{ resultado ->
-//                if (resultado.isSuccessful) {
-//                    val intentGoToHomeScreen = Intent(this, HomeVoluntaryActivity::class.java)
-//                    startActivity((intentGoToHomeScreen))
-//                    // Toast.makeText(this, "Olha, deu certo o Login", Toast.LENGTH_LONG).show()
-//                } else {
-//                    Toast.makeText(this, "Olha, deu erro no Login", Toast.LENGTH_LONG).show()
+////                if (resultado.isSuccessful) {
+////                    val intentGoToHomeScreen = Intent(this, HomeVoluntaryActivity::class.java)
+////                    startActivity((intentGoToHomeScreen))
+////                    // Toast.makeText(this, "Olha, deu certo o Login", Toast.LENGTH_LONG).show()
+////                } else {
+////                    Toast.makeText(this, "Olha, deu erro no Login", Toast.LENGTH_LONG).show()
 //                }
 //            }
 //        }
