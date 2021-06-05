@@ -26,11 +26,6 @@ class LoginFragment : Fragment() {
         ViewModelProvider(this).get(LoginViewModel::class.java)
     }
 
-
-//    fun IrParaHome(v: View) {
-//        findNavController().navigate(R.id.action_loginFragment_to_main)
-//    }
-
     fun IrTelaEsqueceuSenha(v: View) {
         findNavController().navigate(R.id.action_loginFragment_to_forgotFragment)
     }

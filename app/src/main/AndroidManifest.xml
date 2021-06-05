@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.iesb.mobile.gentil">
+    package="br.iesb.mobile.gentil" >
 
     <application
         android:name=".MaisGentilApp"
@@ -9,9 +9,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Gentil">
-        <activity android:name=".ui.activity.MainStartActivity"></activity>
-        <activity android:name=".ui.activity.ChatbotActivity"></activity>
+        android:theme="@style/Theme.Gentil" >
+        <activity android:name=".ui.activity.HomeActivity" >
+        </activity>
+        <activity android:name=".ui.activity.MainStartActivity" />
+        <activity android:name=".ui.activity.ChatbotActivity" />
         <activity android:name=".ui.activity.representative.MyProfileRepresentativeActivity" />
         <activity android:name=".ui.activity.voluntary.CreateAdVoluntaryActivity" />
         <activity android:name=".ui.activity.voluntary.EditProfileVoluntaryActivity" />
@@ -21,10 +23,8 @@
         <activity android:name=".ui.activity.MapActivity" />
         <activity android:name=".ui.activity.voluntary.HomeVoluntaryActivity" />
         <activity android:name=".ui.activity.representative.EditProfileRepresentativeActivity" />
-        <activity android:name=".ui.activity.representative.HomeRepresentativeActivity" /> <!-- <meta-data -->
-        <!-- android:name="com.google.android.wearable.standalone" -->
-        <!-- android:value="true" /> -->
-        <activity android:name=".ui.activity.login.LoginActivity">
+        <activity android:name=".ui.activity.representative.HomeRepresentativeActivity" />
+        <activity android:name=".ui.activity.login.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,12 +32,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.activity.representative.RegisterRepresentativeActivity" />
-        <activity android:name=".ui.activity.HomeActivity" />
         <activity android:name=".ui.activity.login.ForgotActivity" />
         <activity android:name=".ui.activity.voluntary.RegisterVoluntaryActivity" />
         <activity android:name=".ui.activity.RegisterActivity" />
-        <activity android:name=".ui.activity.MaisGentilActivity"/>
-
+        <activity android:name=".ui.activity.MaisGentilActivity" />
     </application>
 
 </manifest>
