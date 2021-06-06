@@ -22,7 +22,7 @@
             tools:context=".ui.activity.voluntary.HomeVoluntaryActivity">
 
             <ImageView
-                android:id="@+id/imageView35"
+                android:id="@+id/ivLogoutHomeRepr"
                 android:layout_width="50dp"
                 android:layout_height="24dp"
                 android:layout_marginTop="7dp"
@@ -35,7 +35,7 @@
                 app:srcCompat="@drawable/logout" />
 
             <TextView
-                android:id="@+id/textView14"
+                android:id="@+id/tvForYouRepr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="36dp"
@@ -51,7 +51,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/imageView20" />
 
             <ImageView
-                android:id="@+id/imageView15"
+                android:id="@+id/btHomeReprDoacoes"
                 android:layout_width="360dp"
                 android:layout_height="130dp"
                 android:layout_marginTop="72dp"
@@ -65,7 +65,7 @@
                 tools:ignore="UnknownIdInLayout" />
 
             <ImageView
-                android:id="@+id/imageView14"
+                android:id="@+id/ivHomeReprNoticias"
                 android:layout_width="360dp"
                 android:layout_height="130dp"
                 android:layout_marginBottom="64dp"
@@ -76,7 +76,7 @@
                 app:srcCompat="@drawable/bloconoticiashomevoluntario" />
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/tvHomeReprNoticias"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="128dp"
@@ -90,7 +90,7 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/tvHomeReprGentileza"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppinsregular"
@@ -104,7 +104,7 @@
                 app:layout_constraintVertical_bias="0.849" />
 
             <ImageView
-                android:id="@+id/imageView13"
+                android:id="@+id/tvMenuHomeRepr"
                 android:layout_width="323dp"
                 android:layout_height="256dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -125,7 +125,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/imageView16"
+                android:id="@+id/ivDoacoesRepr"
                 android:layout_width="360dp"
                 android:layout_height="130dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -137,7 +137,7 @@
                 app:srcCompat="@drawable/backgrounddonations_repr" />
 
             <ImageView
-                android:id="@+id/imageView17"
+                android:id="@+id/ivAvaliacoesRepr"
                 android:layout_width="100dp"
                 android:layout_height="70dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -149,7 +149,7 @@
                 app:srcCompat="@drawable/avaliacoes_repr" />
 
             <ImageView
-                android:id="@+id/imageView34"
+                android:id="@+id/ivHomeReprAvatar"
                 android:layout_width="84dp"
                 android:layout_height="78dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -161,7 +161,7 @@
                 app:srcCompat="@drawable/homerepravatar" />
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/tvHomeReprHello"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppinssemibold"
@@ -176,7 +176,7 @@
                 app:layout_constraintVertical_bias="0.206" />
 
             <TextView
-                android:id="@+id/textView15"
+                android:id="@+id/tvDoacoesHomeRepresentante2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppinssemibold"
@@ -191,7 +191,7 @@
                 app:layout_constraintVertical_bias="0.673" />
 
             <TextView
-                android:id="@+id/textView16"
+                android:id="@+id/tvDoacoesHomeRepresentante3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppinsregular"
@@ -205,7 +205,7 @@
                 app:layout_constraintVertical_bias="0.707" />
 
             <TextView
-                android:id="@+id/textView17"
+                android:id="@+id/tvArrecadarRepr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppinssemibold"
@@ -220,7 +220,7 @@
                 app:layout_constraintVertical_bias="0.512" />
 
             <TextView
-                android:id="@+id/textView18"
+                android:id="@+id/tvArrecadarRepr2"
                 android:layout_width="243dp"
                 android:layout_height="46dp"
                 android:fontFamily="@font/poppinsregular"
