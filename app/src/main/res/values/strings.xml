@@ -75,5 +75,13 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <!--
+    Strings Gamification
+    -->
+    <string name="txtMeusPontos">Meus pontos</string>
+    <string name="txtResgatarPontos">Resgatar pontos</string>
+    <string name="txtMissoesDiarias">Missões diárias</string>
+    <string name="txtConquistas">Conquistas</string>
+    <string name="txtStoreTitle">Resgate seus pontos</string>
 
 </resources>
