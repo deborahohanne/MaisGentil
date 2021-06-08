@@ -49,7 +49,7 @@
             <ImageView
                 android:id="@+id/imageView41"
                 android:layout_width="match_parent"
-                android:layout_height="20dp"
+                android:layout_height="40dp"
                 android:src="@drawable/background_representante" />
 
             <ImageView
