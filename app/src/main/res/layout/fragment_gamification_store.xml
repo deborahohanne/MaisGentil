@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/StoreFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragment.gamification.GamificationStoreFragment" >
+    tools:context=".ui.fragment.gamification.GamificationStoreFragment">
 
     <View
         android:id="@+id/view2"
@@ -12,11 +13,10 @@
         android:layout_height="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/ivButtonBackStoreScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -38,24 +38,24 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/ivPointsBackgroundStore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:src="@drawable/fundo_medio_branco"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView29" />
+        app:layout_constraintTop_toBottomOf="@+id/ivStoreToldo" />
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/tvPointsValueStoreScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Você tem 10 pontos"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView12"
-        app:layout_constraintEnd_toEndOf="@+id/imageView12"
-        app:layout_constraintStart_toStartOf="@+id/imageView12"
-        app:layout_constraintTop_toTopOf="@+id/imageView12" />
+        app:layout_constraintBottom_toBottomOf="@+id/ivPointsBackgroundStore"
+        app:layout_constraintEnd_toEndOf="@+id/ivPointsBackgroundStore"
+        app:layout_constraintStart_toStartOf="@+id/ivPointsBackgroundStore"
+        app:layout_constraintTop_toTopOf="@+id/ivPointsBackgroundStore" />
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -64,7 +64,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12">
+        app:layout_constraintTop_toBottomOf="@+id/ivPointsBackgroundStore">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -72,73 +72,73 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView31"
+                android:id="@+id/ivAvatarGraceStore"
                 android:layout_width="328dp"
                 android:layout_height="116dp"
                 android:src="@drawable/store_avatar_three_image" />
 
             <ImageView
-                android:id="@+id/imageView43"
+                android:id="@+id/ivButtonBuyGrace"
                 android:layout_width="515dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/store_buy_button" />
 
             <ImageView
-                android:id="@+id/imageView52"
+                android:id="@+id/ivStoreSpaceOne"
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
                 android:src="@drawable/background_representante" />
 
             <ImageView
-                android:id="@+id/imageView30"
+                android:id="@+id/ivAvatarFloraStore"
                 android:layout_width="328dp"
                 android:layout_height="116dp"
                 android:src="@drawable/store_avatar_one_image" />
 
             <ImageView
-                android:id="@+id/imageView44"
+                android:id="@+id/ivButtonBuyFlora"
                 android:layout_width="515dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/store_buy_button" />
 
             <ImageView
-                android:id="@+id/imageView53"
+                android:id="@+id/ivStoreSpaceTwo"
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
                 android:src="@drawable/background_representante" />
 
             <ImageView
-                android:id="@+id/imageView32"
+                android:id="@+id/ivAvatarBobStore"
                 android:layout_width="328dp"
                 android:layout_height="116dp"
                 android:src="@drawable/store_avatar_two_image" />
 
             <ImageView
-                android:id="@+id/imageView45"
+                android:id="@+id/ivButtonBuyBob"
                 android:layout_width="515dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/store_buy_button" />
 
             <ImageView
-                android:id="@+id/imageView68"
+                android:id="@+id/ivStoreSpaceThree"
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
                 android:src="@drawable/background_representante" />
 
             <ImageView
-                android:id="@+id/imageView40"
+                android:id="@+id/ivAvatarDudaStore"
                 android:layout_width="328dp"
                 android:layout_height="116dp"
                 android:src="@drawable/store_avatar_four_image" />
 
             <ImageView
-                android:id="@+id/imageView46"
+                android:id="@+id/ivButtonBuyDuda"
                 android:layout_width="515dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/store_buy_button" />
 
             <ImageView
-                android:id="@+id/imageView69"
+                android:id="@+id/ivStoreSpaceFour"
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
                 android:src="@drawable/background_representante" />
@@ -148,7 +148,7 @@
     </ScrollView>
 
     <ImageView
-        android:id="@+id/imageView29"
+        android:id="@+id/ivStoreToldo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"

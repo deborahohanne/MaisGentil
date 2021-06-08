@@ -193,17 +193,8 @@
         app:layout_constraintStart_toEndOf="@+id/ivPointsImageGamification"
         app:layout_constraintTop_toTopOf="@+id/iv_gamification_profile_points_background" />
 
-    <ImageView
-        android:id="@+id/imageView56"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:src="@drawable/conquest_share_image"
-        app:layout_constraintBottom_toBottomOf="@+id/ivBackgroundConquests"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
-        android:id="@+id/textView27"
+        android:id="@+id/tvProfileQuestsTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -213,89 +204,102 @@
         app:layout_constraintTop_toTopOf="@+id/ivProfileBackgroundDailyQuests" />
 
     <ImageView
-        android:id="@+id/imageView61"
+        android:id="@+id/ivProfileGamificationLikeQuests"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
         android:src="@drawable/like_events_image"
-        app:layout_constraintEnd_toStartOf="@+id/imageView62"
-        app:layout_constraintStart_toEndOf="@+id/imageView63"
-        tools:layout_editor_absoluteY="375dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/ivProfileBackgroundDailyQuests"
+        app:layout_constraintEnd_toStartOf="@+id/ivProfileShareQuests"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toEndOf="@+id/ivProfileQuestsInvite"
+        app:layout_constraintTop_toBottomOf="@+id/ivBackgroundDailyQuests"
+        app:layout_constraintVertical_bias="0.25" />
 
     <ImageView
-        android:id="@+id/imageView62"
+        android:id="@+id/ivProfileShareQuests"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="36dp"
         android:src="@drawable/share_events_image"
+        app:layout_constraintBottom_toBottomOf="@+id/ivProfileBackgroundDailyQuests"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="375dp" />
+        app:layout_constraintTop_toBottomOf="@+id/ivBackgroundDailyQuests"
+        app:layout_constraintVertical_bias="0.25" />
 
     <ImageView
-        android:id="@+id/imageView63"
+        android:id="@+id/ivProfileQuestsInvite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
+        android:layout_marginTop="44dp"
         android:src="@drawable/invite_friend_image"
+        app:layout_constraintBottom_toBottomOf="@+id/ivProfileBackgroundDailyQuests"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="375dp" />
+        app:layout_constraintTop_toBottomOf="@+id/ivBackgroundDailyQuests"
+        app:layout_constraintVertical_bias="0.25" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/ivConquestCardAjudante"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
         android:src="@drawable/conquest_ajudante_image"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="539dp" />
+        app:layout_constraintTop_toBottomOf="@+id/tvConquestProfile" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/ivConquestCardAmigavel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:src="@drawable/conquest_amigavel_image"
-        app:layout_constraintEnd_toStartOf="@+id/imageView10"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
-        tools:layout_editor_absoluteY="539dp" />
+        app:layout_constraintEnd_toStartOf="@+id/ivConquestCardCarinhoso"
+        app:layout_constraintStart_toEndOf="@+id/ivConquestCardAjudante"
+        app:layout_constraintTop_toBottomOf="@+id/tvConquestProfile" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/ivConquestCardEngajado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:src="@drawable/conquest_engajado_image"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/ivConquestCardCarinhoso"
         app:layout_constraintVertical_bias="0.428" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/ivConquestCardCarinhoso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="24dp"
         android:src="@drawable/conquest_carinhoso_image"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="539dp" />
+        app:layout_constraintTop_toTopOf="@+id/ivBackgroundConquests" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/ivConquestCardAvaliador"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:src="@drawable/conquest_avaliador_image"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/ivConquestCardAjudante"
         app:layout_constraintVertical_bias="0.428" />
 
     <ImageView
-        android:id="@+id/imageView19"
+        android:id="@+id/ivConquestCardPresente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/conquest_presenca_image"
         app:layout_constraintBottom_toBottomOf="@+id/ivBackgroundConquests"
-        app:layout_constraintEnd_toStartOf="@+id/imageView9"
-        app:layout_constraintStart_toEndOf="@+id/imageView11"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+        app:layout_constraintEnd_toStartOf="@+id/ivConquestCardEngajado"
+        app:layout_constraintStart_toEndOf="@+id/ivConquestCardAvaliador"
+        app:layout_constraintTop_toBottomOf="@+id/ivConquestCardAmigavel" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

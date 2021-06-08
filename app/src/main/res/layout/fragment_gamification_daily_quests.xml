@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="@+id/view" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/tvDailyQuestsTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/txtMissoesDiarias"
@@ -47,55 +47,55 @@
             android:orientation="vertical" >
 
             <ImageView
-                android:id="@+id/imageView41"
+                android:id="@+id/ivDailyQuestsSpaceZero"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:src="@drawable/background_representante" />
 
             <ImageView
-                android:id="@+id/imageView48"
+                android:id="@+id/ivDailyQuestScreenInvite"
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
                 android:src="@drawable/quests_invite_friends_image" />
 
             <ImageView
-                android:id="@+id/imageView33"
+                android:id="@+id/ivDailyQuestsButtonInvite"
                 android:layout_width="475dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/button_10_points_image" />
 
             <ImageView
-                android:id="@+id/imageView49"
+                android:id="@+id/ivDailyQuestsSpaceOne"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/retangulo_branco_editar_perfil_representative" />
 
             <ImageView
-                android:id="@+id/imageView37"
+                android:id="@+id/ivDailyQuestScreenLike"
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
                 android:src="@drawable/quests_like_image" />
 
             <ImageView
-                android:id="@+id/imageView38"
+                android:id="@+id/ivDailyQuestsButtonLike"
                 android:layout_width="475dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/button_5_points_image" />
 
             <ImageView
-                android:id="@+id/imageView50"
+                android:id="@+id/ivDailyQuestsSpaceTwo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/retangulo_branco_editar_perfil_representative" />
 
             <ImageView
-                android:id="@+id/imageView28"
+                android:id="@+id/ivDailyQuestScreenShare"
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
                 android:src="@drawable/quests_invite_image" />
 
             <ImageView
-                android:id="@+id/imageView42"
+                android:id="@+id/ivDailyQuestsButtonShare"
                 android:layout_width="475dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/button_10_points_image" />
