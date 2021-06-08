@@ -2,6 +2,6 @@
 
 Projeto Integrador 2 do curso de Ciência da Computação. 
 
-# Alunos:
+### Alunos:
 
 Amanda, Deborah, Isabella e Matheus.
