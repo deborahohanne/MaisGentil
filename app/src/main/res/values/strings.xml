@@ -35,6 +35,8 @@
     <string name="txtInst2">Acompanhe o que está sendo doado</string>
     <string name="txtNotiEve1">Notícias e eventos</string>
     <string name="txtNotiEve2">Acompanhe a gentileza por aí</string>
+    <string name="txtMeuPerfil">Meu perfil</string>
+    <string name="txtHomeRepresentativeArrecadar">Arrecadar</string>
 
     <string name="txtHomeRepr">Olá, representante!</string>
     <string name="txtDoacoes1">Doações</string>
@@ -60,6 +62,10 @@
     <string name="txt3forgot">Esqueceu sua senha?</string>
     <string name="txt3main">Ir para +Gentil</string>
     <string name="title_activity_chatbot">ChatbotActivity</string>
+    <string name="txtHomeVoluntaryPublicacoes">Publicações</string>
+    <string name="txtHomeVoluntaryEventos">Eventos</string>
+    <string name="txtHomeVoluntaryItensDoar">Itens a doar</string>
+    <string name="txtHomeVoluntaryEditButton">Editar perfil</string>
 
     <string name="title2on">Ajude o próximo enquanto se diverte</string>
     <string name="txt2on">Com o +Gentil é muito mais fácil ser gentil: você ajuda brincando. Participe dos desafios, atinja novos níveis e faça com que as campanhas e ações voluntárias cheguem a mais pessoas.</string>
@@ -83,5 +89,6 @@
     <string name="txtMissoesDiarias">Missões diárias</string>
     <string name="txtConquistas">Conquistas</string>
     <string name="txtStoreTitle">Resgate seus pontos</string>
+
 
 </resources>
