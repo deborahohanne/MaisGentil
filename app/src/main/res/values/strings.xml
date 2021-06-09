@@ -43,6 +43,10 @@
     <string name="txtDoacoes2">Veja o que os voluntários estão doando</string>
     <string name="txtArrecad1">O que está precisando?</string>
     <string name="txtArrecad2">Recursos materiais que a sua instituição está precisando arrecadar</string>
+    <string name="txtDonationScreenTitle">Meus anúncios</string>
+    <string name="txtDonationScreenDoar">A doar</string>
+    <string name="txtDonationScreenAtivos">Ativos</string>
+    <string name="txtDonationScreenPendente">Pendente</string>
 
 
     <string name="txtJaTemUmaConta1">Já tem uma conta?</string>
@@ -66,7 +70,7 @@
     <string name="txtHomeVoluntaryEventos">Eventos</string>
     <string name="txtHomeVoluntaryItensDoar">Itens a doar</string>
     <string name="txtHomeVoluntaryEditButton">Editar perfil</string>
-
+    <string name="txtNoticias">Notícias</string>
     <string name="title2on">Ajude o próximo enquanto se diverte</string>
     <string name="txt2on">Com o +Gentil é muito mais fácil ser gentil: você ajuda brincando. Participe dos desafios, atinja novos níveis e faça com que as campanhas e ações voluntárias cheguem a mais pessoas.</string>
 
