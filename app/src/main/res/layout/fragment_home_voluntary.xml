@@ -4,254 +4,255 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-        <data>
-            <variable
-                name="codigoFragmento"
-                type="br.iesb.mobile.gentil.ui.fragment.voluntary.HomeVoluntaryFragment" />
-        </data>
+    <data>
+        <variable
+            name="codigoFragmento"
+            type="br.iesb.mobile.gentil.ui.fragment.voluntary.HomeVoluntaryFragment" />
+    </data>
 
-        <androidx.coordinatorlayout.widget.CoordinatorLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEEEEE"
+        tools:context=".ui.activity.representative.HomeRepresentativeActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#EEEEEE"
-            tools:context=".ui.activity.representative.HomeRepresentativeActivity">
+            tools:context=".ui.activity.voluntary.HomeVoluntaryActivity">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:context=".ui.activity.voluntary.HomeVoluntaryActivity">
+            <ImageView
+                android:id="@+id/ivHomeVoluntaryLeaveButton"
+                android:layout_width="50dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="7dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.955"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logout" />
 
-                <ImageView
-                    android:id="@+id/ivLogoutHomeVol"
-                    android:layout_width="50dp"
-                    android:layout_height="24dp"
-                    android:layout_marginTop="7dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.955"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/logout" />
+            <ImageView
+                android:id="@+id/ivProfileBackgroundVoluntary"
+                android:layout_width="323dp"
+                android:layout_height="250dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.057"
+                app:srcCompat="@drawable/menubrancohome" />
 
-                <ImageView
-                    android:id="@+id/ivHomeVolBloco"
-                    android:layout_width="323dp"
-                    android:layout_height="250dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.083"
-                    app:srcCompat="@drawable/menubrancohome" />
-
-                <TextView
-                    android:id="@+id/tvHomeVolHello"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppinssemibold"
-                    android:text="@string/txtHomeVoluntario"
-                    android:textColor="#463F3F"
-                    android:textSize="20sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.498"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.192" />
-
-                <ImageView
-                    android:id="@+id/ivHomeVolAvatar"
-                    android:layout_width="84dp"
-                    android:layout_height="78dp"
-                    android:layout_marginTop="56dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.498"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/avatarhomevoluntario" />
-
-                <ImageView
-                    android:id="@+id/ivHomeVolGifts"
-                    android:layout_width="90dp"
-                    android:layout_height="70dp"
-                    android:layout_marginTop="192dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.299"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/gift_recompensas" />
-
-                <ImageView
-                    android:id="@+id/ivHomeVolTime"
-                    android:layout_width="100dp"
-                    android:layout_height="70dp"
-                    android:layout_marginTop="192dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.704"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/doeseutempo" />
-
-                <TextView
-                    android:id="@+id/tvHomeVolForYou"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:fontFamily="@font/poppinssemibold"
-                    android:text="@string/txtForYou"
-                    android:textColor="#1BA879"
-                    android:textSize="20sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.116"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/ivHomeVolBloco" />
-
-                <ImageView
-                    android:id="@+id/ivHomeVolDoacoes"
-                    android:layout_width="360dp"
-                    android:layout_height="130dp"
-                    android:layout_marginTop="36dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.49"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/ivHomeVolBloco"
-                    app:srcCompat="@drawable/suasdoacoes" />
-
-                <TextView
-                    android:id="@+id/tvHomeVolDoacoes"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="340dp"
-                    android:fontFamily="@font/poppinssemibold"
-                    android:text="@string/txtSuasDoacoes1"
-                    android:textColor="#222121"
-                    android:textSize="18sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.374"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <TextView
-                    android:id="@+id/tvHomeVolInst"
-                    android:layout_width="268dp"
-                    android:layout_height="16dp"
-                    android:layout_marginBottom="324dp"
-                    android:fontFamily="@font/poppinsregular"
-                    android:text="@string/txtSuasDoacoes2"
-                    android:textSize="12sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.741"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <ImageView
-                    android:id="@+id/ivHomeVolInst"
-                    android:layout_width="360dp"
-                    android:layout_height="130dp"
-                    android:layout_marginBottom="172dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.49"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/blocoinsthomevoluntario" />
-
-                <TextView
-                    android:id="@+id/tvHomeVolDoacoes2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="214dp"
-                    android:fontFamily="@font/poppinsregular"
-                    android:text="@string/txtInst2"
-                    android:textSize="12sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.582"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <TextView
-                    android:id="@+id/tvHomeVolInst2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="188dp"
-                    android:fontFamily="@font/poppinssemibold"
-                    android:text="@string/txtInst1"
-                    android:textColor="#222121"
-                    android:textSize="18sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.451"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/ivHomeVolInst"
-                    app:layout_constraintVertical_bias="0.452" />
-
-                <ImageView
-                    android:id="@+id/ivHomeVolNoticias"
-                    android:layout_width="360dp"
-                    android:layout_height="130dp"
-                    android:layout_marginBottom="68dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.49"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/bloconoticiashomevoluntario" />
-
-                <TextView
-                    android:id="@+id/tvHomeVolNoticias"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="137dp"
-                    android:fontFamily="@font/poppinssemibold"
-                    android:text="@string/txtNotiEve1"
-                    android:textColor="#222121"
-                    android:textSize="18sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.434"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <TextView
-                    android:id="@+id/tvHomeVolGentileza"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="115dp"
-                    android:fontFamily="@font/poppinsregular"
-                    android:text="@string/txtNotiEve2"
-                    android:textSize="12sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.471"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <com.google.android.material.bottomappbar.BottomAppBar
-                android:id="@+id/bottomAppBar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                app:contentInsetLeft="0dp"
-                app:contentInsetStart="0dp"
-                app:fabCradleMargin="0dp"
-                app:fabCradleRoundedCornerRadius="10dp"
-                app:fabCradleVerticalOffset="0dp">
-
-                <com.google.android.material.bottomnavigation.BottomNavigationView
-                    android:id="@+id/bottomNavigationView"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@android:color/transparent"
-                    app:elevation="0dp"
-                    app:menu="@menu/bottom_bar_menu" />
-            </com.google.android.material.bottomappbar.BottomAppBar>
-
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/fab"
+            <TextView
+                android:id="@+id/tvHomeVoluntaryHelloName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/bottom_menu_plus"
-                app:backgroundTint="#4992EB"
-                app:layout_anchor="@id/bottomAppBar" />
+                android:fontFamily="@font/poppinssemibold"
+                android:text="@string/txtHomeVoluntario"
+                android:textColor="#463F3F"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView22"
+                app:layout_constraintEnd_toEndOf="@+id/ivProfileBackgroundVoluntary"
+                app:layout_constraintStart_toStartOf="@+id/ivProfileBackgroundVoluntary"
+                app:layout_constraintTop_toBottomOf="@+id/ivHomeVoluntaryProfileImage" />
+
+            <ImageView
+                android:id="@+id/ivHomeVoluntaryProfileImage"
+                android:layout_width="84dp"
+                android:layout_height="78dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="@+id/ivProfileBackgroundVoluntary"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="@+id/ivProfileBackgroundVoluntary"
+                app:layout_constraintTop_toTopOf="@+id/ivProfileBackgroundVoluntary"
+                app:srcCompat="@drawable/avatarhomevoluntario" />
+
+            <ImageView
+                android:id="@+id/ivHomeVoluntaryRewards"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivProfileBackgroundVoluntary"
+                app:layout_constraintEnd_toStartOf="@+id/ivHomeVoluntaryDonationTime"
+                app:layout_constraintHorizontal_bias="0.612"
+                app:layout_constraintStart_toStartOf="@+id/ivProfileBackgroundVoluntary"
+                app:srcCompat="@drawable/gift_recompensas" />
+
+            <ImageView
+                android:id="@+id/ivHomeVoluntaryDonationTime"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="88dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivProfileBackgroundVoluntary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvHomeVoluntaryHelloName"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/doeseutempo" />
+
+            <TextView
+                android:id="@+id/tvHomeVoluntarySubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="@string/txtForYou"
+                android:textColor="#1BA879"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.119"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivProfileBackgroundVoluntary" />
+
+            <ImageView
+                android:id="@+id/ivHomeVoluntaryBackgroundOne"
+                android:layout_width="360dp"
+                android:layout_height="130dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvHomeVoluntarySubtitle"
+                app:srcCompat="@drawable/suasdoacoes" />
+
+            <TextView
+                android:id="@+id/tvHomeVoluntaryDonationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="@string/txtSuasDoacoes1"
+                android:textColor="#222121"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/ivHomeVoluntaryBackgroundOne"
+                app:layout_constraintHorizontal_bias="0.398"
+                app:layout_constraintStart_toStartOf="@+id/ivHomeVoluntaryBackgroundOne"
+                app:layout_constraintTop_toTopOf="@+id/ivHomeVoluntaryBackgroundOne" />
+
+            <TextView
+                android:id="@+id/tvHomeVoluntaryDonationsText"
+                android:layout_width="268dp"
+                android:layout_height="16dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/txtSuasDoacoes2"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivHomeVoluntaryBackgroundOne"
+                app:layout_constraintEnd_toEndOf="@+id/ivHomeVoluntaryBackgroundOne"
+                app:layout_constraintHorizontal_bias="0.891"
+                app:layout_constraintStart_toStartOf="@+id/ivHomeVoluntaryBackgroundOne"
+                app:layout_constraintTop_toBottomOf="@+id/tvHomeVoluntaryDonationTitle"
+                app:layout_constraintVertical_bias="0.152" />
+
+            <ImageView
+                android:id="@+id/ivHomeVoluntaryBackgroundTwo"
+                android:layout_width="360dp"
+                android:layout_height="130dp"
+                app:layout_constraintBottom_toTopOf="@+id/tvHomeVoluntaryNoticesTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.484"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivHomeVoluntaryBackgroundOne"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/blocoinsthomevoluntario" />
+
+            <TextView
+                android:id="@+id/tvHomeVoluntaryInstitutionsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/txtInst2"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/ivHomeVoluntaryBackgroundThree"
+                app:layout_constraintEnd_toEndOf="@+id/ivHomeVoluntaryBackgroundTwo"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="@+id/ivHomeVoluntaryBackgroundTwo"
+                app:layout_constraintTop_toBottomOf="@+id/tvHomeVoluntaryInstitutionsTitle"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tvHomeVoluntaryInstitutionsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="@string/txtInst1"
+                android:textColor="#222121"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/ivHomeVoluntaryBackgroundTwo"
+                app:layout_constraintStart_toStartOf="@+id/ivHomeVoluntaryBackgroundTwo"
+                app:layout_constraintTop_toTopOf="@+id/ivHomeVoluntaryBackgroundTwo" />
+
+            <ImageView
+                android:id="@+id/ivHomeVoluntaryBackgroundThree"
+                android:layout_width="360dp"
+                android:layout_height="130dp"
+                android:layout_marginBottom="72dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/bloconoticiashomevoluntario" />
+
+            <TextView
+                android:id="@+id/tvHomeVoluntaryNoticesTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="@string/txtNotiEve1"
+                android:textColor="#222121"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/ivHomeVoluntaryBackgroundThree"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="@+id/ivHomeVoluntaryBackgroundThree"
+                app:layout_constraintTop_toTopOf="@+id/ivHomeVoluntaryBackgroundThree" />
+
+            <TextView
+                android:id="@+id/tvHomeVoluntaryNoticesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/txtNotiEve2"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivHomeVoluntaryBackgroundThree"
+                app:layout_constraintEnd_toEndOf="@+id/ivHomeVoluntaryBackgroundThree"
+                app:layout_constraintStart_toStartOf="@+id/ivHomeVoluntaryBackgroundThree"
+                app:layout_constraintTop_toBottomOf="@+id/tvHomeVoluntaryNoticesTitle"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:fabCradleMargin="0dp"
+            app:fabCradleRoundedCornerRadius="10dp"
+            app:fabCradleVerticalOffset="0dp">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                app:elevation="0dp"
+                app:menu="@menu/bottom_bar_menu" />
+        </com.google.android.material.bottomappbar.BottomAppBar>
 
 
-        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bottom_menu_plus"
+            app:backgroundTint="#4992EB"
+            app:layout_anchor="@id/bottomAppBar" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>

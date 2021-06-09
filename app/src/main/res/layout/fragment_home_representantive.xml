@@ -16,95 +16,89 @@
         tools:context=".ui.activity.representative.HomeRepresentativeActivity">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:backgroundTint="@color/background"
             tools:context=".ui.activity.voluntary.HomeVoluntaryActivity">
 
             <ImageView
-                android:id="@+id/ivLogoutHomeRepr"
+                android:id="@+id/ivHomeRepLeaveButton"
                 android:layout_width="50dp"
                 android:layout_height="24dp"
                 android:layout_marginTop="7dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/ivHomeRepBackgroundProfile"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.93"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0"
                 app:srcCompat="@drawable/logout" />
 
             <TextView
-                android:id="@+id/tvForYouRepr"
+                android:id="@+id/tvHomeRepSubtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="36dp"
-                android:layout_marginBottom="388dp"
+                android:layout_marginTop="4dp"
                 android:fontFamily="@font/poppinssemibold"
                 android:text="@string/txtForYou"
                 android:textColor="#1BA879"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.11"
+                app:layout_constraintHorizontal_bias="0.119"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView20" />
+                app:layout_constraintTop_toBottomOf="@+id/ivHomeRepBackgroundProfile" />
 
             <ImageView
-                android:id="@+id/btHomeReprDoacoes"
+                android:id="@+id/ivHomeRepBackgroundOne"
                 android:layout_width="360dp"
                 android:layout_height="130dp"
-                android:layout_marginTop="72dp"
-                android:layout_marginBottom="268dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="4dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintHorizontal_bias="0.515"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView20"
+                app:layout_constraintTop_toBottomOf="@+id/tvHomeRepSubtitle"
                 app:srcCompat="@drawable/suasdoacoes"
                 tools:ignore="UnknownIdInLayout" />
 
             <ImageView
-                android:id="@+id/ivHomeReprNoticias"
+                android:id="@+id/ivHomeRepBackgroundThree"
                 android:layout_width="360dp"
                 android:layout_height="130dp"
-                android:layout_marginBottom="64dp"
+                android:layout_marginBottom="72dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintHorizontal_bias="0.484"
                 app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/bloconoticiashomevoluntario" />
 
             <TextView
-                android:id="@+id/tvHomeReprNoticias"
+                android:id="@+id/tvHomeVoluntaryNoticesTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="128dp"
                 android:fontFamily="@font/poppinssemibold"
                 android:text="@string/txtNotiEve1"
                 android:textColor="#222121"
                 android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.459"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintBottom_toBottomOf="@+id/tvHomeVoluntaryNoticesText"
+                app:layout_constraintEnd_toEndOf="@+id/ivHomeRepBackgroundThree"
+                app:layout_constraintStart_toStartOf="@+id/ivHomeRepBackgroundThree"
+                app:layout_constraintTop_toTopOf="@+id/ivHomeRepBackgroundThree" />
 
             <TextView
-                android:id="@+id/tvHomeReprGentileza"
+                android:id="@+id/tvHomeVoluntaryNoticesText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="43dp"
                 android:fontFamily="@font/poppinsregular"
                 android:text="@string/txtNotiEve2"
                 android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/ivHomeRepBackgroundThree"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.497"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.849" />
+                app:layout_constraintHorizontal_bias="0.488"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <ImageView
-                android:id="@+id/tvMenuHomeRepr"
+                android:id="@+id/ivHomeRepBackgroundProfile"
                 android:layout_width="323dp"
                 android:layout_height="256dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -125,113 +119,109 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/ivDoacoesRepr"
+                android:id="@+id/ivHomeRepBackgroundTwo"
                 android:layout_width="360dp"
                 android:layout_height="130dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="6dp"
+                app:layout_constraintBottom_toTopOf="@+id/ivHomeRepBackgroundThree"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintHorizontal_bias="0.484"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.723"
+                app:layout_constraintTop_toBottomOf="@+id/ivHomeRepBackgroundOne"
                 app:srcCompat="@drawable/backgrounddonations_repr" />
 
             <ImageView
-                android:id="@+id/ivAvaliacoesRepr"
+                android:id="@+id/ivHomeRepAvaliacao"
                 android:layout_width="100dp"
                 android:layout_height="70dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.29"
+                android:layout_marginBottom="24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivHomeRepBackgroundProfile"
+                app:layout_constraintEnd_toEndOf="@+id/ivHomeRepBackgroundProfile"
+                app:layout_constraintStart_toStartOf="@+id/ivHomeRepBackgroundProfile"
                 app:srcCompat="@drawable/avaliacoes_repr" />
 
             <ImageView
-                android:id="@+id/ivHomeReprAvatar"
+                android:id="@+id/ivHomeRepProfileImage"
                 android:layout_width="84dp"
                 android:layout_height="78dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.522"
+                app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.087"
+                app:layout_constraintTop_toTopOf="@+id/ivHomeRepBackgroundProfile"
                 app:srcCompat="@drawable/homerepravatar" />
 
             <TextView
-                android:id="@+id/tvHomeReprHello"
+                android:id="@+id/tvHomeRepHelloName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppinssemibold"
                 android:text="@string/txtHomeRepr"
                 android:textColor="#463F3F"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.53"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.206" />
+                app:layout_constraintBottom_toTopOf="@+id/ivHomeRepAvaliacao"
+                app:layout_constraintEnd_toEndOf="@+id/ivHomeRepBackgroundProfile"
+                app:layout_constraintStart_toStartOf="@+id/ivHomeRepBackgroundProfile"
+                app:layout_constraintTop_toBottomOf="@+id/ivHomeRepProfileImage" />
 
             <TextView
-                android:id="@+id/tvDoacoesHomeRepresentante2"
+                android:id="@+id/tvHomeRepDonationTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppinssemibold"
                 android:text="@string/txtDoacoes1"
                 android:textColor="#222121"
                 android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.338"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.673" />
+                app:layout_constraintBottom_toTopOf="@+id/ivHomeRepBackgroundThree"
+                app:layout_constraintEnd_toEndOf="@+id/ivHomeRepBackgroundTwo"
+                app:layout_constraintHorizontal_bias="0.311"
+                app:layout_constraintStart_toStartOf="@+id/ivHomeRepBackgroundTwo"
+                app:layout_constraintTop_toBottomOf="@+id/ivHomeRepBackgroundOne"
+                app:layout_constraintVertical_bias="0.084" />
 
             <TextView
-                android:id="@+id/tvDoacoesHomeRepresentante3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/tvHomeRepDonationText"
+                android:layout_width="239dp"
+                android:layout_height="19dp"
+                android:layout_marginTop="4dp"
                 android:fontFamily="@font/poppinsregular"
                 android:text="@string/txtDoacoes2"
                 android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.666"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.707" />
+                app:layout_constraintBottom_toBottomOf="@+id/ivHomeRepBackgroundTwo"
+                app:layout_constraintEnd_toEndOf="@+id/ivHomeRepBackgroundTwo"
+                app:layout_constraintHorizontal_bias="0.677"
+                app:layout_constraintStart_toStartOf="@+id/ivHomeRepBackgroundTwo"
+                app:layout_constraintTop_toBottomOf="@+id/tvHomeRepDonationTitle"
+                app:layout_constraintVertical_bias="0.093" />
 
             <TextView
-                android:id="@+id/tvArrecadarRepr"
+                android:id="@+id/tvHomeRepNeedTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppinssemibold"
                 android:text="@string/txtArrecad1"
                 android:textColor="#222121"
                 android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.571"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.512" />
+                app:layout_constraintBottom_toTopOf="@+id/ivHomeRepBackgroundTwo"
+                app:layout_constraintEnd_toEndOf="@+id/ivHomeRepBackgroundOne"
+                app:layout_constraintHorizontal_bias="0.591"
+                app:layout_constraintStart_toStartOf="@+id/ivHomeRepBackgroundOne"
+                app:layout_constraintTop_toTopOf="@+id/ivHomeRepBackgroundOne"
+                app:layout_constraintVertical_bias="0.26" />
 
             <TextView
-                android:id="@+id/tvArrecadarRepr2"
+                android:id="@+id/tvHomeRepNeedText"
                 android:layout_width="243dp"
                 android:layout_height="46dp"
                 android:fontFamily="@font/poppinsregular"
                 android:text="@string/txtArrecad2"
                 android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.666"
+                app:layout_constraintBottom_toTopOf="@+id/ivHomeRepBackgroundTwo"
+                app:layout_constraintEnd_toEndOf="@+id/ivHomeRepBackgroundOne"
+                app:layout_constraintHorizontal_bias="0.731"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.567" />
+                app:layout_constraintTop_toBottomOf="@+id/tvHomeRepNeedTitle"
+                app:layout_constraintVertical_bias="0.0" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
