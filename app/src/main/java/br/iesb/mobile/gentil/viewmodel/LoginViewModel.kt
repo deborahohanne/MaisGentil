@@ -5,15 +5,15 @@ import androidx.lifecycle.AndroidViewModel
 import br.iesb.mobile.gentil.interactor.LoginInteractor
 
 class LoginViewModel(val app: Application) : AndroidViewModel(app) {
-    //variável que chama o interactor
+    // variável interactor: recebe uma instância da classe LoginInteractor
     private val interactor = LoginInteractor(app.applicationContext)
 
-    //função de login que recebe o email, a senha e um callback
+    // função de login que recebe o email, a senha e um callback
     fun login(email: String, password: String, callback: (result: Array<String>) -> Unit) {
-        //como não tem nenhuma verificação responsável pela view model, já chama a função do interactor
+        // como não tem nenhuma verificação responsável pela view model, já chama a função do interactor
         interactor.login(email, password) { result ->
-            // após ter recebido o resultado da interactor, ele faz as verificações necessárias e
-            // mostra a mensagem referente ao resultado ao usuário
+            /* após ter recebido o resultado da interactor, ele faz as verificações necessárias e
+             mostra a mensagem referente ao resultado ao usuário */
             if (result == "OK") {
                 val resultado = arrayOf("OK", "Login efetuado com sucesso!")
                 callback(resultado)

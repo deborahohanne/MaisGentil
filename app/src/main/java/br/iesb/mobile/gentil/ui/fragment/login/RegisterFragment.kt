@@ -2,6 +2,7 @@ package br.iesb.mobile.gentil.ui.fragment.login
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +11,7 @@ import android.widget.Button
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.Toast
+import androidx.databinding.DataBindingUtil.setContentView
 import androidx.navigation.fragment.findNavController
 import br.iesb.mobile.gentil.R
 import br.iesb.mobile.gentil.databinding.FragmentRegisterBinding
@@ -36,7 +38,6 @@ class RegisterFragment : Fragment() {
         // o código define o ciclo de vida do fragmento
         binding.lifecycleOwner = this
 
-
         return binding.root
 
     }
@@ -47,18 +48,22 @@ class RegisterFragment : Fragment() {
         radioGroup = binding.rgSignupOne
         button = binding.btSignUpOne
 
-        button.setOnClickListener { buttonCheck() }
+        button.setOnClickListener { buttonCheck(view) }
 
     }
 
-    private fun buttonCheck() {
-        val intSelectButton: Int = radioGroup!!.checkedRadioButtonId
+    private fun buttonCheck(view: View) {
 
-        if (intSelectButton.equals(rbCheckVoluntario)) {
+        val intSelectButton = radioGroup!!.checkedRadioButtonId
+
+        Log.d("TESTE", "Teste: ${intSelectButton}")
+        radioButton = view.findViewById(intSelectButton)
+
+        if (radioButton.equals(rbCheckVoluntario)) {
             findNavController().navigate(R.id.action_registerFragment_to_registerVoluntaryFragment)
         }
 
-        if (intSelectButton.equals(rbCheckRepresentante)) {
+        if (radioButton.equals(rbCheckRepresentante)) {
             findNavController().navigate(R.id.action_registerFragment_to_registerRepresentativeFragment)
         }
     }

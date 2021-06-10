@@ -104,4 +104,9 @@
     <string name="txtMissoesCompartilhe">Compartilhe 3 publicações ou eventos</string>
 
 
+    <string name="email_required">O campo email está vazio. Por favor preencha!</string>
+    <string name="password_required">O campo password está vazio. Por favor preencha!</string>
+    <string name="invalid_email">O email informado é inválido. Por favor verificar!</string>
+    <string name="password_minimum_length">A senha contém menos de 6 dígitos. Por favor verificar!</string>
+
 </resources>
