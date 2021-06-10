@@ -26,8 +26,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/ivBackgroundProfileGamification" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/ivBackButtonProfileGamification"
@@ -44,20 +43,20 @@
         android:id="@+id/tvProfileNameGamification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivBackgroundProfileGamification" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/iv_gamification_profile_points_background"
         android:layout_width="130dp"
         android:layout_height="80dp"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="208dp"
         android:src="@drawable/retangulo_branco"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="229dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/ivProfileBackgroundDailyQuests"
@@ -75,11 +74,12 @@
         android:id="@+id/ivBackgroundStoreImage"
         android:layout_width="130dp"
         android:layout_height="80dp"
+        android:layout_marginTop="208dp"
         android:src="@drawable/retangulo_branco"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintHorizontal_bias="0.585"
         app:layout_constraintStart_toEndOf="@+id/iv_gamification_profile_points_background"
-        tools:layout_editor_absoluteY="229dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvMeusPontosGamification"
@@ -149,7 +149,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:src="@drawable/Rectangle_background_white"
+        android:src="@drawable/retangulo_branco"
         app:layout_constraintBottom_toTopOf="@+id/ivBackgroundConquests"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
