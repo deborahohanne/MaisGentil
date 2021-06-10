@@ -110,4 +110,8 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
+    /** Maps */
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+    /** CHAVE API: AIzaSyC8Rveo1CUD5X0PGd2CfzrgvOPtXnwvxu0
+     * key=API_KEY */
 }

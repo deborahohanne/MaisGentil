@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.iesb.mobile.gentil" >
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!--  Permissão necessária para recuperar a localização em background quando
+             a versão do Android for igual ou superior à versão 10  -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+
     <application
         android:name=".MaisGentilApp"
         android:allowBackup="true"
@@ -36,6 +42,12 @@
         <activity android:name=".ui.activity.voluntary.RegisterVoluntaryActivity" />
         <activity android:name=".ui.activity.RegisterActivity" />
         <activity android:name=".ui.activity.MaisGentilActivity" />
+
+        <!--  MAPS  -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC8Rveo1CUD5X0PGd2CfzrgvOPtXnwvxu0"/>
+
     </application>
 
 </manifest>
