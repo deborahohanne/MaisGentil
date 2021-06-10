@@ -12,7 +12,7 @@ class LoginViewModel(val app: Application) : AndroidViewModel(app) {
     fun login(email: String, password: String, callback: (result: Array<String>) -> Unit) {
         //como não tem nenhuma verificação responsável pela view model, já chama a função do interactor
         interactor.login(email, password) { result ->
-            //após ter recebido o resultado da interactor, ele faz as verificações necessárias e
+            // após ter recebido o resultado da interactor, ele faz as verificações necessárias e
             // mostra a mensagem referente ao resultado ao usuário
             if (result == "OK") {
                 val resultado = arrayOf("OK", "Login efetuado com sucesso!")

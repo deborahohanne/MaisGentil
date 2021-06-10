@@ -12,10 +12,7 @@ import android.widget.RadioGroup
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import br.iesb.mobile.gentil.R
-import br.iesb.mobile.gentil.databinding.FragmentLoginBinding
 import br.iesb.mobile.gentil.databinding.FragmentRegisterBinding
-import br.iesb.mobile.gentil.ui.activity.representative.RegisterRepresentativeActivity
-import br.iesb.mobile.gentil.ui.activity.voluntary.RegisterVoluntaryActivity
 import kotlinx.android.synthetic.main.activity_register.*
 
 
@@ -34,18 +31,23 @@ class RegisterFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentRegisterBinding.inflate(inflater, container, false)
-
         // o código é a própria classe
         binding.codigoFragmento = this
         // o código define o ciclo de vida do fragmento
         binding.lifecycleOwner = this
 
+
+        return binding.root
+
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
         radioGroup = binding.rgSignupOne
         button = binding.btSignUpOne
 
         button.setOnClickListener { buttonCheck() }
-
-        return binding.root
 
     }
 
