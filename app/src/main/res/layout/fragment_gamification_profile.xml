@@ -4,37 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#E5E5E5"
 
     tools:context=".ui.fragment.gamification.GamificationProfileFragment">
 
     <View
         android:id="@+id/background_profile_gamification"
-        android:layout_width="0dp"
-        android:layout_height="309dp"
-        android:background="@color/back_ground_profile_gamification"
+        android:layout_width="411dp"
+        android:layout_height="290dp"
+        android:background="#B31FBF9F"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/ivBackgroundProfileGamification"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:src="@drawable/elipese_branco_editar_perfil_representative"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/ivProfileImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="88dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="608dp"
         android:src="@drawable/avatarhomevoluntario"
-        app:layout_constraintBottom_toBottomOf="@+id/ivBackgroundProfileGamification"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/ivBackgroundProfileGamification" />
 
@@ -75,8 +66,10 @@
         android:src="@drawable/background_profile_dailyquests"
         app:layout_constraintBottom_toTopOf="@+id/ivBackgroundConquests"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.294"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/background_profile_gamification" />
+        app:layout_constraintTop_toBottomOf="@+id/background_profile_gamification"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/ivBackgroundStoreImage"
@@ -122,9 +115,10 @@
         android:id="@+id/ivBackgroundProfileLevel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="152dp"
         android:src="@drawable/background_nivel_gamification"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvProfileNameGamification" />
 
@@ -135,8 +129,10 @@
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="@+id/ivBackgroundProfileLevel"
         app:layout_constraintEnd_toEndOf="@+id/ivBackgroundProfileLevel"
+        app:layout_constraintHorizontal_bias="0.541"
         app:layout_constraintStart_toStartOf="@+id/ivBackgroundProfileLevel"
-        app:layout_constraintTop_toBottomOf="@+id/tvProfileNameGamification" />
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileNameGamification"
+        app:layout_constraintVertical_bias="0.894" />
 
     <ImageView
         android:id="@+id/ivStoreIconGamification"

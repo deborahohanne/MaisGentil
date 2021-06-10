@@ -89,6 +89,9 @@
     <string name="txtMissoesDiarias">Missões diárias</string>
     <string name="txtConquistas">Conquistas</string>
     <string name="txtStoreTitle">Resgate seus pontos</string>
+    <string name="txtMissoesConvide">Convide 3 amigos a entrar no +Gentil</string>
+    <string name="txtMissoesCurta">Curta 3 publicações</string>
+    <string name="txtMissoesCompartilhe">Compartilhe 3 publicações ou eventos</string>
 
 
 </resources>
