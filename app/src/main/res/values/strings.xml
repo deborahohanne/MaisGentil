@@ -38,6 +38,7 @@
     <string name="txtMeuPerfil">Meu perfil</string>
     <string name="txtHomeRepresentativeArrecadar">Arrecadar</string>
 
+
     <string name="txtHomeRepr">Olá, representante!</string>
     <string name="txtDoacoes1">Doações</string>
     <string name="txtDoacoes2">Veja o que os voluntários estão doando</string>
@@ -64,8 +65,16 @@
     <string name="title_activity_chatbot">ChatbotActivity</string>
     <string name="txtHomeVoluntaryPublicacoes">Publicações</string>
     <string name="txtHomeVoluntaryEventos">Eventos</string>
+
     <string name="txtHomeVoluntaryItensDoar">Itens a doar</string>
     <string name="txtHomeVoluntaryEditButton">Editar perfil</string>
+    <string name="txtVol2">Maria · ONG Coração de Jesus</string>
+    <string name="txtVol3">Brasília · DF · CEP 2929932</string>
+    <string name="txtAnuncio1">Cesta básica</string>
+    <string name="txtAnuncio2">Roupas</string>
+    <string name="txtAnuncio3">Cobertores</string>
+    <string name="txtAnuncio4">Artigos eletrônicos</string>
+
 
     <string name="title2on">Ajude o próximo enquanto se diverte</string>
     <string name="txt2on">Com o +Gentil é muito mais fácil ser gentil: você ajuda brincando. Participe dos desafios, atinja novos níveis e faça com que as campanhas e ações voluntárias cheguem a mais pessoas.</string>
