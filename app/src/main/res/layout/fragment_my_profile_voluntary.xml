@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.voluntary.MyProfileVoluntaryFragment"
+    android:background="@color/background_app_color"
+    >
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white"
+        />
+
+    <ImageView
+        android:id="@+id/ivMyProfileVoluntaryBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
+    <TextView
+        android:id="@+id/tvMyProfileVoluntaryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtMeuPerfil"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="0dp"
+        android:layout_height="326dp"
+        android:background="@color/background_app_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <ImageView
+        android:id="@+id/ivMyProfileVoluntaryBackgroundImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/elipese_branco_editar_perfil_representative"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <ImageView
+        android:id="@+id/ivMyProfileVoluntaryImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/avatarhomevoluntario"
+        app:layout_constraintBottom_toBottomOf="@+id/ivMyProfileVoluntaryBackgroundImage"
+        app:layout_constraintEnd_toEndOf="@+id/ivMyProfileVoluntaryBackgroundImage"
+        app:layout_constraintStart_toStartOf="@+id/ivMyProfileVoluntaryBackgroundImage"
+        app:layout_constraintTop_toTopOf="@+id/ivMyProfileVoluntaryBackgroundImage" />
+
+    <ImageView
+        android:id="@+id/ivMyProfileVoluntaryBackgroundEdit"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/background_nivel_gamification"
+        app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/view5" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="401dp"
+        android:layout_height="262dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="435dp" />
+
+    <TextView
+        android:id="@+id/tvMyProfileVoluntaryEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtHomeVoluntaryEditButton"
+        app:layout_constraintBottom_toBottomOf="@+id/ivMyProfileVoluntaryBackgroundEdit"
+        app:layout_constraintEnd_toEndOf="@+id/ivMyProfileVoluntaryBackgroundEdit"
+        app:layout_constraintStart_toStartOf="@+id/ivMyProfileVoluntaryBackgroundEdit"
+        app:layout_constraintTop_toTopOf="@+id/ivMyProfileVoluntaryBackgroundEdit"
+        app:layout_constraintVertical_bias="0.322" />
+
+    <TextView
+        android:id="@+id/tvMyProfileVoluntaryInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/ivMyProfileVoluntaryBackgroundEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivMyProfileVoluntaryBackgroundGamificationLevel"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <ImageView
+        android:id="@+id/ivMyProfileVoluntaryBackgroundGamificationLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/custom_bt_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/ivMyProfileVoluntaryBackgroundImage" />
+
+    <TextView
+        android:id="@+id/tvMyProfileVoluntaryGamificationLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/ivMyProfileVoluntaryBackgroundGamificationLevel"
+        app:layout_constraintEnd_toEndOf="@+id/ivMyProfileVoluntaryBackgroundGamificationLevel"
+        app:layout_constraintStart_toStartOf="@+id/ivMyProfileVoluntaryBackgroundGamificationLevel"
+        app:layout_constraintTop_toTopOf="@+id/ivMyProfileVoluntaryBackgroundGamificationLevel" />
+
+    <TextView
+        android:id="@+id/tvMyProfileVoluntaryItensDoar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/txtHomeVoluntaryItensDoar"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+    <TextView
+        android:id="@+id/tvMyProfileVoluntaryPublicaçoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtHomeVoluntaryPublicacoes"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
+        app:layout_constraintEnd_toStartOf="@+id/tvMyProfileVoluntaryEventos"
+        app:layout_constraintStart_toEndOf="@+id/tvMyProfileVoluntaryItensDoar"
+        app:layout_constraintTop_toBottomOf="@+id/view5"
+        app:layout_constraintVertical_bias="0.493" />
+
+    <TextView
+        android:id="@+id/tvMyProfileVoluntaryEventos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="@string/txtHomeVoluntaryEventos"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

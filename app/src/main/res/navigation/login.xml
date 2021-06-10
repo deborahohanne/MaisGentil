@@ -25,7 +25,14 @@
         android:id="@+id/registerFragment"
         android:name="br.iesb.mobile.gentil.ui.fragment.login.RegisterFragment"
         android:label="fragment_register"
-        tools:layout="@layout/fragment_register" />
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_registerVoluntaryFragment"
+            app:destination="@id/registerVoluntaryFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_registerRepresentativeFragment"
+            app:destination="@id/registerRepresentativeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/maisGentilFragment"
         android:name="br.iesb.mobile.gentil.ui.fragment.MaisGentilFragment"
@@ -48,4 +55,14 @@
             app:destination="@id/loginFragment" />
     </fragment>
     <include app:graph="@navigation/main" />
+    <fragment
+        android:id="@+id/registerVoluntaryFragment"
+        android:name="br.iesb.mobile.gentil.ui.fragment.login.RegisterVoluntaryFragment"
+        android:label="fragment_register_voluntary"
+        tools:layout="@layout/fragment_register_voluntary" />
+    <fragment
+        android:id="@+id/registerRepresentativeFragment"
+        android:name="br.iesb.mobile.gentil.ui.fragment.login.RegisterRepresentativeFragment"
+        android:label="fragment_register_representative"
+        tools:layout="@layout/fragment_register_representative" />
 </navigation>

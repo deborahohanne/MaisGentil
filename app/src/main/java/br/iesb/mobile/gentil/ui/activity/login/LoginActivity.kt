@@ -18,8 +18,6 @@ import javax.inject.Inject
 //@WithFragmentBindings
 class LoginActivity : AppCompatActivity() {
 
-    @Inject lateinit var auth: FirebaseAuth
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)

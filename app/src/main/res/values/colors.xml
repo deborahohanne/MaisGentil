@@ -12,4 +12,6 @@
     <color name="loading_background">#E5E5E5</color>
     <color name="txt_negrito">#463F3F</color>
     <color name="txt_vermelho">#EF767A</color>
+    <color name="back_ground_profile_gamification">#FFB6F6B9</color>
+    <color name="background_app_color">#E5E5E5</color>
 </resources>
