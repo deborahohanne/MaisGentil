@@ -5,16 +5,46 @@
     android:id="@+id/frameLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E5E5E5"
     tools:context=".ui.fragment.voluntary.DonateVoluntaryFragment">
 
-    <TextView
-        android:id="@+id/tvFragmentoDonate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="FRAGMENT DONATE"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <View
+        android:id="@+id/viewConquestTopbar2"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:background="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivButtonBackConquest2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="@+id/viewConquestTopbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewConquestTopbar" />
+
+    <TextView
+        android:id="@+id/tvConquestsTitle2"
+        android:layout_width="147dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="@string/txtAnuncios"
+        android:textColor="#463F3F"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewConquestTopbar"
+        app:layout_constraintEnd_toEndOf="@+id/viewConquestTopbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView1"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -42,30 +42,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ivProfileBackgroundVoluntary" />
 
-        <ImageView
-            android:id="@+id/ivHomeRepBackgroundOne"
-            android:layout_width="360dp"
-            android:layout_height="130dp"
-            android:layout_marginTop="72dp"
-            android:layout_marginBottom="268dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.509"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ivProfileBackgroundVoluntary"
-            app:srcCompat="@drawable/suasdoacoes"
-            tools:ignore="UnknownIdInLayout" />
 
-        <ImageView
-            android:id="@+id/ivHomeRepBackgroundThree"
-            android:layout_width="360dp"
-            android:layout_height="130dp"
-            android:layout_marginBottom="64dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.509"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/bloconoticiashomevoluntario" />
 
         <TextView
             android:id="@+id/tvHomeVoluntaryNoticesTitle"
@@ -95,16 +72,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.849" />
 
-        <ImageView
-            android:id="@+id/ivHomeRepBackgroundProfile"
-            android:layout_width="323dp"
-            android:layout_height="256dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.084"
-            app:srcCompat="@drawable/menubrancohome" />
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragmentContainerView4"
@@ -116,17 +83,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/ivHomeRepBackgroundTwo"
-            android:layout_width="360dp"
-            android:layout_height="130dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.509"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.723"
-            app:srcCompat="@drawable/backgrounddonations_repr" />
 
         <ImageView
             android:id="@+id/ivHomeRepAvaliacao"

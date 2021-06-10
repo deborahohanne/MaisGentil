@@ -32,17 +32,18 @@
     <string name="txtSuasDoacoes1">Suas doações</string>
     <string name="txtSuasDoacoes2">Veja o que as instituições estão precisando</string>
     <string name="txtInst1">Instituições e ONGs</string>
-    <string name="txtInst2">Acompanhe o que está sendo doado</string>
+    <string name="txtDoacoes3">Acompanhe suas doações</string>
     <string name="txtNotiEve1">Notícias e eventos</string>
     <string name="txtNotiEve2">Acompanhe a gentileza por aí</string>
     <string name="txtMeuPerfil">Meu perfil</string>
     <string name="txtHomeRepresentativeArrecadar">Arrecadar</string>
 
+
     <string name="txtHomeRepr">Olá, representante!</string>
     <string name="txtDoacoes1">Doações</string>
     <string name="txtDoacoes2">Veja o que os voluntários estão doando</string>
     <string name="txtArrecad1">O que está precisando?</string>
-    <string name="txtArrecad2">Recursos materiais que a sua instituição está precisando arrecadar</string>
+    <string name="txtArrecad2">Itens para arrecadar</string>
 
 
     <string name="txtJaTemUmaConta1">Já tem uma conta?</string>
@@ -64,8 +65,17 @@
     <string name="title_activity_chatbot">ChatbotActivity</string>
     <string name="txtHomeVoluntaryPublicacoes">Publicações</string>
     <string name="txtHomeVoluntaryEventos">Eventos</string>
+
     <string name="txtHomeVoluntaryItensDoar">Itens a doar</string>
     <string name="txtHomeVoluntaryEditButton">Editar perfil</string>
+    <string name="txtVol2">Maria · ONG Coração de Jesus</string>
+    <string name="txtVol3">Brasília · DF · CEP 2929932</string>
+    <string name="txtAnuncio1">Cesta básica</string>
+    <string name="txtAnuncio2">Roupas</string>
+    <string name="txtAnuncio3">Cobertores</string>
+    <string name="txtAnuncio4">Artigos eletrônicos</string>
+
+    <string name="txtAnuncios">Meus anúncios</string>
 
     <string name="title2on">Ajude o próximo enquanto se diverte</string>
     <string name="txt2on">Com o +Gentil é muito mais fácil ser gentil: você ajuda brincando. Participe dos desafios, atinja novos níveis e faça com que as campanhas e ações voluntárias cheguem a mais pessoas.</string>
@@ -89,6 +99,9 @@
     <string name="txtMissoesDiarias">Missões diárias</string>
     <string name="txtConquistas">Conquistas</string>
     <string name="txtStoreTitle">Resgate seus pontos</string>
+    <string name="txtMissoesConvide">Convide 3 amigos a entrar no +Gentil</string>
+    <string name="txtMissoesCurta">Curta 3 publicações</string>
+    <string name="txtMissoesCompartilhe">Compartilhe 3 publicações ou eventos</string>
 
 
 </resources>

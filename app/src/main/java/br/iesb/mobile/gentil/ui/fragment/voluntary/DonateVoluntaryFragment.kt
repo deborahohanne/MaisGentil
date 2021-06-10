@@ -10,8 +10,10 @@ import br.iesb.mobile.gentil.R
 
 class DonateVoluntaryFragment : Fragment() {
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
 
     }
 

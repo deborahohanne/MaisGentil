@@ -34,194 +34,158 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/logout" />
 
-            <TextView
-                android:id="@+id/tvHomeRepSubtitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:fontFamily="@font/poppinssemibold"
-                android:text="@string/txtForYou"
-                android:textColor="#1BA879"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.119"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ivHomeRepBackgroundProfile" />
-
-            <ImageView
-                android:id="@+id/ivHomeRepBackgroundOne"
-                android:layout_width="360dp"
-                android:layout_height="130dp"
-                android:layout_marginTop="4dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.515"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvHomeRepSubtitle"
-                app:srcCompat="@drawable/suasdoacoes"
-                tools:ignore="UnknownIdInLayout" />
-
-            <ImageView
-                android:id="@+id/ivHomeRepBackgroundThree"
-                android:layout_width="360dp"
-                android:layout_height="130dp"
-                android:layout_marginBottom="72dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.484"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/bloconoticiashomevoluntario" />
-
-            <TextView
-                android:id="@+id/tvHomeVoluntaryNoticesTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppinssemibold"
-                android:text="@string/txtNotiEve1"
-                android:textColor="#222121"
-                android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="@+id/tvHomeVoluntaryNoticesText"
-                app:layout_constraintEnd_toEndOf="@+id/ivHomeRepBackgroundThree"
-                app:layout_constraintStart_toStartOf="@+id/ivHomeRepBackgroundThree"
-                app:layout_constraintTop_toTopOf="@+id/ivHomeRepBackgroundThree" />
-
-            <TextView
-                android:id="@+id/tvHomeVoluntaryNoticesText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="43dp"
-                android:fontFamily="@font/poppinsregular"
-                android:text="@string/txtNotiEve2"
-                android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="@+id/ivHomeRepBackgroundThree"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.488"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <ImageView
-                android:id="@+id/ivHomeRepBackgroundProfile"
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardHomeRepr"
                 android:layout_width="323dp"
-                android:layout_height="256dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_height="230dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="8dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false"
+                app:contentPadding="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.084"
-                app:srcCompat="@drawable/menubrancohome" />
+                app:strokeWidth="5dp">
 
-            <androidx.fragment.app.FragmentContainerView
-                android:id="@+id/fragmentContainerView4"
-                android:name="br.iesb.mobile.gentil.ui.fragment.representative.HomeRepresentantiveFragment"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
+                <TextView
+                    android:id="@+id/tvHomeReprHelloName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="@string/txtHomeRepr"
+                    android:textColor="#463F3F"
+                    android:textSize="20sp"
+                    android:layout_gravity="center" />
+
+                <ImageView
+                    android:id="@+id/ivHomeReprProfileImage"
+                    android:layout_width="84dp"
+                    android:layout_height="78dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/homerepravatar" />
+
+                <ImageView
+                    android:id="@+id/ivHomeRepAvaliacao"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="bottom|center"
+                    app:srcCompat="@drawable/avaliacoes_repr" />
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardHomeVoluntaryEvents"
+                android:layout_width="363dp"
+                android:layout_height="94dp"
+                android:layout_marginTop="32dp"
+                app:cardBackgroundColor="#FFD1DB"
+                app:cardCornerRadius="27dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="8dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false"
+                app:contentPadding="10dp"
+                app:layout_anchor="@+id/constraintLayout2"
+                app:layout_anchorGravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.479"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardHomeReprDonate">
+
+                <TextView
+                    android:id="@+id/tvHomeVoluntaryNoticesTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center|left"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginBottom="35dp"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="@string/txtNotiEve1"
+                    android:textColor="#222121"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvHomeVoluntaryNoticesText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center|left"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="@string/txtNotiEve2"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/ivIconEvents"
+                    android:layout_width="46dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center|clip_vertical|start"
+                    android:layout_marginLeft="6dp"
+                    app:srcCompat="@drawable/ic_people_voluntary"
+                    tools:layout_editor_absoluteX="274dp"
+                    tools:layout_editor_absoluteY="286dp" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardHomeReprDonate"
+                android:layout_width="363dp"
+                android:layout_height="94dp"
+                android:layout_marginTop="440dp"
+                app:cardBackgroundColor="#B4FFE6"
+                app:cardCornerRadius="27dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="8dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false"
+                app:contentPadding="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent">
 
-            <ImageView
-                android:id="@+id/ivHomeRepBackgroundTwo"
-                android:layout_width="360dp"
-                android:layout_height="130dp"
-                android:layout_marginBottom="6dp"
-                app:layout_constraintBottom_toTopOf="@+id/ivHomeRepBackgroundThree"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.484"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ivHomeRepBackgroundOne"
-                app:srcCompat="@drawable/backgrounddonations_repr" />
+                <ImageView
+                    android:id="@+id/ivIconDonateRepr"
+                    android:layout_width="48dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center|clip_vertical|start"
+                    android:layout_marginLeft="6dp"
+                    app:srcCompat="@drawable/ic_doacao"
+                    tools:layout_editor_absoluteX="139dp"
+                    tools:layout_editor_absoluteY="284dp" />
 
-            <ImageView
-                android:id="@+id/ivHomeRepAvaliacao"
-                android:layout_width="100dp"
-                android:layout_height="70dp"
-                android:layout_marginBottom="24dp"
-                app:layout_constraintBottom_toBottomOf="@+id/ivHomeRepBackgroundProfile"
-                app:layout_constraintEnd_toEndOf="@+id/ivHomeRepBackgroundProfile"
-                app:layout_constraintStart_toStartOf="@+id/ivHomeRepBackgroundProfile"
-                app:srcCompat="@drawable/avaliacoes_repr" />
+                <TextView
+                    android:id="@+id/tvHomeRepDonationTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center|left"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginBottom="35dp"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="@string/txtDoacoes1"
+                    android:textColor="#222121"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="112dp"
+                    tools:layout_editor_absoluteY="499dp" />
 
-            <ImageView
-                android:id="@+id/ivHomeRepProfileImage"
-                android:layout_width="84dp"
-                android:layout_height="78dp"
-                android:layout_marginTop="20dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/ivHomeRepBackgroundProfile"
-                app:srcCompat="@drawable/homerepravatar" />
+                <TextView
+                    android:id="@+id/tvHomeRepDonationText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center|left"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="@string/txtDoacoes2"
+                    android:textSize="12sp" />
 
-            <TextView
-                android:id="@+id/tvHomeRepHelloName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppinssemibold"
-                android:text="@string/txtHomeRepr"
-                android:textColor="#463F3F"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toTopOf="@+id/ivHomeRepAvaliacao"
-                app:layout_constraintEnd_toEndOf="@+id/ivHomeRepBackgroundProfile"
-                app:layout_constraintStart_toStartOf="@+id/ivHomeRepBackgroundProfile"
-                app:layout_constraintTop_toBottomOf="@+id/ivHomeRepProfileImage" />
 
-            <TextView
-                android:id="@+id/tvHomeRepDonationTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppinssemibold"
-                android:text="@string/txtDoacoes1"
-                android:textColor="#222121"
-                android:textSize="18sp"
-                app:layout_constraintBottom_toTopOf="@+id/ivHomeRepBackgroundThree"
-                app:layout_constraintEnd_toEndOf="@+id/ivHomeRepBackgroundTwo"
-                app:layout_constraintHorizontal_bias="0.311"
-                app:layout_constraintStart_toStartOf="@+id/ivHomeRepBackgroundTwo"
-                app:layout_constraintTop_toBottomOf="@+id/ivHomeRepBackgroundOne"
-                app:layout_constraintVertical_bias="0.084" />
-
-            <TextView
-                android:id="@+id/tvHomeRepDonationText"
-                android:layout_width="239dp"
-                android:layout_height="19dp"
-                android:layout_marginTop="4dp"
-                android:fontFamily="@font/poppinsregular"
-                android:text="@string/txtDoacoes2"
-                android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="@+id/ivHomeRepBackgroundTwo"
-                app:layout_constraintEnd_toEndOf="@+id/ivHomeRepBackgroundTwo"
-                app:layout_constraintHorizontal_bias="0.677"
-                app:layout_constraintStart_toStartOf="@+id/ivHomeRepBackgroundTwo"
-                app:layout_constraintTop_toBottomOf="@+id/tvHomeRepDonationTitle"
-                app:layout_constraintVertical_bias="0.093" />
-
-            <TextView
-                android:id="@+id/tvHomeRepNeedTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppinssemibold"
-                android:text="@string/txtArrecad1"
-                android:textColor="#222121"
-                android:textSize="18sp"
-                app:layout_constraintBottom_toTopOf="@+id/ivHomeRepBackgroundTwo"
-                app:layout_constraintEnd_toEndOf="@+id/ivHomeRepBackgroundOne"
-                app:layout_constraintHorizontal_bias="0.591"
-                app:layout_constraintStart_toStartOf="@+id/ivHomeRepBackgroundOne"
-                app:layout_constraintTop_toTopOf="@+id/ivHomeRepBackgroundOne"
-                app:layout_constraintVertical_bias="0.26" />
-
-            <TextView
-                android:id="@+id/tvHomeRepNeedText"
-                android:layout_width="243dp"
-                android:layout_height="46dp"
-                android:fontFamily="@font/poppinsregular"
-                android:text="@string/txtArrecad2"
-                android:textSize="12sp"
-                app:layout_constraintBottom_toTopOf="@+id/ivHomeRepBackgroundTwo"
-                app:layout_constraintEnd_toEndOf="@+id/ivHomeRepBackgroundOne"
-                app:layout_constraintHorizontal_bias="0.731"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvHomeRepNeedTitle"
-                app:layout_constraintVertical_bias="0.0" />
+            </com.google.android.material.card.MaterialCardView>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -253,6 +217,56 @@
             android:src="@drawable/bottom_menu_plus"
             app:backgroundTint="#4992EB"
             app:layout_anchor="@id/bottomAppBar" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardHomeVoluntaryDonate"
+            android:layout_width="363dp"
+            android:layout_height="94dp"
+            android:layout_marginTop="28dp"
+            app:cardBackgroundColor="#D3E7FF"
+            app:cardCornerRadius="27dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="8dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="false"
+            app:contentPadding="10dp"
+            app:layout_anchor="@+id/constraintLayout"
+            app:layout_anchorGravity="center">
+
+            <ImageView
+                android:id="@+id/ivIconDonate"
+                android:layout_width="50dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center|clip_vertical|start"
+                android:layout_marginLeft="6dp"
+                app:srcCompat="@drawable/ic_donate_voluntary"
+                tools:layout_editor_absoluteX="44dp"
+                tools:layout_editor_absoluteY="284dp" />
+
+            <TextView
+                android:id="@+id/tvHomeRepNeedTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center|left"
+                android:layout_marginLeft="65dp"
+                android:layout_marginBottom="35dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="@string/txtArrecad1"
+                android:textColor="#222121"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvHomeRepNeedText"
+                android:layout_width="268dp"
+                android:layout_height="16dp"
+                android:layout_gravity="bottom|center|left"
+                android:layout_marginLeft="65dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/txtArrecad2"
+                android:textSize="12sp" />
+
+        </com.google.android.material.card.MaterialCardView>
 
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>

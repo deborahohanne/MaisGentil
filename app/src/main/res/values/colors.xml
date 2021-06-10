@@ -14,4 +14,6 @@
     <color name="txt_vermelho">#EF767A</color>
     <color name="back_ground_profile_gamification">#FFB6F6B9</color>
     <color name="background_app_color">#E5E5E5</color>
+
+    <color name="underline">#D8D6D6</color>
 </resources>

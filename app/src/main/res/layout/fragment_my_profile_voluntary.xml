@@ -34,7 +34,10 @@
         android:id="@+id/tvMyProfileVoluntaryTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinssemibold"
         android:text="@string/txtMeuPerfil"
+        android:textColor="#463F3F"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/view4"
         app:layout_constraintEnd_toEndOf="@+id/view4"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,12 +45,41 @@
 
     <View
         android:id="@+id/view5"
-        android:layout_width="0dp"
-        android:layout_height="326dp"
+        android:layout_width="417dp"
+        android:layout_height="252dp"
         android:background="@color/background_app_color"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <TextView
+        android:id="@+id/btLoginLogin4"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="460dp"
+        android:background="@drawable/custom_bt_one"
+        android:fontFamily="@font/poppinssemibold"
+        android:gravity="center"
+        android:text="@string/txtHomeVoluntaryEditButton"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.412" />
 
     <ImageView
         android:id="@+id/ivMyProfileVoluntaryBackgroundImage"
@@ -70,97 +102,44 @@
         app:layout_constraintStart_toStartOf="@+id/ivMyProfileVoluntaryBackgroundImage"
         app:layout_constraintTop_toTopOf="@+id/ivMyProfileVoluntaryBackgroundImage" />
 
-    <ImageView
-        android:id="@+id/ivMyProfileVoluntaryBackgroundEdit"
-        android:layout_width="210dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="40dp"
-        android:src="@drawable/background_nivel_gamification"
-        app:layout_constraintBottom_toBottomOf="@+id/view5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="@+id/view5" />
-
-    <View
-        android:id="@+id/view3"
-        android:layout_width="401dp"
-        android:layout_height="262dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="435dp" />
-
-    <TextView
-        android:id="@+id/tvMyProfileVoluntaryEditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/txtHomeVoluntaryEditButton"
-        app:layout_constraintBottom_toBottomOf="@+id/ivMyProfileVoluntaryBackgroundEdit"
-        app:layout_constraintEnd_toEndOf="@+id/ivMyProfileVoluntaryBackgroundEdit"
-        app:layout_constraintStart_toStartOf="@+id/ivMyProfileVoluntaryBackgroundEdit"
-        app:layout_constraintTop_toTopOf="@+id/ivMyProfileVoluntaryBackgroundEdit"
-        app:layout_constraintVertical_bias="0.322" />
 
     <TextView
         android:id="@+id/tvMyProfileVoluntaryInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/ivMyProfileVoluntaryBackgroundEdit"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="@string/txtVol3"
+        app:layout_constraintBottom_toTopOf="@+id/btLoginLogin4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMyProfileVoluntary2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="@string/txtVol2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivMyProfileVoluntaryBackgroundGamificationLevel"
-        app:layout_constraintVertical_bias="0.111" />
-
-    <ImageView
-        android:id="@+id/ivMyProfileVoluntaryBackgroundGamificationLevel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/custom_bt_one"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/view5"
-        app:layout_constraintTop_toBottomOf="@+id/ivMyProfileVoluntaryBackgroundImage" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvMyProfileVoluntaryGamificationLevel"
+        android:id="@+id/tvItensaDOar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="@+id/ivMyProfileVoluntaryBackgroundGamificationLevel"
-        app:layout_constraintEnd_toEndOf="@+id/ivMyProfileVoluntaryBackgroundGamificationLevel"
-        app:layout_constraintStart_toStartOf="@+id/ivMyProfileVoluntaryBackgroundGamificationLevel"
-        app:layout_constraintTop_toTopOf="@+id/ivMyProfileVoluntaryBackgroundGamificationLevel" />
-
-    <TextView
-        android:id="@+id/tvMyProfileVoluntaryItensDoar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="312dp"
+        android:fontFamily="@font/poppinssemibold"
         android:text="@string/txtHomeVoluntaryItensDoar"
-        app:layout_constraintBottom_toTopOf="@+id/view3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view5" />
-
-    <TextView
-        android:id="@+id/tvMyProfileVoluntaryPublicaçoes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/txtHomeVoluntaryPublicacoes"
-        app:layout_constraintBottom_toTopOf="@+id/view3"
-        app:layout_constraintEnd_toStartOf="@+id/tvMyProfileVoluntaryEventos"
-        app:layout_constraintStart_toEndOf="@+id/tvMyProfileVoluntaryItensDoar"
-        app:layout_constraintTop_toBottomOf="@+id/view5"
-        app:layout_constraintVertical_bias="0.493" />
-
-    <TextView
-        android:id="@+id/tvMyProfileVoluntaryEventos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:text="@string/txtHomeVoluntaryEventos"
-        app:layout_constraintBottom_toTopOf="@+id/view3"
+        android:textColor="#463F3F"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view5" />
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

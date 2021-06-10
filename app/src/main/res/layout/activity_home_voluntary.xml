@@ -23,16 +23,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/logout" />
 
-        <ImageView
-            android:id="@+id/ivProfileBackgroundVoluntary"
-            android:layout_width="323dp"
-            android:layout_height="250dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.083"
-            app:srcCompat="@drawable/menubrancohome" />
 
         <TextView
             android:id="@+id/tvHomeVoluntaryHelloName"
@@ -71,16 +61,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/gift_recompensas" />
 
-        <ImageView
-            android:id="@+id/ivHomeVoluntaryDonationTime"
-            android:layout_width="100dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="192dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.704"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/doeseutempo" />
 
         <TextView
             android:id="@+id/tvHomeVoluntarySubtitle"
@@ -96,16 +76,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ivProfileBackgroundVoluntary" />
 
-        <ImageView
-            android:id="@+id/ivHomeVoluntaryBackgroundOne"
-            android:layout_width="360dp"
-            android:layout_height="130dp"
-            android:layout_marginTop="36dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.49"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ivProfileBackgroundVoluntary"
-            app:srcCompat="@drawable/suasdoacoes" />
 
         <TextView
             android:id="@+id/tvHomeVoluntaryDonationTitle"
@@ -134,56 +104,6 @@
             app:layout_constraintHorizontal_bias="0.741"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <ImageView
-            android:id="@+id/ivHomeVoluntaryBackgroundTwo"
-            android:layout_width="360dp"
-            android:layout_height="130dp"
-            android:layout_marginBottom="172dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.49"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/blocoinsthomevoluntario" />
-
-        <TextView
-            android:id="@+id/tvHomeVoluntaryInstitutionsText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="214dp"
-            android:fontFamily="@font/poppinsregular"
-            android:text="@string/txtInst2"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.582"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <TextView
-            android:id="@+id/tvHomeVoluntaryInstitutionsTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="188dp"
-            android:fontFamily="@font/poppinssemibold"
-            android:text="@string/txtInst1"
-            android:textColor="#222121"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.451"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/ivHomeVoluntaryBackgroundTwo"
-            app:layout_constraintVertical_bias="0.452" />
-
-        <ImageView
-            android:id="@+id/ivHomeVoluntaryBackgroundThree"
-            android:layout_width="360dp"
-            android:layout_height="130dp"
-            android:layout_marginBottom="68dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.49"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/bloconoticiashomevoluntario" />
 
         <TextView
             android:id="@+id/tvHomeVoluntaryNoticesTitle"

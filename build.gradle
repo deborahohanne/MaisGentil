@@ -27,6 +27,7 @@ buildscript {
 
         /** Dependency Injection Plugin */
         classpath "com.google.dagger:hilt-android-gradle-plugin:$hiltVersion"
+
     }
 }
 
