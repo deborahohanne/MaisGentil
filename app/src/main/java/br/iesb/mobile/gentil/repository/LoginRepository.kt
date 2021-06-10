@@ -6,7 +6,7 @@ import com.google.firebase.database.FirebaseDatabase
 
 class LoginRepository(private val context: Context) {
 
-    //variável que pega a instância do firebase auth e database respectivamente
+    //variável que pega a instância do firebase auth e database
     private val auth = FirebaseAuth.getInstance()
     private val database = FirebaseDatabase.getInstance()
 
@@ -17,12 +17,12 @@ class LoginRepository(private val context: Context) {
         val operation = auth.signInWithEmailAndPassword(email, password)
 
         //Coloca o listener para quando completar, a gente verificar se teve sucesso ou falha
-        operation.addOnCompleteListener { task ->
-            if (task.isSuccessful) {
+        operation.addOnCompleteListener { result ->
+            if (result.isSuccessful) {
                 callback("OK")
             } else {
                 //variável de erro pode ser nula, caso não encontre a mensagem de erro da tarefa
-                val error = task.exception?.localizedMessage
+                val error = result.exception?.localizedMessage
                 callback(error)
             }
         }
