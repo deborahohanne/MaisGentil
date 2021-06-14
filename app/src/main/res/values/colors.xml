@@ -16,4 +16,5 @@
     <color name="background_app_color">#E5E5E5</color>
 
     <color name="underline">#D8D6D6</color>
+    <color name="darkerGray">#FF444444</color>
 </resources>

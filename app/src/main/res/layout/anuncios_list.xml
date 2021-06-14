@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_view_bg"
+    tools:showIn="@layout/fragment_home_screen_donation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_txt_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            tools:text="F"/>
+
+        <TextView
+            android:id="@+id/tv_txt_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/darkerGray"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/tv_txt_icon"
+            android:layout_alignTop="@+id/tv_txt_icon"
+            android:layout_toStartOf="@id/tv_txt_date"
+            tools:text="Facebook"/>
+
+        <TextView
+            android:id="@+id/tv_txt_subject"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/darkerGray"
+            android:layout_below="@id/tv_txt_user"
+            android:layout_alignStart="@id/tv_txt_user"
+            tools:text="Teste test etes tes ahahahahahahhahahahhatest ets etste ets test etste"/>
+
+        <TextView
+            android:id="@+id/tv_txt_preview"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/darkerGray"
+            android:layout_below="@id/tv_txt_subject"
+            android:layout_alignStart="@id/tv_txt_user"
+            android:layout_marginEnd="24dp"
+            tools:text="EMAIL EMAILe test etes tes ahahahahahahhahahahhatest ets etste ets test etste"/>
+
+        <TextView
+            android:id="@+id/tv_txt_date"
+            android:textColor="@color/darkerGray"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            tools:text="20 mar"/>
+
+        <ImageView
+            android:id="@+id/iv_star_favorite"
+            android:src="@drawable/ic_star_favorite"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
