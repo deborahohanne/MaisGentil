@@ -16,12 +16,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Gentil" >
+        <fragment android:name=".ui.fragment.voluntary.HomeVoluntaryFragment"
+            android:launchMode="singleTop"/>
         <activity android:name=".ui.activity.HomeActivity" >
         </activity>
         <activity android:name=".ui.activity.MainStartActivity" />
         <activity android:name=".ui.activity.ChatbotActivity" />
         <activity android:name=".ui.activity.representative.MyProfileRepresentativeActivity" />
-        <activity android:name=".ui.activity.voluntary.CreateAdVoluntaryActivity" />
+        <activity android:name=".ui.activity.voluntary.CreateAdVoluntaryActivity"
+            android:parentActivityName=".ui.fragment.voluntary.HomeVoluntaryFragment"/>
         <activity android:name=".ui.activity.voluntary.EditProfileVoluntaryActivity" />
         <activity android:name=".ui.activity.voluntary.MyProfileVoluntaryActivity" />
         <activity android:name=".ui.activity.representative.CreateAdRepresentativeActivity" />
