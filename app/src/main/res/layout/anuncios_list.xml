@@ -35,6 +35,7 @@
             android:layout_toEndOf="@+id/tv_txt_icon"
             android:layout_alignTop="@+id/tv_txt_icon"
             android:fontFamily="@font/poppinsregular"
+            android:layout_toStartOf="@id/iv_star_favorite"
             tools:text="Cesta básica"/>
 
         <TextView
@@ -56,7 +57,7 @@
             android:ellipsize="marquee"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="15sp"
             android:textColor="@color/darkerGray"
             android:layout_below="@id/tv_txt_date"
             android:layout_alignStart="@id/tv_txt_title"
@@ -66,8 +67,8 @@
 
         <ImageView
             android:id="@+id/iv_star_favorite"
-            android:src="@drawable/ic_star_favorite"
-            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_settings"
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_width="24dp"
             android:layout_height="24dp"

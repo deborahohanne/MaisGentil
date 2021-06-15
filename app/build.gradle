@@ -109,6 +109,8 @@ dependencies {
     /** ViewPager Dots Indicator */
     implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
 
+    implementation 'com.github.moove-it:fakeit:v0.7'
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
