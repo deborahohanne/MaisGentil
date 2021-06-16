@@ -22,4 +22,34 @@ class LoginInteractor(private val context: Context) {
         }
     }
 
+    fun forgot(email: String, callback: (result: String?) -> Unit) {
+        if (email.isEmpty()) {
+            callback("VAZIO")
+        } else {
+            repository.forgot(email, callback)
+        }
+    }
+
+    fun registerUser(
+        email: String,
+        password: String,
+        confirmPassword: String,
+        callback: (result: String?) -> Unit
+    ) {
+        //Faz a verificação necessária (regras de negócio)
+        //Se estiver tudo ok (else), ele chama a função do repository
+        if (email.isEmpty() || password.isEmpty() || confirmPassword.isEmpty()) {
+            callback("VAZIO")
+        } else if (password.length < 6) {
+            callback("SENHA")
+        } else if (password != confirmPassword) {
+            callback("SENHAS")
+        } else {
+            //Como o resultado vai vir da repository e não precisa fazer nenhuma verificação
+            // do que vem de la, passa-se o callback como parâmetro para a função do repository
+            // já fazer o feedback pra view model
+            repository.registerUser(email, password, callback)
+        }
+    }
+
 }
