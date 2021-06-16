@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_view_bg"
+    tools:showIn="@layout/fragment_home_screen_donation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_txt_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            tools:text="Foto"/>
+
+        <TextView
+            android:id="@+id/tv_txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/darkerGray"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/tv_txt_icon"
+            android:layout_alignTop="@+id/tv_txt_icon"
+            android:fontFamily="@font/poppinsregular"
+            android:layout_toStartOf="@id/iv_star_favorite"
+            tools:text="Cesta básica"/>
+
+        <TextView
+            android:id="@+id/tv_txt_date"
+            android:textColor="@color/evenlighterGray"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_below="@id/tv_txt_title"
+            android:layout_alignStart="@id/tv_txt_title"
+            android:fontFamily="@font/poppinsregular"
+            tools:text="20 mar"/>
+
+        <TextView
+            android:id="@+id/tv_txt_preview"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/darkerGray"
+            android:layout_below="@id/tv_txt_date"
+            android:layout_alignStart="@id/tv_txt_title"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/poppinsregular"
+            tools:text="Estou doando 3 cestas básicas com alimentos não perecíveis, contendo: 3 arroz, 3 feijão."/>
+
+        <ImageView
+            android:id="@+id/iv_star_favorite"
+            android:src="@drawable/ic_settings"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
