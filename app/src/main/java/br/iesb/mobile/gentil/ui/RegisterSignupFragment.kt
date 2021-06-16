@@ -1,11 +1,10 @@
-package br.iesb.mobile.gentil.ui.fragment.voluntary
+package br.iesb.mobile.gentil.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.RadioButton
 import br.iesb.mobile.gentil.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -15,10 +14,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [EditProfileVoluntaryFragment.newInstance] factory method to
+ * Use the [RegisterSignINFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class EditProfileVoluntaryFragment : Fragment() {
+class RegisterSignINFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -36,7 +35,7 @@ class EditProfileVoluntaryFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_edit_profile_voluntary, container, false)
+        return inflater.inflate(R.layout.fragment_register_signup, container, false)
     }
 
     companion object {
@@ -46,39 +45,16 @@ class EditProfileVoluntaryFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment EditProfileVoluntaryFragment.
+         * @return A new instance of fragment RegisterSignINFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            EditProfileVoluntaryFragment().apply {
+            RegisterSignINFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
                 }
             }
-    }
-
-    fun onRadioButtonClicked(view: View) {
-        if (view is RadioButton) {
-            // Is the button now checked?
-            val checked = view.isChecked
-
-            // Check which radio button was clicked
-            when (view.getId()) {
-                R.id.genero_outro ->
-                    if (checked) {
-                        // Gênero prefiro não informar
-                    }
-                R.id.genero_masculino ->
-                    if (checked) {
-                        // Gênero masculino
-                    }
-                R.id.genero_feminino ->
-                    if (checked) {
-                        // Gênero feminino
-                    }
-            }
-        }
     }
 }

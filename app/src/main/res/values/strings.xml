@@ -26,6 +26,7 @@
     <string name="txtCNPJdaInstituiçao">CNPJ da Instituição</string>
     <string name="txtNomeRepresentante">Nome do Representante</string>
     <string name="txtCPFRepresentante">CPF do Representante</string>
+    <string name="txtRegistrarse">Crie sua conta</string>
 
     <string name="txtHomeVoluntario">Olá, voluntário!</string>
     <string name="txtForYou">Para você</string>

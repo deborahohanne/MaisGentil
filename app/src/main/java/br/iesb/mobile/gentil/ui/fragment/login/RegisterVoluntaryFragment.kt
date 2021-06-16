@@ -5,8 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.RadioButton
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
+import br.iesb.mobile.gentil.R
 import br.iesb.mobile.gentil.databinding.FragmentRegisterVoluntaryBinding
 import br.iesb.mobile.gentil.viewmodel.LoginViewModel
 
@@ -50,5 +52,26 @@ class RegisterVoluntaryFragment : Fragment() {
         }
 
     }
+    fun onRadioButtonClicked(view: View) {
+        if (view is RadioButton) {
+            // Is the button now checked?
+            val checked = view.isChecked
 
+            // Check which radio button was clicked
+            when (view.getId()) {
+                R.id.genero_outro ->
+                    if (checked) {
+                        // Gênero prefiro não informar
+                    }
+                R.id.genero_masculino ->
+                    if (checked) {
+                        // Gênero masculino
+                    }
+                R.id.genero_feminino ->
+                    if (checked) {
+                        // Gênero feminino
+                    }
+            }
+        }
+    }
 }
