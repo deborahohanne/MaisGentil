@@ -32,7 +32,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.activity.representative.RegisterRepresentativeActivity" />
-        <activity android:name=".ui.activity.login.ForgotActivity" />
         <activity android:name=".ui.activity.voluntary.RegisterVoluntaryActivity" />
         <activity android:name=".ui.activity.RegisterActivity" />
         <activity android:name=".ui.activity.MaisGentilActivity" />
