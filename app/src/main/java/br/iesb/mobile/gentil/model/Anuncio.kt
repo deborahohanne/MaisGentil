@@ -4,7 +4,7 @@ data class Anuncio(
     val title: String,
     val preview: String,
     val date: String,
-    var selected: Boolean = false
+    val image: String
 )
 
 class AnuncioBuilder {
@@ -12,7 +12,7 @@ class AnuncioBuilder {
     var preview: String = ""
     var date: String = ""
 
-    fun build() : Anuncio = Anuncio(title, preview, date, false)
+    fun build() : Anuncio = Anuncio(title, preview, date)
 }
 
 fun anuncio(block: AnuncioBuilder.() -> Unit): Anuncio = AnuncioBuilder().apply(block).build()
