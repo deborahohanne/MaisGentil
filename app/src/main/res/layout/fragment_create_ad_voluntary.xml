@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.voluntary.CreateAdVoluntaryFragment">
+
+
+        <ImageView
+            android:id="@+id/ivVoltarEditarPerfilVoluntary2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tvMeuPerfilVoluntary3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="@string/txtAnuncios3"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.598"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etTituloAnuncio"
+            android:layout_width="364dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/custom_input2"
+            android:drawablePadding="18dp"
+            android:ems="10"
+            android:hint="@string/txtTituloAnuncio"
+            android:inputType="textPersonName"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvMeuPerfilVoluntary3" />
+
+        <EditText
+            android:id="@+id/etDescricaoAnuncio"
+            android:layout_width="364dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/custom_input2"
+            android:drawablePadding="18dp"
+            android:ems="10"
+            android:hint="@string/txtDescricaoAnuncio"
+            android:inputType="textPersonName"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etTituloAnuncio" />
+
+        <TextView
+            android:id="@+id/tvCategoriaAnuncio"
+            android:layout_width="83dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="@string/txtCategoriaAnuncio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ad_UF" />
+
+        <Spinner
+            android:id="@+id/ad_categoria"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCategoriaAnuncio" />
+
+        <TextView
+            android:id="@+id/tvQtdAnuncio"
+            android:layout_width="116dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="@string/txtQuantidadeAnuncio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.077"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ad_categoria" />
+
+        <Spinner
+            android:id="@+id/ad_quantidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvQtdAnuncio" />
+
+        <TextView
+            android:id="@+id/tvUFAnuncio"
+            android:layout_width="83dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="@string/txtUFAnuncio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etDescricaoAnuncio" />
+
+        <Spinner
+            android:id="@+id/ad_UF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvUFAnuncio" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="135dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/rectangle_green_bar" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="137dp"
+            android:layout_height="44dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageButton1"
+            app:srcCompat="@drawable/retangulo_branco" />
+
+        <TextView
+            android:id="@+id/tvSaveButtom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="@string/txtSalvar"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton1"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton1"
+            app:layout_constraintStart_toStartOf="@+id/imageButton1"
+            app:layout_constraintTop_toTopOf="@+id/imageButton1" />
+
+        <TextView
+            android:id="@+id/tvBackButtom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="@string/txtVoltar"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="@+id/imageButton2"
+            app:layout_constraintTop_toTopOf="@+id/imageButton2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

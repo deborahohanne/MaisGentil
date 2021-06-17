@@ -50,8 +50,7 @@
             android:textColor="@color/txt_vermelho"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/tvLoginThree" />
+            app:layout_constraintHorizontal_bias="0.5" />
 
         <TextView
             android:id="@+id/tvLoginThree3"
@@ -62,49 +61,8 @@
             android:fontFamily="@font/poppinsregular"
             android:text="@string/txtJaTemUmaConta1"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/tvLoginLinked"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent" />
-
-        <TextView
-            android:id="@+id/tvLoginTwo3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="25dp"
-            android:fontFamily="@font/poppinsbold"
-            android:text="@string/txt3forgot"
-            android:textColor="@color/txt_vermelho"
-            app:layout_constraintBottom_toTopOf="@+id/btLoginLogin"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline2"
-            app:layout_constraintVertical_bias="1.0" />
-
-        <EditText
-            android:id="@+id/etEmailAddressLogin3"
-            android:layout_width="345dp"
-            android:layout_height="58dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginBottom="8dp"
-            android:background="@drawable/custom_input"
-            android:drawableStart="@drawable/email"
-            android:drawablePadding="18dp"
-            android:ems="10"
-            android:fontFamily="@font/poppinsregular"
-            android:hint="@string/txtEmail"
-            android:inputType="textEmailAddress"
-            android:paddingStart="28dp"
-            android:paddingEnd="28dp"
-            android:textAlignment="textStart"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toTopOf="@+id/etPasswordLogin"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4"
-            app:layout_constraintVertical_bias="0.076" />
 
         <EditText
             android:id="@+id/etPasswordLogin3"
@@ -123,7 +81,6 @@
             android:paddingEnd="28dp"
             android:textAlignment="textStart"
             android:textSize="16sp"
-            app:layout_constraintBottom_toTopOf="@+id/tvLoginTwo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -133,10 +90,9 @@
             android:id="@+id/imageView36"
             android:layout_width="263dp"
             android:layout_height="190dp"
-            android:layout_marginTop="40dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvLoginOne"
+            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/login_image_one" />
 
         <TextView
@@ -168,19 +124,21 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#EEEEEE"
-            tools:context=".ui.activity.login.LoginActivity">
+            tools:context=".ui.activity.login.LoginActivity"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="-32dp">
 
             <ImageView
                 android:id="@+id/btforgotTrueLogin"
                 android:layout_width="54dp"
                 android:layout_height="47dp"
+                android:onClick="@{()->codigoFragmento.activity.onBackPressed()}"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.044"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.023"
-                android:onClick="@{()->codigoFragmento.activity.onBackPressed()}"
                 app:srcCompat="@drawable/back" />
 
             <TextView
@@ -211,6 +169,7 @@
                 android:layout_width="345dp"
                 android:layout_height="58dp"
                 android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
                 android:layout_marginEnd="32dp"
                 android:background="@drawable/custom_input"
                 android:drawableStart="@drawable/lock"
@@ -223,20 +182,17 @@
                 android:paddingEnd="28dp"
                 android:textAlignment="textStart"
                 android:textSize="16sp"
-                app:layout_constraintBottom_toTopOf="@+id/tvLoginTwo"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.958" />
+                app:layout_constraintTop_toBottomOf="@+id/etEmailAddressLogin" />
 
             <EditText
                 android:id="@+id/etEmailAddressLogin"
                 android:layout_width="345dp"
                 android:layout_height="58dp"
                 android:layout_marginStart="32dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="56dp"
                 android:layout_marginEnd="32dp"
-                android:layout_marginBottom="8dp"
                 android:background="@drawable/custom_input"
                 android:drawableStart="@drawable/email"
                 android:drawablePadding="18dp"
@@ -248,33 +204,29 @@
                 android:paddingEnd="28dp"
                 android:textAlignment="textStart"
                 android:textSize="16sp"
-                app:layout_constraintBottom_toTopOf="@+id/etPasswordLogin"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView4"
-                app:layout_constraintVertical_bias="0.076" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
             <TextView
                 android:id="@+id/tvLoginTwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="25dp"
+                android:layout_marginBottom="16dp"
                 android:fontFamily="@font/poppinsbold"
+                android:onClick="@{codigoFragmento::IrTelaEsqueceuSenha}"
                 android:text="@string/txt3forgot"
                 android:textColor="@color/txt_vermelho"
-                android:onClick="@{codigoFragmento::IrTelaEsqueceuSenha}"
                 app:layout_constraintBottom_toTopOf="@+id/btLoginLogin"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/guideline2"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/btLoginLogin"
                 android:layout_width="345dp"
                 android:layout_height="58dp"
-                android:layout_marginBottom="84dp"
+                android:layout_marginBottom="48dp"
                 android:background="@drawable/custom_bt_one"
                 android:fontFamily="@font/poppinssemibold"
                 android:gravity="center"
@@ -292,6 +244,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 app:layout_constraintGuide_percent="0.65" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
