@@ -86,8 +86,7 @@ class LoginViewModel(val app: Application) : AndroidViewModel(app) {
         callback: (result: Array<String>) -> Unit
     ) {
         interactor.registerUser(email, password, confirmPassword) { result ->
-            //após ter recebido o resultado da interactor, ele faz as verificações necessárias e
-            // mostra a mensagem referente ao resultado ao usuário
+
             if (result == "OK") {
                 val resultado = arrayOf("OK", "Cadastro efetuado com sucesso!")
                 callback(resultado)
@@ -127,6 +126,5 @@ class LoginViewModel(val app: Application) : AndroidViewModel(app) {
             }
         }
     }
-
 
 }
