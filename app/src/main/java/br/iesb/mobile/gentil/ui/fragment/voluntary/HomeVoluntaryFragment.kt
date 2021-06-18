@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import br.iesb.mobile.gentil.R
 
 
-
 class HomeVoluntaryFragment : Fragment() {
 
 //    private lateinit var binding: FragmentHomeVoluntaryBinding

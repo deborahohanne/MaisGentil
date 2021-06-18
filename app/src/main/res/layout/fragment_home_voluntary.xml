@@ -201,8 +201,8 @@
 
                 <ImageView
                     android:id="@+id/ivIconDonate"
-                    android:layout_width="50dp"
-                    android:layout_height="47dp"
+                    android:layout_width="48dp"
+                    android:layout_height="45dp"
                     android:layout_gravity="center|clip_vertical|start"
                     android:layout_marginLeft="6dp"
                     app:srcCompat="@drawable/ic_donate_voluntary"
@@ -236,6 +236,11 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <FrameLayout
+            android:id="@+id/fl_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above = "@id/bottomNavigationView"/>
 
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/bottomAppBar"
