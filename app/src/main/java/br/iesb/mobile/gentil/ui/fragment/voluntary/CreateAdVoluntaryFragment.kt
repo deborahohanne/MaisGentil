@@ -21,14 +21,10 @@ private const val ARG_PARAM2 = "param2"
  * Use the [CreateAdVoluntaryFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class CreateAdVoluntaryFragment : Fragment(), AdapterView.OnItemSelectedListener {
+class CreateAdVoluntaryFragment : Fragment(){
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-
-    lateinit var categoria: Spinner
-    lateinit var estado: Spinner
-    lateinit var quantidade: Spinner
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,89 +32,6 @@ class CreateAdVoluntaryFragment : Fragment(), AdapterView.OnItemSelectedListener
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
-        
-        categoria = findViewById(R.id.ad_categoria) as Spinner
-        categoria.onItemSelectedListener = this
-        estado = findViewById(R.id.ad_UF) as Spinner
-        estado.onItemSelectedListener = this
-        quantidade = findViewById(R.id.ad_quantidade) as Spinner
-        quantidade.onItemSelectedListener = this
-
-
-        ArrayAdapter.createFromResource(this, R.array.categorias, android.R.layout.simple_spinner_item
-        ).also { adapter ->
-            // Specify the layout to use when the list of choices appears
-            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            // Apply the adapter to the spinner
-            categoria.adapter = adapter
-        }
-
-
-        categoria.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
-            override fun onNothingSelected(parent: AdapterView<*>?) {
-                TODO("Not yet implemented")
-            }
-
-            override fun onItemSelected(
-                parent: AdapterView<*>?,
-                view: View?,
-                position: Int,
-                id: Long
-            ) {
-                TODO("Not yet implemented")
-            }
-        }
-
-        ArrayAdapter.createFromResource(this, R.array.estados, android.R.layout.simple_spinner_item
-        ).also { adapter ->
-            // Specify the layout to use when the list of choices appears
-            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            // Apply the adapter to the spinner
-            estado.adapter = adapter
-        }
-
-
-        estado.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
-            override fun onNothingSelected(parent: AdapterView<*>?) {
-                TODO("Not yet implemented")
-            }
-
-            override fun onItemSelected(
-                parent: AdapterView<*>?,
-                view: View?,
-                position: Int,
-                id: Long
-            ) {
-                TODO("Not yet implemented")
-            }
-        }
-
-        ArrayAdapter.createFromResource(this, R.array.quantidade, android.R.layout.simple_spinner_item
-        ).also { adapter ->
-            // Specify the layout to use when the list of choices appears
-            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            // Apply the adapter to the spinner
-            quantidade.adapter = adapter
-        }
-
-
-        quantidade.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
-            override fun onNothingSelected(parent: AdapterView<*>?) {
-                TODO("Not yet implemented")
-            }
-
-            override fun onItemSelected(
-                parent: AdapterView<*>?,
-                view: View?,
-                position: Int,
-                id: Long
-            ) {
-                TODO("Not yet implemented")
-            }
-        }
-    }
-
-    private fun findViewById(adCategoria: Int): Any {
 
     }
 
@@ -149,6 +62,4 @@ class CreateAdVoluntaryFragment : Fragment(), AdapterView.OnItemSelectedListener
                 }
             }
     }
-
-
 }
