@@ -5,18 +5,22 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import br.iesb.mobile.gentil.R
+import br.iesb.mobile.gentil.databinding.FragmentOnboardingSecondBinding
 
 
 class OnboardingSecondFragment : Fragment() {
 
+    private lateinit var binding: FragmentOnboardingSecondBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_onboarding_second, container, false)
+        binding = FragmentOnboardingSecondBinding.inflate(inflater, container, false)
+        binding.lifecycleOwner = this
+
+        return binding.root
     }
 
 }

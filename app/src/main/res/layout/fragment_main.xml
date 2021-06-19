@@ -51,7 +51,7 @@
             android:layout_width="345dp"
             android:layout_height="58dp"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="120dp"
             android:background="@drawable/custom_bt_one"
@@ -91,8 +91,8 @@
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/vpOnboarding"
-            android:layout_width="408dp"
-            android:layout_height="419dp"
+            android:layout_width="410dp"
+            android:layout_height="468dp"
             android:background="#EEEEEE"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
