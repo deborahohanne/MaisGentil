@@ -25,6 +25,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
+
 <androidx.recyclerview.widget.RecyclerView
     android:id="@+id/recyclerView_MeusAnuncios"
     android:layout_width="match_parent"
@@ -46,7 +47,8 @@
             android:layout_gravity="bottom"
             app:contentInsetLeft="0dp"
             app:contentInsetStart="0dp"
-            app:fabCradleMargin="0dp"
+            app:fabAlignmentMode="center"
+            app:fabCradleMargin="6dp"
             app:fabCradleRoundedCornerRadius="10dp"
             app:fabCradleVerticalOffset="0dp">
 

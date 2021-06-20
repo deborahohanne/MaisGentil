@@ -48,6 +48,8 @@ android {
 
 dependencies {
 
+    apply plugin: 'kotlin-android-extensions'
+
     // RecyclerView
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
 
@@ -65,6 +67,7 @@ dependencies {
 
     /** Material Design */
     implementation 'com.google.android.material:material:1.4.0-rc01'
+
 
     /** Kotlin Coroutines */
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2'
@@ -111,7 +114,6 @@ dependencies {
     /** ViewPager Dots Indicator */
     implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
 
-    implementation 'com.github.moove-it:fakeit:v0.7'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'

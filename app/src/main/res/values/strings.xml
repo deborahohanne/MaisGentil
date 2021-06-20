@@ -98,7 +98,13 @@
     <string name="title_activity_onboarding">OnboardingActivity</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
+    <!--
+    Strings BottomBar
+    -->
+    <string name="txtMenuHome">Início</string>
+    <string name="txtMenuMapa">Mapa</string>
+    <string name="txtMenuPub">Notícias</string>
+    <string name="txtMenuProfile">Meu perfil</string>
     <!--
     Strings Gamification
     -->

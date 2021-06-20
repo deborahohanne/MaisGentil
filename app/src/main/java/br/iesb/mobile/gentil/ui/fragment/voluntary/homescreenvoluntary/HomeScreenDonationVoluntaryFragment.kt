@@ -5,12 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.LinearLayoutManager
 import br.iesb.mobile.gentil.R
-import com.mooveit.library.Fakeit
-import kotlinx.android.synthetic.main.fragment_home_screen_donation.*
-import java.text.SimpleDateFormat
-import java.util.*
 
 class HomeScreenDonationVoluntaryFragment : Fragment() {
 
@@ -28,8 +23,6 @@ class HomeScreenDonationVoluntaryFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
     }
-
 
 }

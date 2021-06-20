@@ -15,15 +15,13 @@
         android:layout_marginEnd="16dp"
         android:layout_height="wrap_content">
 
-        <TextView
+        <ImageView
             android:id="@+id/tv_txt_icon"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:textSize="18sp"
-            android:textColor="@color/white"
-            android:background="@drawable/circle"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/anuncio1"
             android:gravity="center"
-            tools:text="Foto"/>
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/tv_txt_title"
