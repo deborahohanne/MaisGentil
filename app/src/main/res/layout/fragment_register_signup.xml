@@ -7,19 +7,18 @@
     <data>
         <variable
             name="codigoFragmento"
-            type="br.iesb.mobile.gentil.ui.RegisterSignupFragmentKt"/>
+            type="br.iesb.mobile.gentil.ui.fragment.RegisterSignupFragmentKt"/>
     </data>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.fragment.login.RegisterVoluntaryFragment">
+        tools:context=".ui.fragment.RegisterSignupFragmentKt">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#EEEEEE"
-            tools:context=".ui.activity.voluntary.RegisterVoluntaryActivity">
+            android:background="#EEEEEE">
 
             <ImageButton
                 android:id="@+id/btSignupBack"

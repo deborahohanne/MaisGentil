@@ -23,15 +23,18 @@
         android:src="@drawable/back"
         app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintHorizontal_bias="0.043"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/tvStoreTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinssemibold"
         android:text="@string/txtStoreTitle"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="@+id/view2"
         app:layout_constraintStart_toStartOf="@+id/view2"
@@ -51,6 +54,7 @@
         android:id="@+id/tvPointsValueStoreScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinssemibold"
         android:text="Você tem 10 pontos"
         app:layout_constraintBottom_toBottomOf="@+id/ivPointsBackgroundStore"
         app:layout_constraintEnd_toEndOf="@+id/ivPointsBackgroundStore"
@@ -71,76 +75,156 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/ivAvatarGraceStore"
-                android:layout_width="328dp"
-                android:layout_height="116dp"
-                android:src="@drawable/store_avatar_three_image" />
-
-            <ImageView
-                android:id="@+id/ivButtonBuyGrace"
-                android:layout_width="515dp"
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardGamification1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/store_buy_button" />
+                android:layout_marginTop="28dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="27dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="8dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false"
+                app:contentPadding="10dp">
+
+                <ImageView
+                    android:id="@+id/ivAvatarGraceStore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="116dp"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="40dp"
+                    android:src="@drawable/store_avatar_three_image" />
+
+                <ImageButton
+                    android:id="@+id/ivButtonBuyGrace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|end"
+                    android:layout_marginEnd="40dp"
+                    android:background="#00FFFFFF"
+                    android:src="@drawable/store_buy_button" />
+
+            </com.google.android.material.card.MaterialCardView>
 
             <ImageView
                 android:id="@+id/ivStoreSpaceOne"
                 android:layout_width="match_parent"
-                android:layout_height="10dp"
+                android:layout_height="5dp"
                 android:src="@drawable/background_representante" />
 
-            <ImageView
-                android:id="@+id/ivAvatarFloraStore"
-                android:layout_width="328dp"
-                android:layout_height="116dp"
-                android:src="@drawable/store_avatar_one_image" />
-
-            <ImageView
-                android:id="@+id/ivButtonBuyFlora"
-                android:layout_width="515dp"
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardGamification2"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/store_buy_button" />
+                android:layout_marginTop="28dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="27dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="8dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false"
+                app:contentPadding="10dp">
+
+                <ImageView
+                    android:id="@+id/ivAvatarFloraStore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="116dp"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="40dp"
+                    android:src="@drawable/store_avatar_one_image" />
+
+                <ImageButton
+                    android:id="@+id/ivButtonBuyFlora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|end"
+                    android:layout_marginEnd="40dp"
+                    android:background="#00FFFFFF"
+                    android:src="@drawable/store_buy_button" />
+
+            </com.google.android.material.card.MaterialCardView>
 
             <ImageView
                 android:id="@+id/ivStoreSpaceTwo"
                 android:layout_width="match_parent"
-                android:layout_height="10dp"
+                android:layout_height="5dp"
                 android:src="@drawable/background_representante" />
 
-            <ImageView
-                android:id="@+id/ivAvatarBobStore"
-                android:layout_width="328dp"
-                android:layout_height="116dp"
-                android:src="@drawable/store_avatar_two_image" />
-
-            <ImageView
-                android:id="@+id/ivButtonBuyBob"
-                android:layout_width="515dp"
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardGamification3"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/store_buy_button" />
+                android:layout_marginTop="28dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="27dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="8dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false"
+                app:contentPadding="10dp">
+
+                <ImageView
+                    android:id="@+id/ivAvatarBobStore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="116dp"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="40dp"
+                    android:src="@drawable/store_avatar_two_image" />
+
+                <ImageButton
+                    android:id="@+id/ibButtonBuyBob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|end"
+                    android:layout_marginEnd="40dp"
+                    android:background="#00FFFFFF"
+                    android:src="@drawable/store_buy_button" />
+
+            </com.google.android.material.card.MaterialCardView>
 
             <ImageView
                 android:id="@+id/ivStoreSpaceThree"
                 android:layout_width="match_parent"
-                android:layout_height="10dp"
+                android:layout_height="5dp"
                 android:src="@drawable/background_representante" />
 
-            <ImageView
-                android:id="@+id/ivAvatarDudaStore"
-                android:layout_width="328dp"
-                android:layout_height="116dp"
-                android:src="@drawable/store_avatar_four_image" />
-
-            <ImageView
-                android:id="@+id/ivButtonBuyDuda"
-                android:layout_width="515dp"
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardGamification4"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/store_buy_button" />
+                android:layout_marginTop="28dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="27dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="8dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false"
+                app:contentPadding="10dp">
+
+                <ImageView
+                    android:id="@+id/ivAvatarDudaStore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="116dp"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="40dp"
+                    android:src="@drawable/store_avatar_four_image" />
+
+                <ImageButton
+                    android:id="@+id/ibButtonBuyDuda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|end"
+                    android:layout_marginEnd="40dp"
+                    android:background="#00FFFFFF"
+                    android:src="@drawable/store_buy_button" />
+
+            </com.google.android.material.card.MaterialCardView>
 
             <ImageView
                 android:id="@+id/ivStoreSpaceFour"
                 android:layout_width="match_parent"
-                android:layout_height="10dp"
+                android:layout_height="5dp"
                 android:src="@drawable/background_representante" />
 
         </LinearLayout>
