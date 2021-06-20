@@ -19,8 +19,6 @@ class HomeRepresentantiveFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_home_representantive, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) =
         super.onViewCreated(view, savedInstanceState)
-
-    }
 }

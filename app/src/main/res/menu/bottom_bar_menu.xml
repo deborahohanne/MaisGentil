@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item android:id="@+id/menuHome"
         android:title="Início"
-        android:icon="@drawable/home_bottombar"/>
+        android:icon="@drawable/home_bottombar"
+        app:showAsAction="ifRoom"/>
 
     <item android:id="@+id/menuMapa"
-    android:title="Mapa"
-    android:icon="@drawable/mapa_bottombar"/>
+        android:title="Mapa"
+        android:icon="@drawable/mapa_bottombar"
+        app:showAsAction="ifRoom"/>
 
     <item android:id="@+id/placeholder"
         android:title=""
@@ -15,11 +18,13 @@
 
     <item android:id="@+id/menuChatbot"
         android:title="Chatbot"
-        android:icon="@drawable/bottom_menu_chat"/>
+        android:icon="@drawable/bottom_menu_chat"
+        app:showAsAction="ifRoom"/>
 
     <item android:id="@+id/menuProfile"
         android:title="Meu perfil"
-        android:icon="@drawable/profile_bottombar"/>
+        android:icon="@drawable/profile_bottombar"
+        app:showAsAction="ifRoom"/>
 
 
 </menu>

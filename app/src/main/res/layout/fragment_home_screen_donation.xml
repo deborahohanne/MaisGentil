@@ -67,7 +67,8 @@
             android:src="@drawable/bottom_menu_plus"
             app:backgroundTint="#4992EB"
             app:rippleColor="@android:color/darker_gray"
-            app:layout_anchor="@id/bottomAppBar" />
+            app:layout_anchor="@id/bottomAppBar"
+            tools:ignore="ContentDescription" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

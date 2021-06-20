@@ -21,10 +21,11 @@
             android:background="#EEEEEE"
             tools:context=".ui.activity.voluntary.RegisterVoluntaryActivity">
 
-            <ImageView
-                android:id="@+id/btSignupTwoTrue"
+            <ImageButton
+                android:id="@+id/btSignupBack"
                 android:layout_width="54dp"
                 android:layout_height="47dp"
+                android:background="#EEEEEE"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.044"

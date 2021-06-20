@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="br.iesb.mobile.gentil" >
 
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -15,8 +16,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Gentil" >
-        <fragment android:name=".ui.fragment.voluntary.HomeVoluntaryFragment"
+        android:theme="@style/Theme.Gentil"
+        tools:ignore="AllowBackup">
+        <activity android:name=".ui.activity.voluntary.HomeVoluntaryActivity"
             android:launchMode="singleTop"/>
         <activity android:name=".ui.activity.HomeActivity" >
         </activity>
@@ -30,7 +32,6 @@
         <activity android:name=".ui.activity.representative.CreateAdRepresentativeActivity" />
         <activity android:name=".ui.activity.MainActivity" />
         <activity android:name=".ui.activity.MapActivity" />
-        <activity android:name=".ui.activity.voluntary.HomeVoluntaryActivity" />
         <activity android:name=".ui.activity.representative.EditProfileRepresentativeActivity" />
         <activity android:name=".ui.activity.representative.HomeRepresentativeActivity" />
         <activity android:name=".ui.activity.login.LoginActivity" >

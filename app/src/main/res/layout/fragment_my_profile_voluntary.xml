@@ -19,11 +19,13 @@
         android:background="@color/white"
         />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/ivMyProfileVoluntaryBackButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#FFFFFF"
         android:src="@drawable/back"
+        android:onClick="@{() -> codigoFragmento.activity.onBackPressed() }"
         app:layout_constraintBottom_toBottomOf="@+id/view4"
         app:layout_constraintEnd_toEndOf="@+id/view4"
         app:layout_constraintHorizontal_bias="0.045"
