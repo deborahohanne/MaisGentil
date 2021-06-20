@@ -27,7 +27,6 @@
                 android:layout_width="50dp"
                 android:layout_height="24dp"
                 android:layout_marginTop="7dp"
-                app:layout_constraintBottom_toTopOf="@+id/ivHomeRepBackgroundProfile"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.93"
                 app:layout_constraintStart_toStartOf="parent"
@@ -36,7 +35,7 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardHomeRepr"
-                android:layout_width="323dp"
+                android:layout_width="330dp"
                 android:layout_height="230dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="44dp"
@@ -56,34 +55,35 @@
                     android:id="@+id/tvHomeReprHelloName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:fontFamily="@font/poppinssemibold"
                     android:text="@string/txtHomeRepr"
                     android:textColor="#463F3F"
-                    android:textSize="20sp"
-                    android:layout_gravity="center" />
+                    android:textSize="20sp" />
 
                 <ImageView
                     android:id="@+id/ivHomeReprProfileImage"
                     android:layout_width="84dp"
                     android:layout_height="78dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_marginTop="10dp"
                     app:srcCompat="@drawable/homerepravatar" />
 
-                <ImageView
+                <ImageButton
                     android:id="@+id/ivHomeRepAvaliacao"
                     android:layout_width="100dp"
                     android:layout_height="70dp"
                     android:layout_gravity="bottom|center"
+                    android:background="@color/white"
                     app:srcCompat="@drawable/avaliacoes_repr" />
             </com.google.android.material.card.MaterialCardView>
 
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardHomeVoluntaryEvents"
-                android:layout_width="363dp"
+                android:layout_width="330dp"
                 android:layout_height="94dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="24dp"
                 app:cardBackgroundColor="#FFD1DB"
                 app:cardCornerRadius="27dp"
                 app:cardElevation="5dp"
@@ -94,7 +94,7 @@
                 app:layout_anchor="@+id/constraintLayout2"
                 app:layout_anchorGravity="center"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.479"
+                app:layout_constraintHorizontal_bias="0.493"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cardHomeReprDonate">
 
@@ -104,7 +104,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center|left"
                     android:layout_marginLeft="65dp"
-                    android:layout_marginBottom="35dp"
+                    android:layout_marginBottom="33dp"
                     android:fontFamily="@font/poppinssemibold"
                     android:text="@string/txtNotiEve1"
                     android:textColor="#222121"
@@ -135,9 +135,9 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardHomeReprDonate"
-                android:layout_width="363dp"
+                android:layout_width="330dp"
                 android:layout_height="94dp"
-                android:layout_marginTop="440dp"
+                android:layout_marginTop="24dp"
                 app:cardBackgroundColor="#B4FFE6"
                 app:cardCornerRadius="27dp"
                 app:cardElevation="5dp"
@@ -146,8 +146,9 @@
                 app:cardUseCompatPadding="false"
                 app:contentPadding="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.469"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toBottomOf="@+id/cardHomeVoluntaryDonate">
 
                 <ImageView
                     android:id="@+id/ivIconDonateRepr"
@@ -165,7 +166,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center|left"
                     android:layout_marginLeft="65dp"
-                    android:layout_marginBottom="35dp"
+                    android:layout_marginBottom="33dp"
                     android:fontFamily="@font/poppinssemibold"
                     android:text="@string/txtDoacoes1"
                     android:textColor="#222121"
@@ -187,6 +188,59 @@
 
             </com.google.android.material.card.MaterialCardView>
 
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardHomeVoluntaryDonate"
+                android:layout_width="330dp"
+                android:layout_height="94dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="43dp"
+                app:cardBackgroundColor="#D3E7FF"
+                app:cardCornerRadius="27dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="8dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false"
+                app:contentPadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardHomeRepr">
+
+                <ImageView
+                    android:id="@+id/ivIconDonate"
+                    android:layout_width="50dp"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center|clip_vertical|start"
+                    android:layout_marginLeft="6dp"
+                    app:srcCompat="@drawable/ic_donate_voluntary"
+                    tools:layout_editor_absoluteX="44dp"
+                    tools:layout_editor_absoluteY="284dp" />
+
+                <TextView
+                    android:id="@+id/tvHomeRepNeedTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center|left"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginBottom="33dp"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="@string/txtArrecad1"
+                    android:textColor="#222121"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvHomeRepNeedText"
+                    android:layout_width="268dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="bottom|center|left"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="@string/txtArrecad2"
+                    android:textSize="12sp" />
+
+            </com.google.android.material.card.MaterialCardView>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <com.google.android.material.bottomappbar.BottomAppBar
@@ -196,7 +250,7 @@
             android:layout_gravity="bottom"
             app:contentInsetLeft="0dp"
             app:contentInsetStart="0dp"
-            app:fabCradleMargin="0dp"
+            app:fabCradleMargin="5dp"
             app:fabCradleRoundedCornerRadius="10dp"
             app:fabCradleVerticalOffset="0dp">
 
@@ -217,56 +271,6 @@
             android:src="@drawable/bottom_menu_plus"
             app:backgroundTint="#4992EB"
             app:layout_anchor="@id/bottomAppBar" />
-
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/cardHomeVoluntaryDonate"
-            android:layout_width="363dp"
-            android:layout_height="94dp"
-            android:layout_marginTop="28dp"
-            app:cardBackgroundColor="#D3E7FF"
-            app:cardCornerRadius="27dp"
-            app:cardElevation="5dp"
-            app:cardMaxElevation="8dp"
-            app:cardPreventCornerOverlap="true"
-            app:cardUseCompatPadding="false"
-            app:contentPadding="10dp"
-            app:layout_anchor="@+id/constraintLayout"
-            app:layout_anchorGravity="center">
-
-            <ImageView
-                android:id="@+id/ivIconDonate"
-                android:layout_width="50dp"
-                android:layout_height="47dp"
-                android:layout_gravity="center|clip_vertical|start"
-                android:layout_marginLeft="6dp"
-                app:srcCompat="@drawable/ic_donate_voluntary"
-                tools:layout_editor_absoluteX="44dp"
-                tools:layout_editor_absoluteY="284dp" />
-
-            <TextView
-                android:id="@+id/tvHomeRepNeedTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|center|left"
-                android:layout_marginLeft="65dp"
-                android:layout_marginBottom="35dp"
-                android:fontFamily="@font/poppinssemibold"
-                android:text="@string/txtArrecad1"
-                android:textColor="#222121"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/tvHomeRepNeedText"
-                android:layout_width="268dp"
-                android:layout_height="16dp"
-                android:layout_gravity="bottom|center|left"
-                android:layout_marginLeft="65dp"
-                android:layout_marginBottom="15dp"
-                android:fontFamily="@font/poppinsregular"
-                android:text="@string/txtArrecad2"
-                android:textSize="12sp" />
-
-        </com.google.android.material.card.MaterialCardView>
 
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>

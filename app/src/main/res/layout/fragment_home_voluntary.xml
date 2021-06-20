@@ -255,7 +255,7 @@
             android:layout_gravity="bottom"
             app:contentInsetLeft="0dp"
             app:contentInsetStart="0dp"
-            app:fabCradleMargin="0dp"
+            app:fabCradleMargin="5dp"
             app:fabCradleRoundedCornerRadius="10dp"
             app:fabCradleVerticalOffset="0dp">
 
