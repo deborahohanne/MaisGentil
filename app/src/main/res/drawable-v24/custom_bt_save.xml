@@ -6,7 +6,7 @@
     android:height="50dp"
     android:viewportWidth="310"
     android:viewportHeight="50"
-    android:fillColor="#FF03DAC5"
+    android:fillColor="@color/gentil_green2"
     >
 
     <group>
@@ -17,7 +17,7 @@
 
         <path
             android:pathData="M0 0V50H310V0"
-            android:fillColor="#FF03DAC5"
+            android:fillColor="@color/gentil_green2"
             />
 
     </group>
