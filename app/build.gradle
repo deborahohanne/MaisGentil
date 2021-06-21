@@ -48,6 +48,7 @@ android {
 
 dependencies {
 
+    implementation 'com.google.firebase:firebase-storage-ktx:20.0.0'
     apply plugin: 'kotlin-android-extensions'
 
     // RecyclerView e CardView
