@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <data>
+
+        </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E5E5E5"
+        tools:context=".ui.fragment.DetalheAdFragment">
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="0dp"
+            android:layout_height="49dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/gentil_green2"
+            />
+
+        <ImageButton
+            android:id="@+id/ivMyProfileVoluntaryBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/gentil_green2"
+            android:src="@drawable/back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.018"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvMyProfileVoluntaryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Doar para Instituições"
+            android:textColor="#463F3F"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardDetalhe"
+            android:layout_width="370dp"
+            android:layout_height="535dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="3dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="27dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="8dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="false"
+            app:contentPadding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.56"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4">
+
+            <ImageView
+                android:id="@+id/ivFotoAnuncio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:src="@drawable/detalhe_anuncio" />
+
+            <TextView
+                android:id="@+id/tvDetalheTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start|top"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="220dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Cesta básica"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvDetalheInst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start|top"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="260dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Instituição"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvDetalheInst1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start|top"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="280dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Coração de Jesus"
+                android:textSize="14sp"
+            <TextView
+                android:id="@+id/tvDetalheLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start|top"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="310dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Localização"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvDetalheLocal1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start|top"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="330dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Brasília - DF"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvDetalheDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start|top"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="360dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Descrição"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvDetalheDesc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start|top"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="380dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="A Coração de Jesus está promovendo uma ação de graças e precisa de x cestas básicas contendo alimentos não perecíveis."
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvDetalheCategoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start|top"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="460dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Categoria: Alimentos"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvDetalheQtd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start|top"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="480dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Quantidade: 5"
+                android:textSize="14sp"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#E5E5E5"
+            android:src="@drawable/button_quero_doar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
