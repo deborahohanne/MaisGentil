@@ -104,7 +104,8 @@
                 android:layout_marginTop="280dp"
                 android:fontFamily="@font/poppinsregular"
                 android:text="Coração de Jesus"
-                android:textSize="14sp"
+                android:textSize="14sp"/>
+
             <TextView
                 android:id="@+id/tvDetalheLocal"
                 android:layout_width="wrap_content"
