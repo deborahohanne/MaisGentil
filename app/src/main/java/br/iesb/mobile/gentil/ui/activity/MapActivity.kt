@@ -58,11 +58,11 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
     override fun onMapReady(googleMap: GoogleMap) {
         map = googleMap
 
-        val posicaoIESB = LatLng(-15.834963163926998, -47.91285006006427)
-        val pinoIESB = MarkerOptions().position(posicaoIESB).title("IESB Campus Sul")
-        map.addMarker(pinoIESB)
+        val posicaoONG = LatLng(-16.02899, -48.07306)
+        val pinoONG = MarkerOptions().position(posicaoONG).title("Casa Santo André")
+        map.addMarker(pinoONG)
 
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom(posicaoIESB, 13f))
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom(posicaoONG, 13f))
 
         map.setOnMapLongClickListener { ponto -> adicionarPino(ponto) }
     }
