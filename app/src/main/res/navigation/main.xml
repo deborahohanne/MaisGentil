@@ -24,6 +24,9 @@
         <action
             android:id="@+id/action_homeVoluntaryFragment_to_myProfileVoluntaryFragment"
             app:destination="@id/myProfileVoluntaryFragment" />
+        <action
+            android:id="@+id/action_homeVoluntaryFragment_to_createAddVoluntary"
+            app:destination="@id/createAdVoluntary" />
     </fragment>
     <fragment
         android:id="@+id/donateVoluntaryFragment"
@@ -59,4 +62,10 @@
         android:name="br.iesb.mobile.gentil.ui.fragment.voluntary.EditProfileVoluntaryFragment"
         android:label="fragment_edit_profile_voluntary"
         tools:layout="@layout/fragment_edit_profile_voluntary" />
+
+    <fragment
+        android:id="@+id/createAdVoluntary"
+        android:name="br.iesb.mobile.gentil.ui.fragment.voluntary.CreateAdVoluntaryFragment"
+        android:label="fragment_create_ad_voluntary"
+        tools:layout="@layout/fragment_create_ad_voluntary" />
 </navigation>
