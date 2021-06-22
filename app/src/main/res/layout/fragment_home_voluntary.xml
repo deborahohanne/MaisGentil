@@ -14,13 +14,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#EEEEEE"
-        tools:context=".ui.fragment.representative.HomeRepresentativeFragment">
+        tools:context=".ui.fragment.representative.HomeVoluntaryFragment">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:context=".ui.fragment.representative.HomeRepresentativeFragment">
+            android:layout_height="match_parent">
 
             <FrameLayout
                 android:id="@+id/fragment_container"
@@ -273,6 +272,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/bottom_menu_plus"
+            android:onClick="@{codigoFragmento::irParaTelaCreateAdVoluntary}"
             app:backgroundTint="#4992EB"
             app:layout_anchor="@id/bottomAppBar"
             tools:ignore="ContentDescription" />

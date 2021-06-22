@@ -5,8 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
-        </data>
+        <variable
+            name="codigoFragmento"
+            type="br.iesb.mobile.gentil.ui.fragment.voluntary.CreateAdVoluntaryFragment" />
+    </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -19,6 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:onClick="@{()->codigoFragmento.activity.onBackPressed()}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.043"
             app:layout_constraintStart_toStartOf="parent"
@@ -38,52 +41,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginTop="16dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvMeuPerfilVoluntary3">
-
-            <ImageView
-                android:id="@+id/img1"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="onClickImg"
-                android:scaleType="centerCrop"
-                app:srcCompat="@drawable/anuncio1" />
-
-            <ImageView
-                android:id="@+id/img2"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_weight="1"
-                android:onClick="onClickImg"
-                android:scaleType="centerCrop"
-                app:srcCompat="@drawable/anuncio2" />
-
-            <ImageView
-                android:id="@+id/img3"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="onClickImg"
-                android:scaleType="centerCrop"
-                app:srcCompat="@drawable/anuncio3" />
-        </LinearLayout>
-
         <EditText
             android:id="@+id/etTituloAnuncio"
             android:layout_width="364dp"
             android:layout_height="49dp"
             android:layout_marginTop="16dp"
-            android:background="@drawable/custom_input2"
+            android:background="@drawable/custom_input"
             android:drawablePadding="18dp"
             android:ems="10"
             android:hint="@string/txtTituloAnuncio"
@@ -95,18 +58,19 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.489"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+            app:layout_constraintTop_toBottomOf="@+id/tvMeuPerfilVoluntary3" />
 
         <EditText
             android:id="@+id/etDescricaoAnuncio"
             android:layout_width="364dp"
             android:layout_height="100dp"
             android:layout_marginTop="16dp"
-            android:background="@drawable/custom_input2"
+            android:background="@drawable/custom_input"
             android:drawablePadding="18dp"
             android:ems="10"
             android:hint="@string/txtDescricaoAnuncio"
-            android:inputType="textPersonName"
+            android:inputType="textMultiLine"
+            android:lines="3"
             android:paddingStart="28dp"
             android:paddingEnd="28dp"
             android:textAlignment="textStart"
@@ -179,23 +143,22 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvUFAnuncio" />
 
-        <TextView
-            android:id="@+id/tvCreateAdVoluntary"
+        <Button
+            android:id="@+id/btAddAd"
             android:layout_width="345dp"
             android:layout_height="58dp"
-            android:layout_marginStart="33dp"
-            android:layout_marginEnd="33dp"
-            android:layout_marginBottom="48dp"
-            android:background="@drawable/custom_bt_save"
+            android:layout_marginStart="160dp"
+            android:layout_marginEnd="161dp"
+            android:layout_marginBottom="33dp"
+            android:elevation="5dp"
+            android:fadeScrollbars="false"
             android:fontFamily="@font/poppinssemibold"
-            android:gravity="center"
             android:text="@string/txtSalvar"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:cornerRadius="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
