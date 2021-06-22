@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="codigoFragmento"
+            type="br.iesb.mobile.gentil.ui.fragment.voluntary.HomeVoluntaryFragment" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEEEEE"
+        tools:context=".ui.fragment.representative.HomeVoluntaryFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="56dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardHomeVoluntary"
+                android:layout_width="330dp"
+                android:layout_height="230dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="8dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false"
+                app:contentPadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeWidth="5dp">
+
+                <TextView
+                    android:id="@+id/tvHomeVoluntaryHelloName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="@string/txtHomeVoluntario"
+                    android:textColor="#463F3F"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/ivHomeVoluntaryProfileImage"
+                    android:layout_width="84dp"
+                    android:layout_height="78dp"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/avatarhomevoluntario" />
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:backgroundTint="#FFFFFF"
+                    app:srcCompat="@drawable/ic_gift_recompensas" />
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardHomeVoluntaryInst"
+                android:layout_width="330dp"
+                android:layout_height="94dp"
+                android:layout_marginTop="28dp"
+                app:cardBackgroundColor="#B4FFE6"
+                app:cardCornerRadius="27dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="8dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false"
+                app:contentPadding="10dp"
+                app:layout_anchor="@+id/constraintLayout2"
+                app:layout_anchorGravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardHomeVoluntaryDonate">
+
+                <ImageView
+                    android:id="@+id/ivIconInst"
+                    android:layout_width="48dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center|clip_vertical|start"
+                    android:layout_marginLeft="6dp"
+                    app:srcCompat="@drawable/ic_inst_voluntary"
+                    tools:layout_editor_absoluteX="139dp"
+                    tools:layout_editor_absoluteY="284dp" />
+
+                <TextView
+                    android:id="@+id/tvHomeVoluntaryInstitutionsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center|left"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginBottom="13dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="@string/txtSuasDoacoes2"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvHomeVoluntaryInstitutionsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center|left"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginBottom="31dp"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="@string/txtInst1"
+                    android:textColor="#222121"
+                    android:textSize="18sp" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardHomeVoluntaryEvents"
+                android:layout_width="330dp"
+                android:layout_height="94dp"
+                android:layout_marginTop="28dp"
+                app:cardBackgroundColor="#FFD1DB"
+                app:cardCornerRadius="27dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="8dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false"
+                app:contentPadding="10dp"
+                app:layout_anchor="@+id/constraintLayout2"
+                app:layout_anchorGravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardHomeVoluntaryInst">
+
+                <TextView
+                    android:id="@+id/tvHomeVoluntaryNoticesTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center|left"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginBottom="31dp"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="@string/txtNotiEve1"
+                    android:textColor="#222121"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvHomeVoluntaryNoticesText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center|left"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginBottom="14dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="@string/txtNotiEve2"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/ivIconEvents"
+                    android:layout_width="46dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center|clip_vertical|start"
+                    android:layout_marginLeft="6dp"
+                    app:srcCompat="@drawable/ic_people_voluntary"
+                    tools:layout_editor_absoluteX="274dp"
+                    tools:layout_editor_absoluteY="286dp" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardHomeVoluntaryDonate"
+                android:layout_width="330dp"
+                android:layout_height="94dp"
+                android:layout_marginTop="28dp"
+                app:cardBackgroundColor="#D3E7FF"
+                app:cardCornerRadius="27dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="8dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false"
+                app:contentPadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardHomeVoluntary">
+
+                <ImageView
+                    android:id="@+id/ivIconDonate"
+                    android:layout_width="48dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center|clip_vertical|start"
+                    android:layout_marginLeft="6dp"
+                    app:srcCompat="@drawable/ic_donate_voluntary"
+                    tools:layout_editor_absoluteX="44dp"
+                    tools:layout_editor_absoluteY="284dp" />
+
+                <TextView
+                    android:id="@+id/tvHomeVoluntaryDonationTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center|left"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginBottom="31dp"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="@string/txtSuasDoacoes1"
+                    android:textColor="#222121"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvHomeVoluntaryDonationsText"
+                    android:layout_width="207dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center|left"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginBottom="13dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="@string/txtDoacoes3"
+                    android:textSize="12sp"
+                    app:layout_anchorGravity="center" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#EEEEEE"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_sair" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:fabCradleMargin="5dp"
+            app:fabCradleRoundedCornerRadius="10dp"
+            app:fabCradleVerticalOffset="0dp">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                app:elevation="0dp"
+                app:menu="@menu/bottom_bar_menu" />
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bottom_menu_plus"
+            android:onClick="@{codigoFragmento::irParaTelaCreateAdVoluntary}"
+            app:backgroundTint="#4992EB"
+            app:layout_anchor="@id/bottomAppBar"
+            tools:ignore="ContentDescription" />
+
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

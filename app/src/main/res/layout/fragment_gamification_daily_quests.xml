@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    android:fadeScrollbars="true"
+    android:textAlignment="center"
+    tools:context=".ui.fragment.gamification.GamificationDailyQuestsFragment">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.619" />
+
+
+    <TextView
+        android:id="@+id/tvDailyQuestsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="@string/txtMissoesDiarias"
+        android:textColor="#463F3F"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.533" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardVoluntaryMissoes1"
+        android:layout_width="412dp"
+        android:layout_height="187dp"
+        android:layout_marginBottom="240dp"
+        app:cardCornerRadius="27dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="8dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false"
+        app:contentPadding="10dp"
+        app:layout_anchor="@+id/constraintLayout2"
+        app:layout_anchorGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="@string/txtMissoesCurta"
+            android:textColor="#463F3F"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|clip_vertical|start"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/curtapublis"
+            tools:layout_editor_absoluteX="178dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="211dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/button_10_points_image" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardVoluntaryMissoes2"
+        android:layout_width="412dp"
+        android:layout_height="187dp"
+        android:layout_marginBottom="32dp"
+        app:cardCornerRadius="27dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="8dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false"
+        app:contentPadding="10dp"
+        app:layout_anchor="@+id/constraintLayout2"
+        app:layout_anchorGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tvCompartilhe"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="@string/txtMissoesCompartilhe"
+            android:textAlignment="center"
+            android:textColor="#463F3F"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|clip_vertical|start"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/compartilheeventos" />
+
+        <ImageView
+            android:id="@+id/ivPOntos"
+            android:layout_width="211dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="7dp"
+            android:src="@drawable/button_10_points_image" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardVoluntaryMissoes3"
+        android:layout_width="412dp"
+        android:layout_height="187dp"
+        android:layout_marginBottom="448dp"
+        app:cardCornerRadius="27dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="8dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false"
+        app:contentPadding="10dp"
+        app:layout_anchor="@+id/constraintLayout2"
+        app:layout_anchorGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tvConvide"
+            android:layout_width="261dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="@string/txtMissoesConvide"
+            android:textAlignment="center"
+            android:textColor="#463F3F"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/ivInviteFriends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|clip_vertical|start"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/invitefriends" />
+
+        <ImageView
+            android:id="@+id/ivPOntos1"
+            android:layout_width="211dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="7dp"
+            android:src="@drawable/button_5_points_image" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

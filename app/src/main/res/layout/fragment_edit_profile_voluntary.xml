@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <data>
+
+        </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        tools:context=".ui.fragment.voluntary.EditProfileVoluntaryFragment">
+
+
+            <ImageView
+                android:id="@+id/ivEclipseBrancoEditarPerfilVoluntary10"
+                android:layout_width="85dp"
+                android:layout_height="79dp"
+                android:layout_marginTop="84dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/elipese_branco_editar_perfil_representative" />
+
+            <ImageView
+                android:id="@+id/ivAvatarEditarPerfilVoluntary10"
+                android:layout_width="68dp"
+                android:layout_height="63dp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivEclipseBrancoEditarPerfilVoluntary10"
+                app:layout_constraintEnd_toEndOf="@+id/ivEclipseBrancoEditarPerfilVoluntary10"
+                app:layout_constraintHorizontal_bias="0.464"
+                app:layout_constraintStart_toStartOf="@+id/ivEclipseBrancoEditarPerfilVoluntary10"
+                app:layout_constraintTop_toTopOf="@+id/ivEclipseBrancoEditarPerfilVoluntary10"
+                app:layout_constraintVertical_bias="0.32"
+                app:srcCompat="@drawable/avatarhomevoluntario" />
+
+            <TextView
+                android:id="@+id/tvMeuPerfilVoluntary10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="@string/txtEditarPerfil"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivVoltarEditarPerfilVoluntary10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.043"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/back" />
+
+            <EditText
+                android:id="@+id/etNomeEditProfileVoluntary10"
+                android:layout_width="345dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/custom_input"
+                android:drawablePadding="18dp"
+                android:ems="10"
+                android:hint="@string/txtNome"
+                android:inputType="textPersonName"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp"
+                android:textAlignment="textStart"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.529"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivEclipseBrancoEditarPerfilVoluntary10" />
+
+            <EditText
+                android:id="@+id/etCPFEditProfileVoluntary10"
+                android:layout_width="345dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/custom_input"
+                android:drawablePadding="18dp"
+                android:ems="10"
+                android:hint="@string/txtCPF"
+                android:inputType="number"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp"
+                android:textAlignment="textStart"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.47"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etNomeEditProfileVoluntary10" />
+
+            <EditText
+                android:id="@+id/etDateEditProfileVoluntary10"
+                android:layout_width="345dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/custom_input"
+                android:drawablePadding="18dp"
+                android:ems="10"
+                android:hint="@string/txtDataNascimento"
+                android:inputType="date"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp"
+                android:textAlignment="textStart"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.529"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etCPFEditProfileVoluntary10" />
+
+            <EditText
+                android:id="@+id/etEmailEditProfileVoluntary10"
+                android:layout_width="345dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/custom_input"
+                android:drawablePadding="18dp"
+                android:ems="10"
+                android:hint="@string/txtEmail"
+                android:inputType="textEmailAddress"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp"
+                android:textAlignment="textStart"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.529"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+
+            <EditText
+                android:id="@+id/etPhoneEditProfileVoluntary10"
+                android:layout_width="345dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/custom_input"
+                android:drawablePadding="18dp"
+                android:ems="10"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="@string/txtTelefone"
+                android:inputType="phone"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp"
+                android:textAlignment="textStart"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etEndereçoEditProfileVoluntary10" />
+
+            <EditText
+                android:id="@+id/etEndereçoEditProfileVoluntary10"
+                android:layout_width="345dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/custom_input"
+                android:drawablePadding="18dp"
+                android:ems="10"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="@string/txtEndereço"
+                android:inputType="textPersonName"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp"
+                android:textAlignment="textStart"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.529"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etEmailEditProfileVoluntary10" />
+
+            <TextView
+                android:id="@+id/tvEditProfileVoluntary11"
+                android:layout_width="345dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="33dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/custom_bt_save"
+                android:fontFamily="@font/poppinssemibold"
+                android:gravity="center"
+                android:text="@string/txtSalvar"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etPhoneEditProfileVoluntary10" />
+
+            <TextView
+                android:id="@+id/tvEditProfileVoluntaryGender"
+                android:layout_width="83dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/txtGenero"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etDateEditProfileVoluntary10" />
+
+            <RadioGroup
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEditProfileVoluntaryGender">
+
+                    <RadioButton
+                        android:id="@+id/genero_outro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="@string/txtGeneroOutro"
+                        tools:layout_editor_absoluteX="237dp"
+                        tools:layout_editor_absoluteY="398dp" />
+
+                    <RadioButton
+                        android:id="@+id/genero_masculino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="@string/txtGeneroMasculino"
+                        tools:layout_editor_absoluteX="141dp"
+                        tools:layout_editor_absoluteY="396dp" />
+
+                    <RadioButton
+                        android:id="@+id/genero_feminino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="@string/txtGeneroFeminino"
+                        tools:layout_editor_absoluteX="33dp"
+                        tools:layout_editor_absoluteY="394dp" />
+            </RadioGroup>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

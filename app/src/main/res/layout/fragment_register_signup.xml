@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="codigoFragmento"
+            type="br.iesb.mobile.gentil.ui.fragment.RegisterSignupFragmentKt"/>
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.RegisterSignupFragmentKt">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EEEEEE">
+
+            <ImageButton
+                android:id="@+id/btSignupBack"
+                android:layout_width="54dp"
+                android:layout_height="47dp"
+                android:background="#EEEEEE"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.044"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.023"
+                app:srcCompat="@drawable/back" />
+
+            <TextView
+                android:id="@+id/tvRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="@string/txtRegistrarse"
+                android:textColor="#463F3F"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivRegister"
+                android:layout_width="199dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvRegister"
+                app:srcCompat="@drawable/register1" />
+
+            <EditText
+                android:id="@+id/etNomeRegister"
+                android:layout_width="345dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/user"
+                android:drawablePadding="18dp"
+                android:ems="10"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="@string/txtNome"
+                android:inputType="textPersonName"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp"
+                android:textAlignment="textStart"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/etEmailRegister"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivRegister" />
+
+            <EditText
+                android:id="@+id/etEmailRegister"
+                android:layout_width="345dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="18dp"
+                android:ems="10"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="@string/txtEmail"
+                android:inputType="textEmailAddress"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp"
+                android:textAlignment="textStart"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/etPasswordRegister"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etNomeRegister" />
+
+            <EditText
+                android:id="@+id/etPasswordRegister"
+                android:layout_width="345dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/lock"
+                android:drawablePadding="18dp"
+                android:ems="10"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="@string/txtSenha"
+                android:inputType="textPassword"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp"
+                android:textAlignment="textStart"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/etConfirmPasswordRegister"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etEmailRegister" />
+
+            <EditText
+                android:id="@+id/etConfirmPasswordRegister"
+                android:layout_width="345dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/lock"
+                android:drawablePadding="18dp"
+                android:ems="10"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="@string/txtConfirmaSenha"
+                android:inputType="textPassword"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp"
+                android:textAlignment="textStart"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/btSignUp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etPasswordRegister" />
+
+            <TextView
+                android:id="@+id/btSignUp"
+                android:layout_width="345dp"
+                android:layout_height="58dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/custom_bt_one"
+                android:fontFamily="@font/poppinssemibold"
+                android:gravity="center"
+                android:text="@string/txtNext"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+</layout>

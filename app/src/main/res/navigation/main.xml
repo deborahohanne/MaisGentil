@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/homeVoluntaryFragment">
+    <fragment
+        android:id="@+id/homeVoluntaryFragment"
+        android:name="br.iesb.mobile.gentil.ui.fragment.voluntary.HomeVoluntaryFragment"
+        android:label="fragment_home_voluntary"
+        tools:layout="@layout/fragment_home_voluntary" >
+        <action
+            android:id="@+id/action_homeVoluntaryFragment_to_donateVoluntaryFragment"
+            app:destination="@id/donateVoluntaryFragment" />
+        <action
+            android:id="@+id/action_homeVoluntaryFragment_to_eventsVoluntaryFragment"
+            app:destination="@id/eventsVoluntaryFragment" />
+        <action
+            android:id="@+id/action_homeVoluntaryFragment_to_publicationsVoluntaryFragment"
+            app:destination="@id/publicationsVoluntaryFragment" />
+        <action
+            android:id="@+id/action_homeVoluntaryFragment_to_mapActivity"
+            app:destination="@id/mapActivity" />
+        <action
+            android:id="@+id/action_homeVoluntaryFragment_to_myProfileVoluntaryFragment"
+            app:destination="@id/myProfileVoluntaryFragment" />
+        <action
+            android:id="@+id/action_homeVoluntaryFragment_to_createAddVoluntary"
+            app:destination="@id/createAdVoluntary" />
+    </fragment>
+    <fragment
+        android:id="@+id/donateVoluntaryFragment"
+        android:name="br.iesb.mobile.gentil.ui.fragment.voluntary.DonateVoluntaryFragment"
+        android:label="fragment_donate_voluntary"
+        tools:layout="@layout/fragment_donate_voluntary" />
+    <fragment
+        android:id="@+id/eventsVoluntaryFragment"
+        android:name="br.iesb.mobile.gentil.ui.fragment.voluntary.EventsVoluntaryFragment"
+        android:label="fragment_events_voluntary"
+        tools:layout="@layout/fragment_events_voluntary" />
+    <fragment
+        android:id="@+id/publicationsVoluntaryFragment"
+        android:name="br.iesb.mobile.gentil.ui.fragment.voluntary.PublicationsVoluntaryFragment"
+        android:label="fragment_publications_voluntary"
+        tools:layout="@layout/fragment_publications_voluntary" />
+    <activity
+        android:id="@+id/mapActivity"
+        android:name="br.iesb.mobile.gentil.ui.activity.MapActivity"
+        android:label="activity_map"
+        tools:layout="@layout/activity_map" />
+    <fragment
+        android:id="@+id/myProfileVoluntaryFragment"
+        android:name="br.iesb.mobile.gentil.ui.fragment.voluntary.MyProfileVoluntaryFragment"
+        android:label="fragment_my_profile_voluntary"
+        tools:layout="@layout/fragment_my_profile_voluntary" >
+        <action
+            android:id="@+id/action_myProfileVoluntaryFragment_to_editProfileVoluntaryFragment"
+            app:destination="@id/editProfileVoluntaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileVoluntaryFragment"
+        android:name="br.iesb.mobile.gentil.ui.fragment.voluntary.EditProfileVoluntaryFragment"
+        android:label="fragment_edit_profile_voluntary"
+        tools:layout="@layout/fragment_edit_profile_voluntary" />
+
+    <fragment
+        android:id="@+id/createAdVoluntary"
+        android:name="br.iesb.mobile.gentil.ui.fragment.voluntary.CreateAdVoluntaryFragment"
+        android:label="fragment_create_ad_voluntary"
+        tools:layout="@layout/fragment_create_ad_voluntary" />
+</navigation>

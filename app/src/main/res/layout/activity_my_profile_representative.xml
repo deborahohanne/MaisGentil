@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    tools:context=".ui.activity.representative.MyProfileRepresentativeActivity">
+
+    <ImageView
+        android:id="@+id/ivEclipseBrancoEditarPerfilRepresentative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/elipese_branco_editar_perfil_representative"
+        tools:layout_editor_absoluteY="83dp" />
+
+    <ImageView
+        android:id="@+id/ivAvatarEditarPerfilRepresentative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/avatar_home_representante"
+        tools:layout_editor_absoluteY="83dp" />
+
+    <TextView
+        android:id="@+id/tvNomeEditarPerfilRepresentaive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Maria - ONG Bla bla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivEclipseBrancoEditarPerfilRepresentative" />
+
+    <ImageView
+        android:id="@+id/ivIconeLocalizacaoEditarPerfilRepresentante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNomeEditarPerfilRepresentaive"
+        app:srcCompat="@drawable/icone_localizacao_editar_perfil_representative" />
+
+    <TextView
+        android:id="@+id/tvLocalizacaoEditarPerfilRepresentante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:text="Brasilia, bla bla bla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toEndOf="@+id/ivIconeLocalizacaoEditarPerfilRepresentante"
+        app:layout_constraintTop_toBottomOf="@+id/tvNomeEditarPerfilRepresentaive" />
+
+    <ImageView
+        android:id="@+id/ivBotaoEditarPerfilRepresentante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocalizacaoEditarPerfilRepresentante"
+        app:srcCompat="@drawable/custom_bt_one" />
+
+    <TextView
+        android:id="@+id/tvEditarPerfilRepresentante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar Perfil"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBotaoEditarPerfilRepresentante"
+        app:layout_constraintEnd_toEndOf="@+id/ivBotaoEditarPerfilRepresentante"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="@+id/ivBotaoEditarPerfilRepresentante"
+        app:layout_constraintTop_toTopOf="@+id/ivBotaoEditarPerfilRepresentante" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="br.iesb.mobile.gentil.ui.fragment.representative.BackgroundRepresentativeFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+
+    </data>
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        tools:context=".ui.fragment.representative.EditProfileRepresentativeFragment">
+
+
+            <TextView
+                android:id="@+id/tvMeuPerfilVoluntary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="@string/txtEditarPerfil"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivBackEditProfileRepresentative10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/back" />
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/elipese_branco_editar_perfil_representative" />
+
+            <ImageView
+                android:id="@+id/ivHomeVoluntaryDonationTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView22"
+                app:layout_constraintEnd_toEndOf="@+id/imageView22"
+                app:layout_constraintStart_toStartOf="@+id/imageView22"
+                app:layout_constraintTop_toTopOf="@+id/imageView22"
+                app:layout_constraintVertical_bias="0.388"
+                app:srcCompat="@drawable/avatar_home_representante" />
+
+        <EditText
+            android:id="@+id/etEditProfileRepresentativeNomeInstituicao"
+            android:layout_width="345dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/custom_input"
+            android:drawablePadding="18dp"
+            android:ems="10"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="@string/txtNomeInstituicao"
+            android:inputType="textPersonName"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView22" />
+
+        <EditText
+            android:id="@+id/etEditProfileRepresentativeCPNJ"
+            android:layout_width="345dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/custom_input"
+            android:drawablePadding="18dp"
+            android:ems="10"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="@string/txtCNPJdaInstituiçao"
+            android:inputType="number"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEditProfileRepresentativeNomeInstituicao" />
+
+        <EditText
+            android:id="@+id/etEditProfileRepresentativeNomeRepresentante"
+            android:layout_width="345dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/custom_input"
+            android:drawablePadding="18dp"
+            android:ems="10"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="@string/txtNomeRepresentante"
+            android:inputType="textPersonName"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEditProfileRepresentativeCPNJ" />
+
+        <EditText
+            android:id="@+id/etEditProfileRepresentativeCPF"
+            android:layout_width="345dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/custom_input"
+            android:drawablePadding="18dp"
+            android:ems="10"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="@string/txtCPFRepresentante"
+            android:inputType="number"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEditProfileRepresentativeNomeRepresentante" />
+
+        <EditText
+            android:id="@+id/etEditProfileRepresentativeEmail"
+            android:layout_width="345dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/custom_input"
+            android:drawablePadding="18dp"
+            android:ems="10"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="@string/txtEmail"
+            android:inputType="textEmailAddress"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEditProfileRepresentativeCPF" />
+
+        <EditText
+            android:id="@+id/etEditProfileRepresentativePhone"
+            android:layout_width="345dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/custom_input"
+            android:drawablePadding="18dp"
+            android:ems="10"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="@string/txtTelefone"
+            android:inputType="phone"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEditProfileRepresentativeEmail" />
+
+        <EditText
+            android:id="@+id/etEditProfileRepresentativeEndereço"
+            android:layout_width="345dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/custom_input"
+            android:drawablePadding="18dp"
+            android:ems="10"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="@string/txtEndereço"
+            android:inputType="textPersonName"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEditProfileRepresentativePhone" />
+
+        <TextView
+            android:id="@+id/tvEditProfileRepresentativeSalvar"
+            android:layout_width="345dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/custom_bt_save"
+            android:fontFamily="@font/poppinssemibold"
+            android:gravity="center"
+            android:text="@string/txtSalvar"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEditProfileRepresentativeEndereço" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

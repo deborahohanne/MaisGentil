@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+
+    tools:context=".ui.fragment.gamification.GamificationProfileFragment">
+
+    <View
+        android:id="@+id/background_profile_gamification"
+        android:layout_width="411dp"
+        android:layout_height="290dp"
+        android:background="#B31FBF9F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivProfileImage"
+        android:layout_width="88dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="49dp"
+        android:src="@drawable/avatarhomevoluntario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background_profile_gamification" />
+
+    <ImageView
+        android:id="@+id/ivBackButtonProfileGamification"
+        android:layout_width="37dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/back_button_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvProfileNameGamification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Matheus"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivProfileImage" />
+
+    <ImageView
+        android:id="@+id/iv_gamification_profile_points_background"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/retangulo_branco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBackgroundStoreImage"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/retangulo_branco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.657"
+        app:layout_constraintStart_toEndOf="@+id/iv_gamification_profile_points_background"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMeusPontosGamification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="@string/txtMeusPontos"
+        app:layout_constraintBottom_toTopOf="@+id/iv_gamification_profile_points_background"
+        app:layout_constraintEnd_toStartOf="@+id/tvResgateGamification"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvResgateGamification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="@string/txtResgatarPontos"
+        app:layout_constraintBottom_toTopOf="@+id/ivBackgroundStoreImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.849"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivPointsImageGamification"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/points_image_gamification"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_gamification_profile_points_background"
+        app:layout_constraintEnd_toEndOf="@+id/iv_gamification_profile_points_background"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="@+id/iv_gamification_profile_points_background"
+        app:layout_constraintTop_toTopOf="@+id/iv_gamification_profile_points_background" />
+
+    <ImageView
+        android:id="@+id/ivStoreIconGamification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/store_image_gamification"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBackgroundStoreImage"
+        app:layout_constraintEnd_toEndOf="@+id/ivBackgroundStoreImage"
+        app:layout_constraintStart_toStartOf="@+id/ivBackgroundStoreImage"
+        app:layout_constraintTop_toTopOf="@+id/ivBackgroundStoreImage" />
+
+    <TextView
+        android:id="@+id/tvPointsValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsbold"
+        android:text="10"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_gamification_profile_points_background"
+        app:layout_constraintEnd_toEndOf="@+id/iv_gamification_profile_points_background"
+        app:layout_constraintStart_toEndOf="@+id/ivPointsImageGamification"
+        app:layout_constraintTop_toTopOf="@+id/iv_gamification_profile_points_background" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardGamification5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="27dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="8dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false"
+        app:contentPadding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background_profile_gamification">
+
+        <TextView
+            android:id="@+id/tvProfileQuestsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="@string/txtMissoesDiarias"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivProfileBackgroundDailyQuests" />
+
+        <ImageView
+            android:id="@+id/ivProfileGamificationLikeQuests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="44dp"
+            android:src="@drawable/like_events_image"
+            app:layout_constraintBottom_toBottomOf="@+id/ivProfileBackgroundDailyQuests"
+            app:layout_constraintEnd_toStartOf="@+id/ivProfileShareQuests"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toEndOf="@+id/ivProfileQuestsInvite"
+            app:layout_constraintTop_toBottomOf="@+id/ivBackgroundDailyQuests"
+            app:layout_constraintVertical_bias="0.25" />
+
+        <ImageView
+            android:id="@+id/ivProfileShareQuests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/share_events_image"
+            app:layout_constraintBottom_toBottomOf="@+id/ivProfileBackgroundDailyQuests"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivBackgroundDailyQuests"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/ivProfileQuestsInvite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="44dp"
+            android:src="@drawable/invite_friend_image"
+            app:layout_constraintBottom_toBottomOf="@+id/ivProfileBackgroundDailyQuests"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivBackgroundDailyQuests"
+            app:layout_constraintVertical_bias="0.25" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardGamification6"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="27dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="8dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false"
+        app:contentPadding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardGamification5">
+
+        <TextView
+            android:id="@+id/tvConquistasTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:gravity="start|top"
+            android:text="@string/txtConquistas"
+            tools:layout_editor_absoluteX="169dp"
+            tools:layout_editor_absoluteY="454dp" />
+
+        <ImageView
+            android:id="@+id/ivProfileGamification1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="44dp"
+            android:src="@drawable/conquistagentil" />
+
+        <ImageView
+            android:id="@+id/ivProfileShare2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/conquistaamigavel" />
+
+        <ImageView
+            android:id="@+id/ivProfile3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="44dp"
+            android:src="@drawable/conquistaengajado" />
+
+        <ImageView
+            android:id="@+id/ivProfileGamification2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="44dp"
+            android:src="@drawable/conquistaajudante" />
+
+        <ImageView
+            android:id="@+id/ivProfileGame2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/conquistainovador" />
+
+        <ImageView
+            android:id="@+id/ivProfileGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="44dp"
+            android:src="@drawable/conquistasociavel" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

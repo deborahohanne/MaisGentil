@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.gamification.GamificationConquestsFragment"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <View
+        android:id="@+id/viewConquestTopbar"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivButtonBackConquest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="@+id/viewConquestTopbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewConquestTopbar" />
+
+    <TextView
+        android:id="@+id/tvConquestsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="@string/txtConquistas"
+        android:textColor="#463F3F"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewConquestTopbar"
+        app:layout_constraintEnd_toEndOf="@+id/viewConquestTopbar"
+        app:layout_constraintStart_toStartOf="@+id/viewConquestTopbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewConquestTopbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivConquestsSpaceZero"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:src="@drawable/background_representante" />
+
+            <ImageView
+                android:id="@+id/ivConquestScreenAmigavel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/conquestscreen_amigavel_image" />
+
+            <ImageView
+                android:id="@+id/ivConquestsSpaceOne"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:src="@drawable/background_representante" />
+
+            <ImageView
+                android:id="@+id/ivConquestScreenAjudante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/conquestscreen_ajudante_image" />
+
+            <ImageView
+                android:id="@+id/ivConquestsSpaceTwo"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:src="@drawable/background_representante" />
+
+            <ImageView
+                android:id="@+id/ivConquestScreenCarinhoso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/conquestscreen_carinhoso_image" />
+
+            <ImageView
+                android:id="@+id/ivConquestsSpaceThree"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:src="@drawable/background_representante" />
+
+            <ImageView
+                android:id="@+id/ivConquestScreenPresente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/conquestscreen_presente_image" />
+
+            <ImageView
+                android:id="@+id/ivConquestsSpaceFour"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:src="@drawable/background_representante" />
+
+            <ImageView
+                android:id="@+id/ivConquestScreenEngajado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/conquestscreen_engajado_image" />
+
+            <ImageView
+                android:id="@+id/ivConquestsSpaceFive"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:src="@drawable/background_representante" />
+
+            <ImageView
+                android:id="@+id/ivConquestScreenAvaliador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/conquestscreen_avaliador_image" />
+
+            <ImageView
+                android:id="@+id/ivConquestsSpaceSix"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:src="@drawable/background_representante" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

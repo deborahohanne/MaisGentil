@@ -1,33 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.iesb.mobile.gentil">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="br.iesb.mobile.gentil" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!--  Permissão necessária para recuperar a localização em background quando
+             a versão do Android for igual ou superior à versão 10  -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
 
     <application
+        android:name=".MaisGentilApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Gentil">
-
-<!--        <meta-data-->
-<!--            android:name="com.google.android.wearable.standalone"-->
-<!--            android:value="true" />-->
-
-        <activity android:name=".ui.activity.LoginActivity" />
-        <activity android:name=".ui.activity.SignUpThreeActivity" />
-        <activity android:name=".ui.activity.HomeActivity" />
-        <activity android:name=".ui.activity.ForgotActivity" />
-        <activity android:name=".ui.activity.SignUpTwoActivity" />
-        <activity android:name=".ui.activity.SignUpOneActivity" />
-        <activity android:name=".ui.activity.MainActivity"/>
-        <activity android:name=".ui.activity.LoadingActivity">
+        android:theme="@style/Theme.Gentil"
+        tools:ignore="AllowBackup">
+        <activity android:name=".ui.activity.voluntary.HomeVoluntaryActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".ui.activity.HomeActivity" >
+        </activity>
+        <activity android:name=".ui.activity.MainStartActivity" />
+        <activity android:name=".ui.activity.ChatbotActivity" />
+        <activity android:name=".ui.activity.representative.MyProfileRepresentativeActivity" />
+        <activity android:name=".ui.activity.voluntary.CreateAdVoluntaryActivity"
+            android:parentActivityName=".ui.fragment.voluntary.HomeVoluntaryFragment"/>
+        <activity android:name=".ui.activity.voluntary.EditProfileVoluntaryActivity" />
+        <activity android:name=".ui.activity.voluntary.MyProfileVoluntaryActivity" />
+        <activity android:name=".ui.activity.representative.CreateAdRepresentativeActivity" />
+        <activity android:name=".ui.activity.MainActivity" />
+        <activity android:name=".ui.activity.MapActivity" />
+        <activity android:name=".ui.activity.representative.EditProfileRepresentativeActivity" />
+        <activity android:name=".ui.activity.representative.HomeRepresentativeActivity" />
+        <activity android:name=".ui.activity.login.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.activity.representative.RegisterRepresentativeActivity" />
+        <activity android:name=".ui.activity.voluntary.RegisterVoluntaryActivity" />
+        <activity android:name=".ui.activity.RegisterActivity" />
+        <activity android:name=".ui.activity.MaisGentilActivity" />
+
+        <!--  MAPS  -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC8Rveo1CUD5X0PGd2CfzrgvOPtXnwvxu0"/>
+
     </application>
 
 </manifest>

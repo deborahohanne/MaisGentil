@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="codigoFragmento"
+            type="br.iesb.mobile.gentil.ui.fragment.voluntary.CreateAdVoluntaryFragment" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.voluntary.CreateAdVoluntaryFragment">
+
+
+        <ImageView
+            android:id="@+id/ivVoltarEditarPerfilVoluntary2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="@{()->codigoFragmento.activity.onBackPressed()}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tvMeuPerfilVoluntary3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="@string/txtAnuncios3"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.598"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etTituloAnuncio"
+            android:layout_width="364dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_input"
+            android:drawablePadding="18dp"
+            android:ems="10"
+            android:hint="@string/txtTituloAnuncio"
+            android:inputType="textPersonName"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvMeuPerfilVoluntary3" />
+
+        <EditText
+            android:id="@+id/etDescricaoAnuncio"
+            android:layout_width="364dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_input"
+            android:drawablePadding="18dp"
+            android:ems="10"
+            android:hint="@string/txtDescricaoAnuncio"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etTituloAnuncio" />
+
+        <TextView
+            android:id="@+id/tvCategoriaAnuncio"
+            android:layout_width="83dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="@string/txtCategoriaAnuncio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ad_UF" />
+
+        <Spinner
+            android:id="@+id/ad_categoria"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCategoriaAnuncio" />
+
+        <TextView
+            android:id="@+id/tvQtdAnuncio"
+            android:layout_width="116dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="@string/txtQuantidadeAnuncio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.077"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ad_categoria" />
+
+        <Spinner
+            android:id="@+id/ad_quantidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvQtdAnuncio" />
+
+        <TextView
+            android:id="@+id/tvUFAnuncio"
+            android:layout_width="78dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="@string/txtUFAnuncio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etDescricaoAnuncio" />
+
+        <Spinner
+            android:id="@+id/ad_UF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvUFAnuncio" />
+
+        <Button
+            android:id="@+id/btAddAd"
+            android:layout_width="345dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginEnd="161dp"
+            android:layout_marginBottom="33dp"
+            android:elevation="5dp"
+            android:fadeScrollbars="false"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="@string/txtSalvar"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
